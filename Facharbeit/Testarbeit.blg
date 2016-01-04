@@ -1,0 +1,14 @@
+[1] Config.pm:318> INFO - This is Biber 1.8
+[1] Config.pm:321> INFO - Logfile is 'Testarbeit.blg'
+[82] biber:275> INFO - === Mo Jan  4, 2016, 15:25:24
+[82] Biber.pm:333> INFO - Reading 'Testarbeit.bcf'
+[147] Biber.pm:630> INFO - Found 1 citekeys in bib section 0
+[160] Biber.pm:3053> INFO - Processing section 0
+[173] Biber.pm:3190> INFO - Looking for bibtex format file 'Quellen.bib' for section 0
+[177] bibtex.pm:933> INFO - Decoding LaTeX character macros into UTF-8
+[179] bibtex.pm:808> INFO - Found BibTeX data source 'Quellen.bib'
+[214] Biber.pm:2939> INFO - Overriding locale 'de_DE.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[214] Biber.pm:2945> INFO - Sorting 'entry' list 'nyt' keys
+[214] Biber.pm:2949> INFO - No sort tailoring available for locale 'de_DE.UTF-8'
+[216] bbl.pm:482> INFO - Writing 'Testarbeit.bbl' with encoding 'UTF-8'
+[223] bbl.pm:555> INFO - Output to Testarbeit.bbl
