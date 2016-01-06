@@ -8,14 +8,30 @@
 
 \usepackage[backend=biber,
 			style=authoryear,
+			citestyle=alphabetic,
+			sorting=nyt,
 			language=german]{biblatex}
 			
 \addbibresource{Quellen.bib}
 
+
+% cite 		- Cite the work
+% textcite 	- Cite within text
+% footcite 	- Make a footnote citation
+% parencite	- Cite explicitly in []
+% autocite 	- Cite depending on style
+
+% citeXX	- Cite only XX (Whyyy) (author, year, title)
+
 \begin{document}
 
-As you can see in \footcite{FORT}
+As you can see in \citetitle{SPACECeramics},
 3D Printing is becoming more and more popular.
+
+Auch in der Biomedizin gibt es wesentliche Fortschritte \parencite[siehe][]{BABY,BIOMED}.
+Die Industrie wächst steil an: \begin{quotation}
+The market for 3D printing, more technically called additive manufacturing (AM), grew at a compound annual growth rate (CAGR) of 35.2 percent to  \$4.1 billion in 2014, according to Wohlers Report 2015. \emph{\cite{FORBES}}
+\end{quotation}
 
 \newpage
 

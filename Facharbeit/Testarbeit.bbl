@@ -19,27 +19,110 @@
 
 \refsection{0}
   \sortlist{entry}{nyt}
-    \entry{FORT}{online}{}
+    \entry{BABY}{online}{}
       \name{labelname}{1}{}{%
-        {{uniquename=0,hash=a3f5b6238129b9317b992310ad21828c}{Zaleski}{Z\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=797633e8fe70962b0ef34a677e3cbb51}{Ericson}{E\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{uniquename=0,hash=a3f5b6238129b9317b992310ad21828c}{Zaleski}{Z\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=797633e8fe70962b0ef34a677e3cbb51}{Ericson}{E\bibinitperiod}{John}{J\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{a3f5b6238129b9317b992310ad21828c}
-      \strng{fullhash}{a3f5b6238129b9317b992310ad21828c}
-      \field{sortinit}{Z}
+      \strng{namehash}{797633e8fe70962b0ef34a677e3cbb51}
+      \strng{fullhash}{797633e8fe70962b0ef34a677e3cbb51}
+      \field{labelalpha}{Eri14}
+      \field{sortinit}{E}
+      \field{labelyear}{2014}
+      \field{labelmonth}{03}
+      \field{labelday}{18}
+      \field{datelabelsource}{}
+      \field{labeltitle}{3D-Printed Windpipe Splints Help Baby With Tracheomalacia Breathe Again}
+      \field{day}{18}
+      \field{month}{03}
+      \field{title}{3D-Printed Windpipe Splints Help Baby With Tracheomalacia Breathe Again}
+      \field{urlday}{05}
+      \field{urlmonth}{01}
+      \field{urlyear}{2016}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.medicaldaily.com/3d-printed-windpipe-splints-help-baby-tracheomalacia-breathe-again-271518
+      \endverb
+    \endentry
+    \entry{FORBES}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=2b1fb994cb040b6b7b6a9fef95b4e1de}{McCue}{M\bibinitperiod}{TJ}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=2b1fb994cb040b6b7b6a9fef95b4e1de}{McCue}{M\bibinitperiod}{TJ}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2b1fb994cb040b6b7b6a9fef95b4e1de}
+      \strng{fullhash}{2b1fb994cb040b6b7b6a9fef95b4e1de}
+      \field{labelalpha}{McC15}
+      \field{sortinit}{M}
+      \field{labelyear}{2015}
+      \field{labelmonth}{07}
+      \field{labelday}{30}
+      \field{datelabelsource}{}
+      \field{labeltitle}{\$4.1 Billion Industry Forecast In Crazy 3D Printing Stock Market}
+      \field{day}{30}
+      \field{month}{07}
+      \field{title}{\$4.1 Billion Industry Forecast In Crazy 3D Printing Stock Market}
+      \field{urlday}{05}
+      \field{urlmonth}{01}
+      \field{urlyear}{2016}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.forbes.com/sites/tjmccue/2015/07/30/4-1-billion-industry-forecast-in-crazy-3d-printing-stock-market/
+      \endverb
+    \endentry
+    \entry{SPACECeramics}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=bac399bc5b3c00f0d14346c06ed32856}{Niiler}{N\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=bac399bc5b3c00f0d14346c06ed32856}{Niiler}{N\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{bac399bc5b3c00f0d14346c06ed32856}
+      \strng{fullhash}{bac399bc5b3c00f0d14346c06ed32856}
+      \field{labelalpha}{Nii16}
+      \field{sortinit}{N}
       \field{labelyear}{2016}
       \field{labelmonth}{01}
-      \field{labelday}{1}
+      \field{labelday}{05}
       \field{datelabelsource}{}
-      \field{labeltitle}{5 Things to watch for in 3D Printing in 2016}
-      \field{day}{1}
+      \field{labeltitle}{3D-Printed Ceramics Could Build Next-Gen Spaceships}
+      \field{day}{05}
       \field{month}{01}
-      \field{title}{5 Things to watch for in 3D Printing in 2016}
+      \field{title}{3D-Printed Ceramics Could Build Next-Gen Spaceships}
+      \field{urlday}{05}
+      \field{urlmonth}{01}
+      \field{urlyear}{2016}
       \field{year}{2016}
       \verb{url}
-      \verb http://fortune.com/2015/12/31/5-things-to-watch-3d-printing-2016/
+      \verb http://www.space.com/31516-3d-printed-ceramics-next-gen-spaceships.html
+      \endverb
+    \endentry
+    \entry{BIOMED}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=f85270ddc0a2b9570c42fab40544031a}{Sethi}{S\bibinitperiod}{Chitra}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f85270ddc0a2b9570c42fab40544031a}{Sethi}{S\bibinitperiod}{Chitra}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f85270ddc0a2b9570c42fab40544031a}
+      \strng{fullhash}{f85270ddc0a2b9570c42fab40544031a}
+      \field{labelalpha}{Set15}
+      \field{sortinit}{S}
+      \field{labelyear}{2015}
+      \field{labelmonth}{04}
+      \field{datelabelsource}{}
+      \field{labeltitle}{3D Printing Blooms in Biomedial}
+      \field{month}{04}
+      \field{title}{3D Printing Blooms in Biomedial}
+      \field{urlday}{05}
+      \field{urlmonth}{01}
+      \field{urlyear}{2016}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://www.asme.org/engineering-topics/articles/bioengineering/3d-printing-blooms-in-biomedical
       \endverb
     \endentry
   \endsortlist
