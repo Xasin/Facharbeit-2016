@@ -1,0 +1,21 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[backend=biber,
+			style=reading,
+			sorting=nty,
+			language=german]{biblatex}
+			
+\bibliography{Quellen.bib}
+
+
+\begin{document}
+
+\nocite{*}
+
+\printbibliography[title=NASA Stuff,keyword={space}]
+\printbibliography[title=Medizin,keyword={medicine}]
+\printbibliography[title=Entwicklung,keyword={development}]
+\printbibliography[title=Do it yourself,keyword={DIY}]
+
+\end{document}
