@@ -25,7 +25,7 @@ Durch das schichtweise aufbauende Verfahren hat das Modell klar getrennte sichtb
 
 \subsubsection{Stereolithographie (SLA)}
 
-Die Stereolithographie ist eine weitaus neuere und komplexere Technologie zur Erstellung von 3D Modellen, welche mit hohem Detail und hoher Geschwindigkeit arbeiten kann. Jedoch sind die Modelle lichtempfindlich, und das Ausgangsmaterial ist um ein vielfaches teurer als bei anderen Varianten.
+Die Stereolithographie ist eine alternative Technologie zur Erstellung von 3D Modellen, welche mit hohem Detail und hoher Geschwindigkeit arbeiten kann. Jedoch sind die Modelle lichtempfindlich, und das Ausgangsmaterial ist um ein vielfaches teurer als bei anderen Varianten.
 
 Beim SLA Verfahren wird, anders als bei anderen Möglichkeiten, mit einem bei Raumtemperatur flüssigem Kunstharz gearbeitet, welches sich in einem Becken befinden.
 Dieses Kunstharz wird nun mithilfe eines starken UV-Lasers an den gewollten Stellen gehärtet, wobei ähnlich wie beim FDM Verfahren schichtweise gearbeitet wird.
@@ -37,6 +37,31 @@ Ist das Modell fertig kann es aus dem Harz entnommen werden, muss allerdings oft
 Sehr vorteilhaft ist hierbei dass die Modelle mit hoher Präzision gedruckt werden können da der Laser quasi unbegrenzt fein sein kann, wodurch kaum noch am Objekt nachgearbeitet werden muss. Höchstens die für Überhänge nötigen Stützstrukturen müssen entfernt werden, diese können jedoch oftmals um ein Vielfaches kleiner sein da das Modell während des Druckes vom Kunstharz umgeben ist welches die gleiche Dichte besitzt, und so \textquotedblleft in der Schwebe\textquotedblright ~gehalten wird.
 
 Nachteile des SLA sind allerdings vor allem hohe Kosten des Kunstharzes, sowie die verbleibende Lichtempfindlichkeit des Modells, welche bei übermäßigem Lichteinfall zu Sprödigkeit führen kann. \parencite[Informationen aus:][]{DRUCKVERFAHREN}
+
+\subsubsection{MultiJet Modeling (MJM)}
+
+Das MultiJet-Modeling kann als Kombination von SLA und FDM angesehen werden. Es arbeitet mit einem anfangs festen, wachsähnlichem Material, welches wie beim FDM geschmolzen und danach auf die vorherige Schicht aufgetragen wird. Allerdings wird das Plastik nun, wie beim SLA, mithilfe einer UV-Lampe gehärtet um die Stabilität zu erhöhen. Somit können Teile mit hoher Präzision schnell und kostengünstig hergestellt werden. Die meisten 3D Drucker mit MJM Verfahren sind sehr teuer, und sind dadurch nur für größere Unternehmen lohnenswert.
+
+Wie bereist erwähnt ist MJM eine Kombination aus sowohl FDM und SLA. Ein festes, schmelzbares Thermoplast oder Hartwachs wird im Druckkopf in der gewünschten Menge geschmolzen. Nun wird das flüssige Material mithilfe von mehreren kleinen Düsen auf die vorherige Schicht aufgetragen, und mit einer kleinen Walze zu einer einheitlichen Schicht geglättet. Diese neue Schicht wird anschließend mit einer starken UV-Lampe gehärtet. Wie auch bei den anderen Verfahren wird dies Schichtweise durchgeführt bis das Endmodell fertig ist. Durch Verwendung mehrerer Materialien mit unterschiedlichen Schmelzpunkten (z.B. einem Wachs) ist es sogar möglich, Stützstrukturen zu drucken welche sich durch leichtes Aufwärmen erneut verflüssigen. Hierdurch kann die Produktion eines 3D-Modells komplett automatisiert werden, ohne dass ein menschliches Eingreifen notwendig ist.
+
+Sehr vorteilhaft an diesem Verfahren ist die hohe Geschwindigkeit, mit der Modelle gedruckt werden können. Da der Druckkopf mehrere Düsen besitzt kann mehr Material gleichzeitig aufgetragen werden, ohne dabei die Qualität des Modells zu beeinflussen. Auch können die Modelle dank sehr feiner Düsen mit sehr hoher Präzision gedruckt werden. Da die Stützstrukturen aus einem wachsähnlichen Material gefertigt werden können diese durch leichtes Erwärmen entfernt werden. Theoretisch könnte auch das gesamte Modell aus Wachs gedruckt werden, und eignet sich dadurch als Gießmodell für ein Metallobjekt.
+
+Einziger Nachteil dieser Technologie wäre der hohe Preis bzw. die geringe Verfügbarkeit der Materialien und Drucker, welche momentan nur von einigen wenigen Firmen hergestellt werden. \parencite[Informationen aus:][]{DRUCKVERFAHREN,WIKIMJM}
+
+\subsubsection{Selektives Lasersintern (SLS), Selektives Laserschmelzen (SLM) und Selektives Elektronenstrahlschmelzen (SEBM)}
+
+Alle drei aufgeführten Verfahren arbeiten auf eine ähnliche Funktionsweise, bei der ein pulverförmiger Feststoff mithilfe eines (Laser)Strahls zusammengeschmolzen wird. Aus diesem Grund wird hier nur das Selektive Lasersintern (SLS) beschrieben.
+
+Beim SLS wird zuerst ein pulverförmiges Material dünn auf entweder die Basisplatte oder die vorherige Schicht aufgetragen. Hierbei kann das Material theoretisch alles sein, sofern es als feines Pulver vorliegt und der Schmelzpunkt mit dem Laser des Druckers erreicht werden kann.
+
+Ist die Schicht mithilfe einer Walze geglättet worden wird das Pulver an den gewollten Stellen mithilfe eines starken Lasers geschmolzen. Beim SLS wird hierbei das Pulver nur an der Oberfläche erwärmt, ein Bindemittel hält das Material zusammen. Beim SLM oder SEBM wird das Pulver selbst geschmolzen und verbindet sich. Dies benötigt zwar eine höhere Temperatur, macht das Modell jedoch fester, und erlaubt für die Verarbeitung von Metallen.
+Ist eine Schicht fertig gestellt wird die nächste aufgetragen; der Prozess wiederholt sich solange, bis das Modell fertig ist.
+
+In industriellen Applikationen befindet sich der Drucker meist in einer Vakuumkammer. Dies verhindert Verunreinigungen durch sich in der Luft befindlichen Partikel und sorgt für eine höhere Reinheit des Modells.
+
+Vorteilhaft an diese Methodik ist die Verwendbarkeit von quasi jedem pulverförmigem Material. Mithilfe von SLS bzw. SLM können Plastik, Metalle und sogar Keramik problemlos gedruckt werden. Auch die Qualität ist eine der höchsten aller Verfahren, mit Schichtdicken von nur 20 Mikrometern. Auch müssen keinerlei Stützstrukturen verwendet werden, da das gesamte Modell vom Pulver umgeben und gestützt wird. Durch das Zusammenschmelzen des Stoffes ist bei Metallen das Endmodell vergleichbar stabil wie ein gegossenes Modell, und bei Kunststoffen können während des Druckens Farben hinzugegeben werden, um beliebig eingefärbte Drucke zu produzieren.
+
+Allerdings hat dieses Verfahren auch seine Nachteile. Das Pulver welches aufgetragen wird ist durch seine Feinheit gefährlich für Menschen und es muss sehr vorsichtig mit dem Material umgegangen werden. Zusätzlich sorgt diese Pulver auch für eine umständliche Entsorgung, welche mit teuren Filteranlagen realisiert werden muss. All dies sorgt dafür dass diese Verfahren eine der komplexesten und teuersten sind, und deshalb nur für Industrie nützlich sind. \parencite[Informationen aus:][]{DRUCKVERFAHREN,SLSDetail}
 
 \subsection{3D Druck in der Industrie}
 \subsection{Medizinischer Gebrauch}
