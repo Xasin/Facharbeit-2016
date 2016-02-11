@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="de-DE" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ 
+
+ 
+<link rel="stylesheet" href="http://www.3d-drucken.de/wp-content/themes/Avenue/style.css" type="text/css" />
+<link rel="stylesheet" href="http://www.3d-drucken.de/wp-content/themes/Avenue/js/colorbox/colorbox.css" type="text/css" />
+
+
+<link rel="shortcut icon" href="http://www.3d-drucken.de/wp-content/uploads/2014/11/favicon.png" />
+
+
+<!-- This site is optimized with the Yoast SEO plugin v3.0.7 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Alles über Fused Deposition Modeling</title>
+<meta name="description" content="Hintergründe zum Fused Deposition Modeling Das heute genannte FDM-Verfahren wurde in den 1980er Jahren populär. Damals experimentierte man mit neuen..."/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="http://www.3d-drucken.de/2015/01/alles-ueber-fused-deposition-modeling/" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Alles über Fused Deposition Modeling" />
+<meta property="og:description" content="Hintergründe zum Fused Deposition Modeling Das heute genannte FDM-Verfahren wurde in den 1980er Jahren populär. Damals experimentierte man mit neuen..." />
+<meta property="og:url" content="http://www.3d-drucken.de/2015/01/alles-ueber-fused-deposition-modeling/" />
+<meta property="og:site_name" content="3D-Drucken.de - Der Blog zur 3D-Drucker Revolution" />
+<meta property="article:publisher" content="https://www.facebook.com/pages/3D-Druckende/301569366668240" />
+<meta property="article:tag" content="alles über" />
+<meta property="article:tag" content="featured" />
+<meta property="article:tag" content="fused deposition modeling" />
+<meta property="article:tag" content="grundlagen" />
+<meta property="article:section" content="Grundlagen" />
+<meta property="article:published_time" content="2015-01-19T08:30:57+00:00" />
+<meta property="article:modified_time" content="2015-01-18T21:15:05+00:00" />
+<meta property="og:updated_time" content="2015-01-18T21:15:05+00:00" />
+<meta property="fb:admins" content="100005815365680" />
+<meta property="og:image" content="http://www.3d-drucken.de/wp-content/uploads/2015/01/cover-fused-deposition-modeling-creative-tools.jpg" />
+<!-- / Yoast SEO plugin. -->
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.3d-drucken.de\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='validate-engine-css-css'  href='http://www.3d-drucken.de/wp-content/plugins/wysija-newsletters/css/validationEngine.jquery.css?ver=2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='wds_frontend-css'  href='http://www.3d-drucken.de/wp-content/plugins/slider-wd/css/wds_frontend.css?ver=1.1.17' type='text/css' media='all' />
+<link rel='stylesheet' id='wds_effects-css'  href='http://www.3d-drucken.de/wp-content/plugins/slider-wd/css/wds_effects.css?ver=1.1.17' type='text/css' media='all' />
+<link rel='stylesheet' id='wds_font-awesome-css'  href='http://www.3d-drucken.de/wp-content/plugins/slider-wd/css/font-awesome-4.0.1/font-awesome.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpnc-css-css'  href='http://www.3d-drucken.de/wp-content/plugins/trickbd-news-collector/assets/style.css?ver=1.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/themes/Avenue/js/jcarousellite_1.0.1.pack.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/themes/Avenue/js/jquery.nivo.slider.pack.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/themes/Avenue/js/colorbox/jquery.colorbox-min.js?ver=4.4.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var AvenueVars = {"ajaxUrl":"http:\/\/www.3d-drucken.de\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/themes/Avenue/js/scripts.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/plugins/slider-wd/js/jquery.mobile.js?ver=1.1.17'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/plugins/slider-wd/js/wds_frontend.js?ver=1.1.17'></script>
+<link rel='https://api.w.org/' href='http://www.3d-drucken.de/wp-json/' />
+<meta name="generator" content="WordPress 4.4.2" />
+<link rel="alternate" type="application/json+oembed" href="http://www.3d-drucken.de/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.3d-drucken.de%2F2015%2F01%2Falles-ueber-fused-deposition-modeling%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.3d-drucken.de/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.3d-drucken.de%2F2015%2F01%2Falles-ueber-fused-deposition-modeling%2F&#038;format=xml" />
+
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/plugins/wp-spamshield/js/jscripts.php'></script> 
+
+<script type='text/javascript'>
+jQuery(window).load(function() {
+	// Implementation of Nivo Slider
+    jQuery('#slider').nivoSlider({
+		effect: 'fade',
+		pauseTime: '20000',
+        controlNavThumbs: true,
+        controlNavThumbsFromRel: true,
+        directionNav: false,
+        directionNavHide: false,
+        captionOpacity: false
+	});
+
+	jQuery('.nivo-control').each(function() {
+		jQuery('<div class="overlay">').appendTo(this);
+	});
+});
+</script>
+
+<style type='text/css'>
+body { background-image: url('http://www.3d-drucken.de/wp-content/themes/Avenue/images/bodybg.jpg'); background-attachment:fixed; }
+.arrows { color:#167ece; }
+.block-arrows, .block-arrows a { color:#167ece; }
+.meta-arrow { font-size:16px; color:#167ece; }
+.tweets a, .textwidget a { color:#167ece; }
+</style>
+
+</head>
+
+<body class="single single-post postid-750 single-format-standard">
+	<a name='top'></a>
+	
+	<!-- BEGIN WRAPPER -->
+	<div id="wrapper">
+		
+		<!-- BEGIN HEADER-TOP -->
+		<div class="menu-top-navi-container"><ul id="menu-top-navi" class="topNav"><li id="menu-item-1378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1378"><a href="http://www.3d-drucken.de/impressum/">Impressum</a></li>
+</ul></div>		<!-- END HEADER-TOP -->
+	
+		<!-- BEGIN WRAPPER-CONTENT -->
+		<div id="wrapper-content">
+
+<div id="partner-1"> 
+</div>
+
+					
+			<!-- BEGIN HEADER -->
+			<div id="header">
+				
+				<!-- BEGIN HEADER-MIDDLE -->
+				<div id="header-middle">
+					
+					<div id="logo">
+												<a href='http://www.3d-drucken.de'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/01/header-3d-drucken5.png" alt="3D-Drucken.de &#8211; Der Blog zur 3D-Drucker Revolution" /></a>
+					</div>
+					
+										
+				</div>
+				<!-- END HEADER-MIDDLE -->
+				
+				<!-- BEGIN WRAPPER-NAVIGATION -->
+				<div id="wrapper-navigation">
+				
+					<div class="navigation navigation_top">
+						<div class="menu-main-navi-container"><ul id="menu-main-navi" class="menu"><li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-32"><a href="http://www.3d-drucken.de/">Blog</a></li>
+<li id="menu-item-967" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-967"><a href="http://www.3d-drucken.de/category/interviews/">Interviews</a></li>
+<li id="menu-item-965" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-965"><a href="http://www.3d-drucken.de/category/kolumnen/">Kolumnen</a></li>
+<li id="menu-item-966" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-966"><a href="http://www.3d-drucken.de/category/grundlagen/">Grundlagen</a></li>
+<li id="menu-item-968" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-968"><a href="http://www.3d-drucken.de/category/news/">News</a></li>
+<li id="menu-item-694" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-694"><a href="http://www.3d-drucken.de/kontakt/">Kontakt aufnehmen</a></li>
+</ul></div>					</div>
+					<div class="navigation navigation_bottom">
+											</div>
+					
+					
+				</div>
+				<!-- END WRAPPER-NAVIGATION -->
+
+			<div id="partner-conbo">
+						
+			</div>
+
+			</div>
+			<!-- END HEADER -->
+			
+			<!-- BEGIN MAIN -->
+			<div id="main">
+				
+								
+								
+				<div class="post-heading">
+					<h1>Alles über Fused Deposition Modeling</h1>
+					<span class="heading-author">Phillip Paul</span> 
+					<span class="heading-date">19. Januar 2015</span>
+					<span class="heading-comments"><a href="http://www.3d-drucken.de/2015/01/alles-ueber-fused-deposition-modeling/#respond">0</a></span>
+				</div>
+				
+								
+								
+								<div class="post-thumb">
+															<a class='lightbox' href='http://www.3d-drucken.de/wp-content/uploads/2015/01/cover-fused-deposition-modeling-creative-tools.jpg'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/01/cover-fused-deposition-modeling-creative-tools-610x250.jpg" alt="Alles über Fused Deposition Modeling" width='610' height='250' /></a>
+				</div>
+												
+				<div class="post-entry">
+										
+					<p><strong>Eines der derzeit am meist verwendeten 3D-Druckverfahren ist das Fused Deposition Modeling. Vor allem Desktop-Geräte bedienen sich dieser Technologie. Im Folgenden soll ein ausführlicher Überblick über das Verfahren gegeben werden.</strong></p>
+<h2>Hintergründe zum Fused Deposition Modeling</h2>
+<p>Das heute genannte FDM-Verfahren wurde in den 1980er Jahren populär. Damals experimentierte man mit neuen Materialien für Heißklebepistolen. Der Maschinenbau-Ingenieur Scott Crump entwickelte aus einer banalen Notwendigkeit heraus das Verfahren weiter. Im Jahr 1988 wollte er für seine jüngere Tochter einen Spielzeugfrosch mithilfe einer Heißklebepistole und einer Mischung aus Polyethylen und Kerzenwachs herstellen. Seine Idee war es die Form schichtweise aufzubauen.</p>
+<p>&nbsp;</p>
+<div id="attachment_754" style="width: 260px" class="wp-caption aligncenter"><a href="http://www.3d-drucken.de/wp-content/uploads/2015/01/Crump-photo_Med_Mbailey.jpg"><img class=" wp-image-754" src="http://www.3d-drucken.de/wp-content/uploads/2015/01/Crump-photo_Med_Mbailey-229x300.jpg" alt="fused-deposition-modeling-crump" width="250" height="327" /></a>
+<p class="wp-caption-text">Scott Crump, Gründer von Stratasys</p>
+</div>
+<p>&nbsp;</p>
+<p>Nach unzähligen Versuchen und Unterstützung seitens seiner Frau suchte er nach einer Möglichkeit der Automatisierung des Verfahrens. Crump war überzeugt von seiner Idee und gab 10.000 USD für Geräte aus, womit es ihm möglich war erste Prototypen zu fertigen. Seine Frau stellte ihm vor die Wahl, dass er daraus entweder ein Geschäft mache oder es aufgeben solle. Im Oktober 1989 ließ sich Scott Crump das Verfahren unter dem Titel „Apparatus and method for creating three-dimensional objects“ patentieren (<a title="Apparatus and method for creating three-dimensional objects" href="http://www.google.com/patents/US5121329%20" target="_blank">US 5121329 A</a>). In diesem Jahr gründete er zusammen mit seiner Frau Lisa den heute bekannten 3D-Druckerhersteller Stratasys.</p>
+<p>&nbsp;</p>
+<div id="attachment_763" style="width: 410px" class="wp-caption aligncenter"><a href="http://www.3d-drucken.de/wp-content/uploads/2015/01/US5121329-11.jpg"><img class=" wp-image-763" src="http://www.3d-drucken.de/wp-content/uploads/2015/01/US5121329-11-300x204.jpg" alt="US5121329-1-fused-deposition-modeling" width="400" height="272" srcset="http://www.3d-drucken.de/wp-content/uploads/2015/01/US5121329-11-300x204.jpg 300w, http://www.3d-drucken.de/wp-content/uploads/2015/01/US5121329-11-600x409.jpg 600w, http://www.3d-drucken.de/wp-content/uploads/2015/01/US5121329-11.jpg 1000w" sizes="(max-width: 400px) 100vw, 400px" /></a>
+<p class="wp-caption-text">Patentzeichnung zum FDM</p>
+</div>
+<p>&nbsp;</p>
+<p>Wann genau das Fused Deposition Modeling seinen Namen erhielt, ist nicht genau bekannt. Allerdings ließ sich Stratasys im August 1991 die Buchstabenkombination „<a title="Stratasys FDM Marke" href="http://www.trademarkia.com/fdm-74133656.html%20" target="_blank">FDM</a>“ als Handelsmarke eintragen. Ab Juni 1994 war der ausgeschriebene Begriff etabliert und tauchte erstmals namentlich in einem Patent mit dem Titel „Process of support removal for fused deposition modeling“ auf (<a title="process of support removal for fused deposition modeling" href="http://www.google.com/patents/US5503785%20" target="_blank">US 5503785 A</a>).</p>
+<p>Der Begriff „FDM“ bzw. „Fused Deposition Modeling“ ist also eine Marke von Stratasys. Mitglieder des RepRap Project nutzten nach</p>
+<p>Auslaufen des Patents von Crump den Begriff „Fused Filament Fabrication“ bzw. „FFF“ um rechtlichen Bedenken aus dem Weg zu gehen, da Handelsmarken keinem Ablaufdatum unterliegen. Manchmal wird das Verfahren auch „Plastic Jet Printing“ bzw. „PJP“ genannt.</p>
+<h3>Komponenten eines FDM-Druckers</h3>
+<p>Das Gerät besteht in aller Regel aus fünf Komponenten. Diese sind Filamentspule, Extruder, Heizblock, Düse und Druckbett bzw. Bauplattform. Den Druckkopf bilden dabei Extruder, Heizblock und Düse. Als Hot-End wird die Einheit aus Heizblock und Düse bezeichnet.</p>
+<p><strong>Filamentspule</strong></p>
+<p>Auf der Spule wird das Filament aufgewickelt. Die Spulenform erleichtert das Abwickeln. Das Filament kann im Vergleich zu anderen Formen mit minimaler Spannung abgerollt werden. Damit wird gewährleistet, dass das Filament nicht schon durch lokale Spannungsüberhöhungen auf dem Weg zum Extruder reißt. Der Extruder bestimmt die Abrollgeschwindigkeit.</p>
+<p>&nbsp;</p>
+<div id="attachment_767" style="width: 410px" class="wp-caption aligncenter"><a href="http://www.3d-drucken.de/wp-content/uploads/2015/01/filament-fused-deposition-modeling-creative-tools.jpg"><img class=" wp-image-767" src="http://www.3d-drucken.de/wp-content/uploads/2015/01/filament-fused-deposition-modeling-creative-tools-300x225.jpg" alt="filament-fused-deposition-modeling-creative-tools" width="400" height="300" srcset="http://www.3d-drucken.de/wp-content/uploads/2015/01/filament-fused-deposition-modeling-creative-tools-300x225.jpg 300w, http://www.3d-drucken.de/wp-content/uploads/2015/01/filament-fused-deposition-modeling-creative-tools-600x450.jpg 600w, http://www.3d-drucken.de/wp-content/uploads/2015/01/filament-fused-deposition-modeling-creative-tools.jpg 640w" sizes="(max-width: 400px) 100vw, 400px" /></a>
+<p class="wp-caption-text">Filamentspule</p>
+</div>
+<p>&nbsp;</p>
+<p>Als Filament werden beim Fused Deposition Modeling bevorzugt Thermoplaste eingesetzt.<br />
+Thermoplaste sind Polymere, die sich in einem bestimmten Temperaturbereich verformen lassen. Dieser Vorgang ist umkehrbar. Durch Abkühlung und Wiedererwärmung kann die Formgebung beliebig oft wiederholt werden. Die Liste der 3D-druckbaren Thermoplaste erweitert sich stetig. Zu den bekanntesten Materialien gehören PLA (<a title="Polylactat" href="http://de.wikipedia.org/wiki/Polylactat%20" target="_blank">Polylactat</a>), ABS (<a title="Acrylnitril-Butadien-Styrol" href="http://de.wikipedia.org/wiki/Acrylnitril-Butadien-Styrol%20" target="_blank">Acrylnitril-Butadien-Styrol</a>), Nylon bzw. PA (<a title="Polyamid" href="http://de.wikipedia.org/wiki/Polyamide%20" target="_blank">Polyamid</a>), PE bzw. HDPE (<a title="Polyethylen" href="http://de.wikipedia.org/wiki/Polyethylen%20" target="_blank">High-Density Polyethylen</a>), PC (<a title="Polycarbonat" href="http://de.wikipedia.org/wiki/Polycarbonat%20" target="_blank">Polycarbonat</a>) und PCL (<a title="Polycaprolacton" href="http://de.wikipedia.org/wiki/Polycaprolacton%20" target="_blank">Polycaprolacton</a>). Daraus werden meist auch Materialmixe mit spezifischeren Eigenschaften hergestellt. Auch können die Polymere mit Metallpartikeln angereichert werden, womit sich optische Effekte und Änderungen der mechanischen Eigenschaften erzielen lassen. Auch optisch dem Holz ähnliche Polymere gibt es. In diesem Feld findet derzeit eine rege Entwicklungstätigkeit statt.</p>
+<p>Das Filament wird in verschiedenen Durchmessern geliefert. Handelsüblich sind Durchmesser von 1,75mm bis 3,5mm. Das Zusammenspiel von Filamentdurchmesser und Druckkopfeinstellungen kann zu Optimierungen bei Druckqualität und Druckgeschwindigkeit genutzt werden.</p>
+<p><strong>Extruder</strong></p>
+<p>Das Filament wird durch den Extruder gefördert zum Heizblock. Dabei wird das Filament zwischen zwei leicht gezackten Rädchen eingespannt. Die Rädchen drehen sich gegenläufig und gewährleisten den Vorschub des Materials. Dabei kann die Geschwindigkeit reguliert werden, um die optimale Materialmasse zum Heizelement zu fördern. Wird zu viel Material gefördert, kann sich ein zu hoher Ausgangsdruck an der Düse ergeben, wodurch das Material auf die Bauplattform geschossen wird und nicht gelegt. Das Druckergebnis wird signifikant von der Einstellung des Extruders beeinflusst. Die Rädchen sind meist aus Metall gefertigt, da es abriebfester ist, präziser und auch günstiger als keramische Bauteile gefertigt werden kann.</p>
+<p>&nbsp;</p>
+<div id="attachment_758" style="width: 410px" class="wp-caption aligncenter"><a href="http://www.3d-drucken.de/wp-content/uploads/2015/01/druckkopf-fused-deposition-modeling-zack-hoeken.jpg"><img class=" wp-image-758" src="http://www.3d-drucken.de/wp-content/uploads/2015/01/druckkopf-fused-deposition-modeling-zack-hoeken-300x225.jpg" alt="druckkopf-fused-deposition-modeling-zack-hoeken" width="400" height="300" srcset="http://www.3d-drucken.de/wp-content/uploads/2015/01/druckkopf-fused-deposition-modeling-zack-hoeken-300x225.jpg 300w, http://www.3d-drucken.de/wp-content/uploads/2015/01/druckkopf-fused-deposition-modeling-zack-hoeken-600x450.jpg 600w, http://www.3d-drucken.de/wp-content/uploads/2015/01/druckkopf-fused-deposition-modeling-zack-hoeken.jpg 640w" sizes="(max-width: 400px) 100vw, 400px" /></a>
+<p class="wp-caption-text">Druckkopf &#8211; Extruder, Heizblock und Düse</p>
+</div>
+<p>&nbsp;</p>
+<p><strong>Heizblock</strong></p>
+<p>Im Heizblock wird das vom Extruder geförderte Material aufgeschmolzen. Die Erwärmung erfolgt dabei ähnlich wie bei einem Heizstab in einem Wasserkocher über Induktion. Dabei wird ein elektrisch leitfähiger Körper durch angelegten Strom über Wirbelstromverluste erhitzt. Metalle erfüllen diese Anforderungen, jedoch sind die verwendeten Materialien zur Herstellung eines Heizblocks ebenso vielfältig und anwendungabhängig, wie das eingesetzte Filament.<br />
+Einige Unternehmen konzentrieren sich neben der Entwicklung eigener Drucker auch auf das Thermomanagement des Hot-Ends. Damit kann eine gleichmäßigere Schmelze und eine effektiverer Wirkungsgrad erzielt werden.</p>
+<p><strong>Düse</strong></p>
+<p>Die Düse ist das Endstück des Druckkopfes. An ihr tritt das geschmolzene Material aus. Der Düsendurchmesser ist in der Regel um ein Vielfaches kleiner als der Filamentdurchmesser. Der Querschnittsunterschied resultiert in einem leicht erhöhten Druck an der Düse, sodass das geschmolzene Material gleichmäßiger und schneller als der Vorschub am Extruder verarbeitet werden kann.</p>
+<p>Auch hier sollte der Parameter Düsendurchmesser in die Einstellung des 3D-Druckers mit einbezogen werden. Kleinere Durchmesser bedeuten geringere Schichtdicken. Geringere Schichtdicken erfordern allerdings auch eine höhere Präzision beim Auftragen, was wiederum in geringeren Druckgeschwindigkeiten mündet. Die geringeren Druckgeschwindigkeiten sind daher notwendig, da der 3D-Drucker bei hohen Bewegungsgeschwindigkeiten des Druckkopfes selber anfängt zu schwingen. Diese Schwingungen beeinflussen unmittelbar den Auftragprozess des Materials. Wird der Druckkopf zu schnell betrieben, dann wackelt das ganze System. Deswegen sollte auch darauf geachtet werden, wie das Gewichtsverhältnis von Druckkopf zu Gesamtsystem ist. Ist der Koeffizient von Druckkopfgewicht zu Gesamtgewicht klein, dann wird der Prozess stabiler ablaufen und das Druckergebnis sauberer sein. Es ist also Skepsis angebracht, wenn die elektronischen Steuereinheiten auf eine Erhöhung der Druckgeschwindigkeit getrimmt werden.</p>
+<p><strong>Druckbett</strong></p>
+<p>Das Druckbett ist die Bauplattform, auf der das gedruckte Objekt aufgetragen wird. Je nach verwendetem Steuerungssystem ist sie entweder starr oder beweglich. Hier gibt es verschiedene Auslegungen, je nachdem welche Achsen im dreidimensionalen kartesischen Koordinatensystem vom Druckkopf angesteuert werden. Übernimmt der Druckkopf z.B. alle drei Achsen, dann ist das Druckbett starr und unbeweglich. Übernimmt der Druckkopf z.B. die x- und y-Achse, dann ist das Druckbett höhenbeweglich bzw. in z-Richtung. Am Markt existieren verschiedene Lösungen der 3D-Druckerhersteller.</p>
+<p>&nbsp;</p>
+<div id="attachment_759" style="width: 411px" class="wp-caption aligncenter"><a href="http://www.3d-drucken.de/wp-content/uploads/2015/01/druckbett-fused-deposition-modeling.jpg"><img class=" wp-image-759" src="http://www.3d-drucken.de/wp-content/uploads/2015/01/druckbett-fused-deposition-modeling-300x199.jpg" alt="druckbett-fused-deposition-modeling" width="401" height="266" srcset="http://www.3d-drucken.de/wp-content/uploads/2015/01/druckbett-fused-deposition-modeling-300x199.jpg 300w, http://www.3d-drucken.de/wp-content/uploads/2015/01/druckbett-fused-deposition-modeling-600x398.jpg 600w, http://www.3d-drucken.de/wp-content/uploads/2015/01/druckbett-fused-deposition-modeling.jpg 640w" sizes="(max-width: 401px) 100vw, 401px" /></a>
+<p class="wp-caption-text">Druckbett, beheizbar</p>
+</div>
+<p>&nbsp;</p>
+<p>Anfangs waren die Druckbetten einfache Platten aus Metall, oder Glas. Schnell bemerkte man jedoch, dass man das Druckergebnis erheblich dadurch beeinflussen konnte, wenn das Druckbett beheizt wurde. Trifft das geschmolzene Material von über 100°C auf eine kalte Fläche, dann entstehen hohe Temperaturgradienten und somit hohe Eigenspannungen. Als Ergebnis verzieht sich das erstarrte Material und das Druckergebnis wird ungenau. Ein beheiztes Druckbett wirkt dem entgegen. Zumeist sind dies Glasplatten mit Heizdrähten, die ebenfalls elektronisch angesteuert werden können, wichtig im Hinblick auf die unterschiedlichen Schmelzbereiche der Materialien. Hier muss die Temperatur des Druckbetts mit der Temperatur des Schmelzbereichs abgestimmt werden.</p>
+<h4>Prozess des Fused Deposition Modeling</h4>
+<p>Zu Beginn wird ein 3D-Modell am Computer mithilfe einer CAD-Software erstellt. Das Modell muss schließlich in das sogenannte .stl–Format gebracht werden. Diese STL-Schnittstelle ist mittlerweile standardmäßig in CAD-Anwendungen eingebunden. „STL“ bedeutet hierbei „Surface Tesselation Language“ also eine Sprache zur Beschreibung der Oberfläche durch Dreiecke. Mithilfe dieser Schnittstelle kann der 3D-Drucker die geometrischen Informationen des 3D-Datenmodells auslesen und verarbeiten. Merkmal des .stl-Formats ist einerseits das sogenannte Slicing des 3D-Modells. Mittels Slicing wird das Modell in virtuelle Scheiben geschnitten. Diese Scheiben entsprechen den jeweiligen aufzutragenden Materialschichten. Andererseits werden automatisch Stützstrukturen berechnet, die notwendig werden, wenn das 3D-Modell zu stark abstehende Teile hat. Diese müssen abgestützt werden.</p>
+<p>Der 3D-Drucker liest dann die Datei im .stl-Format aus und beginnt den Druckvorgang. Der Extruder fördert das Filament kontinuierlich durch das Heizelement, in dem es zur Aufschmelzung des Filaments kommt. Das geschmolzene Filament gelangt weiter zur Düse und wird in geschmolzener, zähflüssiger Form auf das Druckbett aufgetragen. Nach dem Auftragen erstarrt das Filament aufgrund der Abkühlung wieder. Es ist eine Schicht entstanden. Auf dieser Schicht kann nun im gleichen Verfahren eine weitere Schicht aufgetragen werden. Die Summe dieser Schichten bildet schließlich das 3D-gedruckte Objekt.</p>
+<p>Im Anschluss werden die eventuell anfallenden Stützstrukturen manuell entfernt. Allerdings gibt es auch Druckersysteme, wo die Stützstrukturen mit einem wasserlöslichen Material gestaltet werden, sodass das fertige Objekt nur in ein Wasserbad getaucht werden muss, um die Stützen zu entfernen.<br />
+Konstruktiv sollte darauf geachtet werden, wie stark die Schichtdicken und Wandstärken entsprechend des Anwendungsbereiches des Bauteils sein sollen. Wandstärken unter 0,30mm sind aktuell als kritisch anzusehen.</p>
+<p>&nbsp;</p>
+<div class="video-shortcode"><iframe title="YouTube video player" width="600" height="350" src="http://www.youtube.com/embed/yKHMmKqdI68" frameborder="0" allowfullscreen></iframe></div>
+<p>&nbsp;</p>
+<h5>Druckergebnis beim Fused Deposition Modeling</h5>
+<p>Das Druckergebnis hängt stark von den Einstellungen des verwendeten 3D-Druckers ab. Ein einfaches „plug-and-print“ ist meist nicht ohne Feinjustierung der einzelnen Komponenten, vor allem bei selbstgebauten oder äußerst günstigen 3D-Druckern, zu erreichen. Toleranzen müssen von vorneherein berücksichtigt werden. Ein etwas teureres Gerät erspart unter Umständen diesen Vorgang oder bietet Zusatzsoftware für eine einfachere Handhabung.</p>
+<p>&nbsp;</p>
+<div id="attachment_760" style="width: 410px" class="wp-caption aligncenter"><a href="http://www.3d-drucken.de/wp-content/uploads/2015/01/vistl-andresen-fused-deposition-modeling-prob.jpg"><img class=" wp-image-760" src="http://www.3d-drucken.de/wp-content/uploads/2015/01/vistl-andresen-fused-deposition-modeling-prob-300x181.jpg" alt="vistl-andresen-fused-deposition-modeling-prob" width="400" height="241" /></a>
+<p class="wp-caption-text">Kantenbildung und Asymmetrie</p>
+</div>
+<p>&nbsp;</p>
+<p>Weitere Aspekte beim Druckergebnis sind z.B. das Wasserziehen oder die Schrumpfung des Objekts im Nachhinein. Bestimmte Materialien ziehen Wasser aus der umgebenden Atmosphäre und quellen etwas auf. Das beeinflusst wieder die Toleranzen, aber unter Umständen auch die mechanischen Eigenschaften. Als Beispiel für das Wasserziehen kann hier PVA genannt werden. Hochwertige Filamente sind meist getrocknet und besser verarbeitet worden, sodass diese, im Idealfall, Wasser nur an der Oberfläche ziehen. Geringwertige Filamente bieten das im geringeren Ausmaß und lagern mehr Wasser ein. Als Folge des Wasserziehens ergeben sich unter Umständen die Bildung von Dampfbläschen oder Schaum während der Verarbeitung und es können Viskositätsschwankungen entstehen. Deswegen verfallen die meisten Herstellergarantien der 3D-Druckerhersteller, wenn bekannt wird, dass systemfremdes Filament verwendet wurde.</p>
+<p>Im umgekehrten Fall kann es beim Objekt auch zur Schrumpfung kommen, auch Schwindung genannt. Dabei findet eine Volumenänderung statt, ohne dass Material entfernt oder Druck ausgeübt wird. Meist aufgrund der Abkühlung des Objekts. Als Folge können Schwindungsrisse oder Eigenspannungen entstehen. Als Beispiel kann hier Polystyrol genannt werden.</p>
+<p>Wenn das fertige Objekt vorliegt, dann können die Druckergebnisse qualitativ stark schwanken, abhängig vom verwendeten 3D-Drucker und deren Einstellung. Schnelle Drucke resultieren oft in einer optisch gut wahrnehmbaren Kantenbildung. Diese Kantenbildung ist Resultat des Versatzes der Schichten, welche meist sehr dick sind bei großen Druckgeschwindigkeiten. Deswegen sollte ein Kompromiss zwischen Druckqualität (Kantenglättung) und Druckgeschwindigkeit abhängig vom Anwendungsbereich des Objekts gefunden werden. Anwendungsbereiche sind zumeist Prototypen mit niedrigen Ansprüchen an mechanischen Eigenschaften.</p>
+<p>Diese Prototypen können je nach Bedarf weiter veredelt werden. Dabei kann die Oberfläche weiter geglättet und poliert werden, sodass das Ergebnis vergleichbar mit dem von Spritzgussteilen ist. Auch kann die Oberfläche galvanisch behandelt werden. Mit der Galvanisierung erreicht man z.B. metallische Oberflächeneffekte.</p>
+<p><em>Bildmaterial: via flickr.com und Common Creative Lizenz von <a href="https://www.flickr.com/photos/creative_tools/14515077461" target="_blank">Creative Tools</a> (keine Änderungen), <a href="https://www.flickr.com/photos/morgaines/6303115397/in/photolist-eEXwuy-eERqwR-eEXvEq-cCXkif-aAZ7BB-aAZ7Bp-ar2ceh-ar2d7L-aqYwia" target="_blank">Morgaine Dinova</a> (keine Änderungen), <a href="https://www.flickr.com/photos/hoeken/3201012356" target="_blank">Zack Hoeken</a> (Änderungen), <a href="https://www.flickr.com/photos/creative_tools/8640983874" target="_blank">Creative Tools</a> (keine Änderungen), <a href="https://www.flickr.com/photos/talpadk/9755773775" target="_blank">Visti Andresen</a> (keine Änderungen), stratasys.com, google.com &#8212; Vielen Dank an die Mitglieder von flickr.com!</em><script type="text/javascript">jQuery.ajax({url: "http://www.3d-drucken.de/", data: {top_ten_id: 750, top_ten_blog_id: 1, activate_counter: 11, top10_rnd: (new Date()).getTime() + "-" + Math.floor(Math.random()*100000)}});</script></p>
+										
+					<div class='clear'></div>
+				</div>
+				
+								<div class='post-share'>
+										<div class='twitter-share share-widget'>
+						<a href="http://twitter.com/share" class="twitter-share-button" data-text='Alles über Fused Deposition Modeling' data-count="vertical">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+					</div>
+															<div class='facebook-share share-widget'>
+						<iframe src="http://www.facebook.com/plugins/like.php?app_id=149766198425277&amp;href=http%3A%2F%2Fwww.3d-drucken.de%2F2015%2F01%2Falles-ueber-fused-deposition-modeling%2F&amp;send=false&amp;layout=box_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=90" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:60px;" allowTransparency="true"></iframe>
+					</div>
+																																			<div class='email-share share-widget'>
+						<a href="mailto:?subject=Alles über Fused Deposition Modeling&amp;body=http://www.3d-drucken.de/2015/01/alles-ueber-fused-deposition-modeling/"><img src='http://www.3d-drucken.de/wp-content/themes/Avenue/images/email-share.png' alt='Email Share' /></a>
+					</div>
+														</div>
+								
+				<div class="post-meta">
+					 
+					<div class="post-meta-tags"><strong>TAGS</strong> <span class="meta-arrow">&raquo;</span> <a href="http://www.3d-drucken.de/tag/alles-ueber/" rel="tag">alles über</a>, <a href="http://www.3d-drucken.de/tag/featured/" rel="tag">featured</a>, <a href="http://www.3d-drucken.de/tag/fused-deposition-modeling/" rel="tag">fused deposition modeling</a>, <a href="http://www.3d-drucken.de/tag/grundlagen/" rel="tag">grundlagen</a></div>
+										
+					 
+					<div class="post-meta-cats"><strong>GEPOSTET IN</strong> <span class="meta-arrow">&raquo;</span> <a href="http://www.3d-drucken.de/category/grundlagen/" rel="category tag">Grundlagen</a></div>
+						
+				</div>
+				
+				 
+				<div class="post-author">
+
+					<img alt='' src='http://0.gravatar.com/avatar/fd8ceabc71a773812ab38affc7dbdf23?s=100&#038;r=g' srcset='http://0.gravatar.com/avatar/fd8ceabc71a773812ab38affc7dbdf23?s=200&amp;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' />					<h5><em>Über den Author:</em> <a href="http://www.3d-drucken.de" title="Besuche Phillip Pauls Website" rel="author external">Phillip Paul</a></h5> 
+
+					<div class="author-descrip">Phillip ist studierter Wirtschaftsingenieur und angehender Materialwissenschaftler. Der 3D-Druck lässt ihn nicht los, denn hier können Unternehmergeist, Kreativität und analytische Denkweisen seiner Meinung nach voll ausgelebt werden. Vom Herzen her ist er unverbesserlicher Optimist und kann ünnötiges Blabla nicht leiden, wohl aber gute Gespräche mit Leuten, die etwas antreibt.</div>
+									</div>
+								
+																				<div class='homepage-widget'>
+					<div class="block full">
+						
+						<h3>Ähnliche Posts <span class="arrows">&raquo;</span></h3>
+							
+																																							<div class="related-item">
+								<a href='http://www.3d-drucken.de/2015/12/welche-unternehmen-beschaeftigen-sich-mit-dem-bioprinting/' title='Welche Unternehmen beschäftigen sich mit dem Bioprinting?'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/12/bioprinting-organs-134x90.jpg" alt="Welche Unternehmen beschäftigen sich mit dem Bioprinting?" width='134' height='90' /></a>
+								<h2><a href='http://www.3d-drucken.de/2015/12/welche-unternehmen-beschaeftigen-sich-mit-dem-bioprinting/' title='Welche Unternehmen beschäftigen sich mit dem Bioprinting?'>Welche Unternehmen beschäftigen sich mit dem Bioprinting?</a></h2>
+								</div>
+																																															<div class="related-item">
+								<a href='http://www.3d-drucken.de/2015/11/futurale-das-filmfestival-zur-zukunft-der-arbeit/' title='Futurale – Das Filmfestival zur Zukunft der Arbeit'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/11/03_A40_FF_Master_Teaser_Film_Print-the-Legend_960x540-134x90.jpg" alt="Futurale – Das Filmfestival zur Zukunft der Arbeit" width='134' height='90' /></a>
+								<h2><a href='http://www.3d-drucken.de/2015/11/futurale-das-filmfestival-zur-zukunft-der-arbeit/' title='Futurale – Das Filmfestival zur Zukunft der Arbeit'>Futurale – Das Filmfestival zur Zukunft der Arbeit</a></h2>
+								</div>
+																																															<div class="related-item">
+								<a href='http://www.3d-drucken.de/2015/11/die-8-wichtigsten-metall-3d-druckverfahren/' title='Die 8 wichtigsten Metall-3D-Druckverfahren'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/11/EOS_Automotive_RennteamUniStuttgart_Knuckle_zoom-134x90.jpg" alt="Die 8 wichtigsten Metall-3D-Druckverfahren" width='134' height='90' /></a>
+								<h2><a href='http://www.3d-drucken.de/2015/11/die-8-wichtigsten-metall-3d-druckverfahren/' title='Die 8 wichtigsten Metall-3D-Druckverfahren'>Die 8 wichtigsten Metall-3D-Druckverfahren</a></h2>
+								</div>
+																																															<div class="related-item">
+								<a href='http://www.3d-drucken.de/2015/01/alles-ueber-selektives-lasersintern/' title='Alles über Selektives Lasersintern'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/01/dental_laser_in_aktion_02-134x90.jpg" alt="Alles über Selektives Lasersintern" width='134' height='90' /></a>
+								<h2><a href='http://www.3d-drucken.de/2015/01/alles-ueber-selektives-lasersintern/' title='Alles über Selektives Lasersintern'>Alles über Selektives Lasersintern</a></h2>
+								</div>
+																				
+					</div>
+				</div>
+																
+				<div id="comments">
+				
+						
+<!-- You can start editing here. -->
+
+
+			<!-- If comments are open, but there are no comments. -->
+
+	 
+
+<div id="respond">
+
+	<h3>Schreibe einen Kommentar <span class="arrows">&raquo;</span></h3>
+
+	<p class="cancel-comment-reply"><a rel="nofollow" id="cancel-comment-reply-link" href="/2015/01/alles-ueber-fused-deposition-modeling/#respond" style="display:none;">Hier klicken, um das Kommentieren abzubrechen.</a></p>
+
+	
+	<form action="http://www.3d-drucken.de/wp-comments-post.php" method="post">
+
+		
+		<div id="comment-input">
+		
+			<label for="author">Name <span class="req">(required)</span></label>
+			<input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' class="input-name" />
+
+			<label for="email">Email <span class="req">(required)</span></label>
+			<input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' class="input-email"  />
+		
+			<label for="url">Website</label>
+			<input type="text" name="url" id="url" value="" size="22" tabindex="3" class="input-website" />
+			
+		</div>
+		
+		<div id="comment-textarea">
+			
+			<label for="comment">Kommentar</label>
+			<textarea name="comment" id="comment" cols="39" rows="4" tabindex="4" class="textarea-comment"></textarea>
+		
+		</div>
+		
+		<div id="comment-submit">
+		
+			<p><input name="submit" type="submit" id="submit" tabindex="5" value="Senden" class="comment-submit" /></p>
+			<input type='hidden' name='comment_post_ID' value='750' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+			
+<noscript><input type="hidden" name="JS04X7" value="NS1" /></noscript>
+<noscript><p><strong>Derzeit hast du JavaScript deaktiviert. Um Kommentare zu schreiben, stelle bitte sicher, dass JavaScript und Cookies aktiviert sind, und lade Sie die Seite neu.</strong> <a href="http://enable-javascript.com/" rel="nofollow external" >Klicke hier für eine Anleitung die dir zeigt, wie du JavaScript in deinem Browser aktivierst.</a></p></noscript>
+			
+		</div>
+
+		
+	</form>
+
+		
+</div>
+
+					
+				</div>
+				
+							
+			</div>
+			<!-- END MAIN -->
+			
+			<!-- BEGIN SIDEBAR -->
+			<div id="sidebar">
+				
+				
+				<div class="widget"><h3 class="widget-title">Newsletter abonnieren</h3><div class="widget_wysija_cont"><div id="msg-form-wysija-2" class="wysija-msg ajax"></div><form id="form-wysija-2" method="post" action="#wysija" class="widget_wysija">
+<p class="wysija-paragraph">
+    <label>E-Mail <span class="wysija-required">*</span></label>
+    
+    	<input type="text" name="wysija[user][email]" class="wysija-input validate[required,custom[email]]" title="E-Mail"  value="" />
+    
+    
+    
+    <span class="abs-req">
+        <input type="text" name="wysija[user][abs][email]" class="wysija-input validated[abs][email]" value="" />
+    </span>
+    
+</p>
+<input class="wysija-submit wysija-submit-field" type="submit" value="Anmelden!" />
+
+    <input type="hidden" name="form_id" value="1" />
+    <input type="hidden" name="action" value="save" />
+    <input type="hidden" name="controller" value="subscribers" />
+    <input type="hidden" value="1" name="wysija-page" />
+
+    
+        <input type="hidden" name="wysija[user_list][list_ids]" value="1" />
+    
+ </form></div></div><div class="widget"><h3 class="widget-title">3D-Model Viewer</h3>			<div class="textwidget">		<iframe width="250" height="188" scrolling="no" src="https://sketchfab.com/models/8afc9b76797a417d868011a0046fb3e8/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe><p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+	    <a href="https://sketchfab.com/models/8afc9b76797a417d868011a0046fb3e8?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Tree House</a>
+	    by <a href="https://sketchfab.com/incodart?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">3D Studios</a>
+	    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+		</p>
+		</div>
+		</div><div class="widget"><h3 class="widget-title">Beliebteste Artikel</h3><div class="tptn_posts  tptn_posts_widget"><ul><li><span class="tptn_after_thumb"><a href="http://www.3d-drucken.de/2015/01/die-5-wichtigsten-3d-druckverfahren/"     class="tptn_link"><span class="tptn_title">Die 5 wichtigsten 3D-Druckverfahren</span></a></span></li><li><span class="tptn_after_thumb"><a href="http://www.3d-drucken.de/2015/01/alles-ueber-selektives-lasersintern/"     class="tptn_link"><span class="tptn_title">Alles über Selektives Lasersintern</span></a></span></li><li><span class="tptn_after_thumb"><a href="http://www.3d-drucken.de/2015/01/alles-ueber-fused-deposition-modeling/"     class="tptn_link"><span class="tptn_title">Alles über Fused Deposition Modeling</span></a></span></li><li><span class="tptn_after_thumb"><a href="http://www.3d-drucken.de/2015/06/video-meltwerk-review-ii-empfehlenswert-alternativlos/"     class="tptn_link"><span class="tptn_title">Video: MeltWerk Review II &#8211; empfehlenswert&hellip;</span></a></span></li><li><span class="tptn_after_thumb"><a href="http://www.3d-drucken.de/2015/01/keyence-vor-weltweitem-angebot-seiner-3d-drucker/"     class="tptn_link"><span class="tptn_title">Keyence vor weltweitem Angebot seiner 3D-Drucker?</span></a></span></li><li><span class="tptn_after_thumb"><a href="http://www.3d-drucken.de/2015/04/exklusivinterview-concept-laser/"     class="tptn_link"><span class="tptn_title">Exklusivinterview mit Concept Laser GmbH</span></a></span></li><li><span class="tptn_after_thumb"><a href="http://www.3d-drucken.de/2015/01/3d-drucker-fuer-metalle-fuer-zuhause/"     class="tptn_link"><span class="tptn_title">3 Gründe warum es keinen 3D-Drucker für Metalle für&hellip;</span></a></span></li></ul><div class="tptn_clear"></div></div></div><div class="widget"><h3 class="widget-title">Suche</h3><form method="get" id="searchform" action="http://www.3d-drucken.de/">
+	<input type="text" name="s" id="s" value="Suche.." onfocus='if (this.value == "Suche..") { this.value = ""; }' onblur='if (this.value == "") { this.value = "Suche.."; }' />
+	<input type="image" src="http://www.3d-drucken.de/wp-content/themes/Avenue/images/search-button.png" value="" id="search-button">
+</form></div><div class="widget">		<!-- BEGIN WIDGET -->
+		<h3 class="widget-title">Interviews</h3>		
+				
+							
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/12/exclusive-interview-with-materialise-nv/' title='Exclusive interview with Materialise NV'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/12/materialise_interview_logo-50x50.jpg" alt="Exclusive interview with Materialise NV"  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/12/exclusive-interview-with-materialise-nv/' title='Exclusive interview with Materialise NV'>Exclusive interview with Materialise NV</a></h2>
+			<span class="block-meta">24. Dezember 2015, <a href="http://www.3d-drucken.de/2015/12/exclusive-interview-with-materialise-nv/#comments">1 Kommentar<span class="screen-reader-text"> zu Exclusive interview with Materialise NV</span></a></span>
+		</div>
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/08/interview-mit-frank-herzog-zu-15-jahren-concept-laser-gmbh/' title='Interview mit Frank Herzog zu 15 Jahren Concept Laser GmbH'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/08/concept_laser_15_jahre_lasercusing-50x50.jpg" alt="Interview mit Frank Herzog zu 15 Jahren Concept Laser GmbH"  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/08/interview-mit-frank-herzog-zu-15-jahren-concept-laser-gmbh/' title='Interview mit Frank Herzog zu 15 Jahren Concept Laser GmbH'>Interview mit Frank Herzog zu 15 Jahren Concept Laser GmbH</a></h2>
+			<span class="block-meta">17. August 2015, <a href="http://www.3d-drucken.de/2015/08/interview-mit-frank-herzog-zu-15-jahren-concept-laser-gmbh/#respond">Keine Kommentare<span class="screen-reader-text"> zu Interview mit Frank Herzog zu 15 Jahren Concept Laser GmbH</span></a></span>
+		</div>
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/07/interview-mit-dr-dirk-sellmer-von-mapal/' title='Interview mit Dr. Dirk Sellmer von MAPAL'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/07/mapal-sellmer-concept-laser-50x50.jpg" alt="Interview mit Dr. Dirk Sellmer von MAPAL"  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/07/interview-mit-dr-dirk-sellmer-von-mapal/' title='Interview mit Dr. Dirk Sellmer von MAPAL'>Interview mit Dr. Dirk Sellmer von MAPAL</a></h2>
+			<span class="block-meta">20. Juli 2015, <a href="http://www.3d-drucken.de/2015/07/interview-mit-dr-dirk-sellmer-von-mapal/#respond">Keine Kommentare<span class="screen-reader-text"> zu Interview mit Dr. Dirk Sellmer von MAPAL</span></a></span>
+		</div>
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/06/exklusivinterview-mit-3faktur-aus-jena/' title='Exklusivinterview mit 3Faktur aus Jena!'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/06/3faktur-doolydoo-duplipet-team-50x50.jpg" alt="Exklusivinterview mit 3Faktur aus Jena!"  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/06/exklusivinterview-mit-3faktur-aus-jena/' title='Exklusivinterview mit 3Faktur aus Jena!'>Exklusivinterview mit 3Faktur aus Jena!</a></h2>
+			<span class="block-meta">4. Juni 2015, <a href="http://www.3d-drucken.de/2015/06/exklusivinterview-mit-3faktur-aus-jena/#respond">Keine Kommentare<span class="screen-reader-text"> zu Exklusivinterview mit 3Faktur aus Jena!</span></a></span>
+		</div>
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/04/exklusivinterview-mit-verbatim-ltd/' title='Exklusivinterview mit Verbatim Ltd.'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/04/VerbatimLogo_HighRes-50x50.jpg" alt="Exklusivinterview mit Verbatim Ltd."  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/04/exklusivinterview-mit-verbatim-ltd/' title='Exklusivinterview mit Verbatim Ltd.'>Exklusivinterview mit Verbatim Ltd.</a></h2>
+			<span class="block-meta">30. April 2015, <a href="http://www.3d-drucken.de/2015/04/exklusivinterview-mit-verbatim-ltd/#respond">Keine Kommentare<span class="screen-reader-text"> zu Exklusivinterview mit Verbatim Ltd.</span></a></span>
+		</div>
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/04/exklusivinterview-concept-laser/' title='Exklusivinterview mit Concept Laser GmbH'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/04/concept-laser-3d-drucken-de-frank-herzog-50x50.jpg" alt="Exklusivinterview mit Concept Laser GmbH"  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/04/exklusivinterview-concept-laser/' title='Exklusivinterview mit Concept Laser GmbH'>Exklusivinterview mit Concept Laser GmbH</a></h2>
+			<span class="block-meta">3. April 2015, <a href="http://www.3d-drucken.de/2015/04/exklusivinterview-concept-laser/#respond">Keine Kommentare<span class="screen-reader-text"> zu Exklusivinterview mit Concept Laser GmbH</span></a></span>
+		</div>
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/03/exklusivinterview-mit-bigrep/' title='Exklusivinterview mit BigRep aus Berlin!'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/03/bigrep-rene-ceo-logo1-50x50.jpg" alt="Exklusivinterview mit BigRep aus Berlin!"  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/03/exklusivinterview-mit-bigrep/' title='Exklusivinterview mit BigRep aus Berlin!'>Exklusivinterview mit BigRep aus Berlin!</a></h2>
+			<span class="block-meta">13. März 2015, <a href="http://www.3d-drucken.de/2015/03/exklusivinterview-mit-bigrep/#respond">Keine Kommentare<span class="screen-reader-text"> zu Exklusivinterview mit BigRep aus Berlin!</span></a></span>
+		</div>
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/03/16-fragen-an-mypressus/' title='Lesenswert: 16 Fragen an myPRESSUS!'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/03/mypressus-cover-50x50.jpg" alt="Lesenswert: 16 Fragen an myPRESSUS!"  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/03/16-fragen-an-mypressus/' title='Lesenswert: 16 Fragen an myPRESSUS!'>Lesenswert: 16 Fragen an myPRESSUS!</a></h2>
+			<span class="block-meta">6. März 2015, <a href="http://www.3d-drucken.de/2015/03/16-fragen-an-mypressus/#respond">Keine Kommentare<span class="screen-reader-text"> zu Lesenswert: 16 Fragen an myPRESSUS!</span></a></span>
+		</div>
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/02/exklusivinterview-mit-3yourmind/' title='Exklusivinterview mit 3YOURMIND'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/02/3yourmind-logo2-50x50.jpg" alt="Exklusivinterview mit 3YOURMIND"  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/02/exklusivinterview-mit-3yourmind/' title='Exklusivinterview mit 3YOURMIND'>Exklusivinterview mit 3YOURMIND</a></h2>
+			<span class="block-meta">26. Februar 2015, <a href="http://www.3d-drucken.de/2015/02/exklusivinterview-mit-3yourmind/#respond">Keine Kommentare<span class="screen-reader-text"> zu Exklusivinterview mit 3YOURMIND</span></a></span>
+		</div>
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/02/lesenswert-8-fragen-an-twinkind-berlin/' title='Lesenswert: 8 Fragen an TWINKIND Berlin!'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/02/twinkind_windy_140608_5310-cover-50x50.jpg" alt="Lesenswert: 8 Fragen an TWINKIND Berlin!"  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/02/lesenswert-8-fragen-an-twinkind-berlin/' title='Lesenswert: 8 Fragen an TWINKIND Berlin!'>Lesenswert: 8 Fragen an TWINKIND Berlin!</a></h2>
+			<span class="block-meta">9. Februar 2015, <a href="http://www.3d-drucken.de/2015/02/lesenswert-8-fragen-an-twinkind-berlin/#respond">Keine Kommentare<span class="screen-reader-text"> zu Lesenswert: 8 Fragen an TWINKIND Berlin!</span></a></span>
+		</div>
+				<!-- END WIDGET -->
+		</div><div class="widget"><h3 class="widget-title">Archiv</h3>		<ul>
+			<li><a href='http://www.3d-drucken.de/2016/02/'>Februar 2016</a></li>
+	<li><a href='http://www.3d-drucken.de/2016/01/'>Januar 2016</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/12/'>Dezember 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/11/'>November 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/10/'>Oktober 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/09/'>September 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/08/'>August 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/07/'>Juli 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/06/'>Juni 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/05/'>Mai 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/04/'>April 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/03/'>März 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/02/'>Februar 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/01/'>Januar 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2014/12/'>Dezember 2014</a></li>
+	<li><a href='http://www.3d-drucken.de/2014/11/'>November 2014</a></li>
+	<li><a href='http://www.3d-drucken.de/2014/10/'>Oktober 2014</a></li>
+	<li><a href='http://www.3d-drucken.de/2014/09/'>September 2014</a></li>
+		</ul>
+		</div><div class="widget"><h3 class="widget-title">Kategorien</h3>		<ul>
+	<li class="cat-item cat-item-102"><a href="http://www.3d-drucken.de/category/featured-2/" >Featured</a> (7)
+</li>
+	<li class="cat-item cat-item-351"><a href="http://www.3d-drucken.de/category/grundlagen/" >Grundlagen</a> (7)
+</li>
+	<li class="cat-item cat-item-383"><a href="http://www.3d-drucken.de/category/interviews/" >Interviews</a> (13)
+</li>
+	<li class="cat-item cat-item-1"><a href="http://www.3d-drucken.de/category/kolumnen/" >Kolumnen</a> (35)
+</li>
+	<li class="cat-item cat-item-96"><a href="http://www.3d-drucken.de/category/news/" >News</a> (349)
+</li>
+		</ul>
+</div>				
+			</div>
+			<!-- END SIDEBAR -->			
+		</div>
+		<!-- END WRAPPER-CONTENT -->
+		
+		<!-- BEGIN WRAPPER -->
+		<div id="wrapper-footer">
+		
+			<div id="footer">
+
+				<div class="widget">			<div class="textwidget"><br><br>
+<img src="http://www.3d-drucken.de/wp-content/themes/Avenue/images/LogoFooter.png">
+<br><br>
+<p align="justify">3D-Drucken.de begleitet die Leute, die unser Leben besser, facettenreicher und interessanter machen, und informiert Leser über die wichtigsten Mitteilungen und Neuerungen der 3D-Druckszene.</p>
+<br>
+<a href="https://twitter.com/team3ddrucken" class="social-twitter"><img src="http://www.3d-drucken.de/wp-content/themes/Avenue/images/twitter_logo.png" height="25" width="25" alt="Twitter"></a>&nbsp;<a href="https://www.facebook.com/pages/3D-Druckende/301569366668240" class="social-facebook"><img src="http://www.3d-drucken.de/wp-content/themes/Avenue/images/facebook_logo.png" height="25" width="25" alt="Facebook"></a></div>
+		</div>				
+								
+							
+								<div id="footer-bottom">
+				
+										<p class="left">Copyright © 2015 - 3D-Drucken.de. All rights reserved.</p>
+															<p class="right"><a href="http://wordpress.org">Powered by WordPress</a><a href='#top' class='backToTop'>Nach oben</a></p>
+									
+				</div>
+									
+			</div>
+		
+		</div>
+
+	</div>
+	<!-- END WRAPPER -->
+	
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57684755-1', 'auto');
+  ga('send', 'pageview');
+
+</script>	
+	
+<script type='text/javascript'>
+/* <![CDATA[ */
+r3f5x9JS=escape(document['referrer']);
+hf4N='c6b27d09d946b7a41028ad69f5ef0d69';
+hf4V='5cad36c703da6c99223f0760140665a9';
+cm4S="form[action='http://www.3d-drucken.de/wp-comments-post.php']";
+jQuery(document).ready(function($){var e="#commentform, .comment-respond form, .comment-form, "+cm4S+", #lostpasswordform, #registerform, #loginform, #login_form, #wpss_contact_form";$(e).submit(function(){$("<input>").attr("type","hidden").attr("name","r3f5x9JS").attr("value",r3f5x9JS).appendTo(e);$("<input>").attr("type","hidden").attr("name",hf4N).attr("value",hf4V).appendTo(e);return true;});$("#comment").attr({minlength:"15",maxlength:"15360"})});
+/* ]]> */
+</script> 
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-includes/js/comment-reply.min.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/plugins/wp-spamshield/js/jscripts-ftr-min.js'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-includes/js/wp-embed.min.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/plugins/wysija-newsletters/js/validate/languages/jquery.validationEngine-de.js?ver=2.7'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/plugins/wysija-newsletters/js/validate/jquery.validationEngine.js?ver=2.7'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wysijaAJAX = {"action":"wysija_ajax","controller":"subscribers","ajaxurl":"http:\/\/www.3d-drucken.de\/wp-admin\/admin-ajax.php","loadingTrans":"Laden...","is_rtl":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/plugins/wysija-newsletters/js/front-subscribers.js?ver=2.7'></script>
+</body>
+
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+ Served from: 3d-drucken.de @ 2016-02-11 19:01:49 by W3 Total Cache -->

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="de-DE" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ 
+
+ 
+<link rel="stylesheet" href="http://www.3d-drucken.de/wp-content/themes/Avenue/style.css" type="text/css" />
+<link rel="stylesheet" href="http://www.3d-drucken.de/wp-content/themes/Avenue/js/colorbox/colorbox.css" type="text/css" />
+
+
+<link rel="shortcut icon" href="http://www.3d-drucken.de/wp-content/uploads/2014/11/favicon.png" />
+
+
+<!-- This site is optimized with the Yoast SEO plugin v3.0.7 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Alles über Selektives Lasersintern</title>
+<meta name="description" content="Das Selektive Lasersintern (SLS) wurde in den 1980ern an der University of Texas am Austin Mechanical Engineering Department (UT ME) von Carl Deckard erf..."/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="http://www.3d-drucken.de/2015/01/alles-ueber-selektives-lasersintern/" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Alles über Selektives Lasersintern" />
+<meta property="og:description" content="Das Selektive Lasersintern (SLS) wurde in den 1980ern an der University of Texas am Austin Mechanical Engineering Department (UT ME) von Carl Deckard erf..." />
+<meta property="og:url" content="http://www.3d-drucken.de/2015/01/alles-ueber-selektives-lasersintern/" />
+<meta property="og:site_name" content="3D-Drucken.de - Der Blog zur 3D-Drucker Revolution" />
+<meta property="article:publisher" content="https://www.facebook.com/pages/3D-Druckende/301569366668240" />
+<meta property="article:tag" content="3d systems" />
+<meta property="article:tag" content="arcam" />
+<meta property="article:tag" content="carl deckard" />
+<meta property="article:tag" content="concept laser" />
+<meta property="article:tag" content="ebm" />
+<meta property="article:tag" content="eos" />
+<meta property="article:tag" content="grundlagen" />
+<meta property="article:tag" content="laser" />
+<meta property="article:tag" content="lasersintern" />
+<meta property="article:tag" content="selektives" />
+<meta property="article:tag" content="slm" />
+<meta property="article:tag" content="sls" />
+<meta property="article:tag" content="university of texas" />
+<meta property="article:section" content="Grundlagen" />
+<meta property="article:published_time" content="2015-01-26T09:30:26+00:00" />
+<meta property="article:modified_time" content="2015-02-26T09:41:01+00:00" />
+<meta property="og:updated_time" content="2015-02-26T09:41:01+00:00" />
+<meta property="fb:admins" content="100005815365680" />
+<meta property="og:image" content="http://www.3d-drucken.de/wp-content/uploads/2015/01/dental_laser_in_aktion_02-e1422211048573.jpg" />
+<!-- / Yoast SEO plugin. -->
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.3d-drucken.de\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='validate-engine-css-css'  href='http://www.3d-drucken.de/wp-content/plugins/wysija-newsletters/css/validationEngine.jquery.css?ver=2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='wds_frontend-css'  href='http://www.3d-drucken.de/wp-content/plugins/slider-wd/css/wds_frontend.css?ver=1.1.17' type='text/css' media='all' />
+<link rel='stylesheet' id='wds_effects-css'  href='http://www.3d-drucken.de/wp-content/plugins/slider-wd/css/wds_effects.css?ver=1.1.17' type='text/css' media='all' />
+<link rel='stylesheet' id='wds_font-awesome-css'  href='http://www.3d-drucken.de/wp-content/plugins/slider-wd/css/font-awesome-4.0.1/font-awesome.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpnc-css-css'  href='http://www.3d-drucken.de/wp-content/plugins/trickbd-news-collector/assets/style.css?ver=1.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/themes/Avenue/js/jcarousellite_1.0.1.pack.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/themes/Avenue/js/jquery.nivo.slider.pack.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/themes/Avenue/js/colorbox/jquery.colorbox-min.js?ver=4.4.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var AvenueVars = {"ajaxUrl":"http:\/\/www.3d-drucken.de\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/themes/Avenue/js/scripts.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/plugins/slider-wd/js/jquery.mobile.js?ver=1.1.17'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/plugins/slider-wd/js/wds_frontend.js?ver=1.1.17'></script>
+<link rel='https://api.w.org/' href='http://www.3d-drucken.de/wp-json/' />
+<meta name="generator" content="WordPress 4.4.2" />
+<link rel="alternate" type="application/json+oembed" href="http://www.3d-drucken.de/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.3d-drucken.de%2F2015%2F01%2Falles-ueber-selektives-lasersintern%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.3d-drucken.de/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.3d-drucken.de%2F2015%2F01%2Falles-ueber-selektives-lasersintern%2F&#038;format=xml" />
+
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/plugins/wp-spamshield/js/jscripts.php'></script> 
+
+<script type='text/javascript'>
+jQuery(window).load(function() {
+	// Implementation of Nivo Slider
+    jQuery('#slider').nivoSlider({
+		effect: 'fade',
+		pauseTime: '20000',
+        controlNavThumbs: true,
+        controlNavThumbsFromRel: true,
+        directionNav: false,
+        directionNavHide: false,
+        captionOpacity: false
+	});
+
+	jQuery('.nivo-control').each(function() {
+		jQuery('<div class="overlay">').appendTo(this);
+	});
+});
+</script>
+
+<style type='text/css'>
+body { background-image: url('http://www.3d-drucken.de/wp-content/themes/Avenue/images/bodybg.jpg'); background-attachment:fixed; }
+.arrows { color:#167ece; }
+.block-arrows, .block-arrows a { color:#167ece; }
+.meta-arrow { font-size:16px; color:#167ece; }
+.tweets a, .textwidget a { color:#167ece; }
+</style>
+
+</head>
+
+<body class="single single-post postid-810 single-format-standard">
+	<a name='top'></a>
+	
+	<!-- BEGIN WRAPPER -->
+	<div id="wrapper">
+		
+		<!-- BEGIN HEADER-TOP -->
+		<div class="menu-top-navi-container"><ul id="menu-top-navi" class="topNav"><li id="menu-item-1378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1378"><a href="http://www.3d-drucken.de/impressum/">Impressum</a></li>
+</ul></div>		<!-- END HEADER-TOP -->
+	
+		<!-- BEGIN WRAPPER-CONTENT -->
+		<div id="wrapper-content">
+
+<div id="partner-1"> 
+</div>
+
+					
+			<!-- BEGIN HEADER -->
+			<div id="header">
+				
+				<!-- BEGIN HEADER-MIDDLE -->
+				<div id="header-middle">
+					
+					<div id="logo">
+												<a href='http://www.3d-drucken.de'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/01/header-3d-drucken5.png" alt="3D-Drucken.de &#8211; Der Blog zur 3D-Drucker Revolution" /></a>
+					</div>
+					
+										
+				</div>
+				<!-- END HEADER-MIDDLE -->
+				
+				<!-- BEGIN WRAPPER-NAVIGATION -->
+				<div id="wrapper-navigation">
+				
+					<div class="navigation navigation_top">
+						<div class="menu-main-navi-container"><ul id="menu-main-navi" class="menu"><li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-32"><a href="http://www.3d-drucken.de/">Blog</a></li>
+<li id="menu-item-967" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-967"><a href="http://www.3d-drucken.de/category/interviews/">Interviews</a></li>
+<li id="menu-item-965" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-965"><a href="http://www.3d-drucken.de/category/kolumnen/">Kolumnen</a></li>
+<li id="menu-item-966" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-966"><a href="http://www.3d-drucken.de/category/grundlagen/">Grundlagen</a></li>
+<li id="menu-item-968" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-968"><a href="http://www.3d-drucken.de/category/news/">News</a></li>
+<li id="menu-item-694" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-694"><a href="http://www.3d-drucken.de/kontakt/">Kontakt aufnehmen</a></li>
+</ul></div>					</div>
+					<div class="navigation navigation_bottom">
+											</div>
+					
+					
+				</div>
+				<!-- END WRAPPER-NAVIGATION -->
+
+			<div id="partner-conbo">
+						
+			</div>
+
+			</div>
+			<!-- END HEADER -->
+			
+			<!-- BEGIN MAIN -->
+			<div id="main">
+				
+								
+								
+				<div class="post-heading">
+					<h1>Alles über Selektives Lasersintern</h1>
+					<span class="heading-author">Phillip Paul</span> 
+					<span class="heading-date">26. Januar 2015</span>
+					<span class="heading-comments"><a href="http://www.3d-drucken.de/2015/01/alles-ueber-selektives-lasersintern/#respond">0</a></span>
+				</div>
+				
+								
+								
+								<div class="post-thumb">
+															<a class='lightbox' href='http://www.3d-drucken.de/wp-content/uploads/2015/01/dental_laser_in_aktion_02-e1422211048573.jpg'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/01/dental_laser_in_aktion_02-610x250.jpg" alt="Alles über Selektives Lasersintern" width='610' height='250' /></a>
+				</div>
+												
+				<div class="post-entry">
+										
+					<p style="text-align: justify;"><strong>Für die additive Verarbeitung von Metallen oder Keramiken kommen Verfahren wie das Selektive Lasersintern (SLS) zum Einsatz. Heute ist es eines der fortschrittlichsten und vielversprechendsten Fertigungsverfahren in der Industrie. Was es damit auf sich hat und wie es funktioniert soll im Folgenden dargestellt werden.</strong></p>
+<h2 style="text-align: justify;">Hintergründe zum Selektiven Lasersintern</h2>
+<p style="text-align: justify;">Das Selektive Lasersintern (SLS) wurde in den 1980ern an der University of Texas am Austin Mechanical Engineering Department (<a title="University of Texas Austin Mechanical Engineering Department" href="http://www.me.utexas.edu/" target="_blank">UT ME</a>) von Carl Deckard erforscht und entwickelt. Deckard arbeitete 1981, während seines Bachelor-Studiums im Maschinenbau, bei TRW Mission, die Bauteile für die Ölindustrie mithilfe von CAD-Software, welche zu der Zeit sehr neu waren. Zu dieser Zeit sah Deckard einen riesigen Markt für automatisierte Methoden, um diese CAD-Daten real werden zu lassen. Die nächsten Jahre dachte er immer wieder darüber nach, wie er das bewerkstelligen konnte. Im Jahr 1984, zum Ende seines Bachelor-Studiums, kam er auf die Idee einen gerichteten Energiestrahl (z.B. einen Laser oder einen Elektronenstrahl) zur Aufschmelzung von Pulverpartikeln zu verwenden. Er fand in Dr. Joe Beaman einen Professor, der ihn in seiner Idee unterstützte.</p>
+<div id="attachment_811" style="width: 160px" class="wp-caption aligncenter"><a href="http://www.3d-drucken.de/wp-content/uploads/2015/01/sls_deckard_125x188.jpg"><img class=" wp-image-811" src="http://www.3d-drucken.de/wp-content/uploads/2015/01/sls_deckard_125x188.jpg" alt="carl-deckard-lasersintern-sls" width="150" height="226" /></a>
+<p class="wp-caption-text">Carl Deckard</p>
+</div>
+<p style="text-align: justify;">Deckard entwickelte die Idee zu einem funktionierenden Verfahren während seines Master-Studiums und später während seiner Zeit als Doktorand bei Beaman weiter. Im Oktober 1986 reichte er schließlich sein erstes Patent mit dem Titel „Method and apparatus for producing parts by selective sintering“ (<a title="Method and apparatus for producing parts by selective sintering" href="http://www.google.com/patents/US486353%20" target="_blank">US 4863538 A</a>) ein. Das Wissen um diese neue Technologie bündelte sich im Unternehmen Nova Automation, dessen Ziel die Kommerzialisierung des Selektiven Lasersinter-Verfahrens war. Elf Jahre später war die Technologie ausgereift genug und der 3D-Druckerhersteller 3D-Systems erwarb die Mehrheit am Unternehmen, das die Lasersinter-Geräte herstellt. (Nova Automation wurde zu DTM, Goodrich kaufte die Mehrheit an DTM, Goodrich verkaufte die Mehrheit an ProActive Finance, ProActive Finance verkaufte die Mehrheit an 3D Systems). Die Patente rund um das Selektive Lasersintern generierten für die University of Texas die meisten Umsätze im Laufe der Jahre.</p>
+<div id="attachment_812" style="width: 240px" class="wp-caption aligncenter"><a href="http://www.3d-drucken.de/wp-content/uploads/2015/01/US4863538-1.png"><img class=" wp-image-812" src="http://www.3d-drucken.de/wp-content/uploads/2015/01/US4863538-1-204x300.png" alt="US4863538-1-deckard-lasersintern" width="230" height="338" srcset="http://www.3d-drucken.de/wp-content/uploads/2015/01/US4863538-1-204x300.png 204w, http://www.3d-drucken.de/wp-content/uploads/2015/01/US4863538-1-697x1024.png 697w, http://www.3d-drucken.de/wp-content/uploads/2015/01/US4863538-1-600x881.png 600w" sizes="(max-width: 230px) 100vw, 230px" /></a>
+<p class="wp-caption-text">US4863538-1 Patentzeichnung</p>
+</div>
+<h3 style="text-align: justify;">Komponenten eines Geräts zum Selektiven Lasersintern</h3>
+<p style="text-align: justify;">Das Gerät besteht in aller Regel aus fünf Komponenten. Diese sind der Laser, eine Scan-Einheit, eine Pulverauftrag-Einheit, eine Pulverkammer und eine Hebevorrichtung für die Pulverkammer.</p>
+<div id="attachment_818" style="width: 409px" class="wp-caption aligncenter"><a href="http://www.3d-drucken.de/wp-content/uploads/2015/01/Unbenannt-1.jpg"><img class=" wp-image-818" src="http://www.3d-drucken.de/wp-content/uploads/2015/01/Unbenannt-1-300x243.jpg" alt="schema-sls-lasersintern-materialgeeza" width="399" height="323" /></a>
+<p class="wp-caption-text">Schema: Prinzip des Lasersinterns</p>
+</div>
+<p style="text-align: justify;"><strong>Laser</strong></p>
+<p style="text-align: justify;">Der Laser hat die Aufgabe die vorerwärmten Pulverpartikel zu erhitzen. Die Partikel werden dann durch die Energie des Lasers partiell aufgeschmolzen und verbinden sich an ihrer Oberfläche mit umliegenden Partikeln. Zum Einsatz kommen dabei meist <a title="Wiki: CO2-Laser" href="http://de.wikipedia.org/wiki/Kohlendioxidlaser%20" target="_blank">CO2-Laser</a>, <a title="Wiki: Nd:YAG-Laser" href="http://de.wikipedia.org/wiki/Nd:YAG-Laser%20" target="_blank">Nd:YAG-Laser</a> oder ein <a title="Wiki: Faserlaser" href="http://de.wikipedia.org/wiki/Faserlaser%20" target="_blank">Faserlaser</a>. Da die Bauteildichte mehr von der Spitzenleistung des Lasers und weniger von der Bestrahlungsdauer abhängt, nutzt man zum Lasersintern daher gepulste Laser, anstelle von kontinuierlichen Lasern. Die aktuellen Laserleistungen bewegen sich in der Größenordnung von 1 Kilowatt und mehr. Die Erhöhung der Baurate ist dabei das primäre Ziel.</p>
+<p style="text-align: justify;"><strong>Scan-Einheit</strong></p>
+<p style="text-align: justify;">Die Scanner-Einheit lenkt den Laserstrahl um auf das Pulverbett. Hier erfolgt die Verarbeitung der CAD-Daten. Die CAD-Daten bzw. die Koordinaten des Bauteils können vom Gerät gelesen werden und je nachdem welche Koordinaten vom Laser angesteuert werden sollen, regelt das die Scan-Einheit. Dabei regelt sie nicht nur die Bestrahlung, sondern überprüft gleichzeitig auch das Pulverbett nach dem gesinterten Material. Die Oberfläche des Pulverbetts wird untersucht und wenn die Scan-Einheit registriert, dass an allen Koordinaten gesintert wurde, dann wird die nächste Pulverschicht durch eine Pulverauftrag-Einheit aufgetragen.</p>
+<p style="text-align: justify;"><strong>Pulverauftrag-Einheit</strong></p>
+<p style="text-align: justify;">Die Pulverauftrag-Einheit sorgt, wie der Name es vermuten lässt, für den Auftrag der Pulverebenen in der Pulverkammer, wenn es erforderlich ist. Dazu führt meist ein Rakel oder eine Walze etwas Pulver von einem Pulvertank mit zur Pulverkammer. Das gewährleistet eine gleichmäßige Pulverschicht. Bei einer unregelmäßigen Pulverschicht würde es zu Unregelmäßigen am Bauteil kommen.</p>
+<p style="text-align: justify;"><strong>Pulverkammer</strong></p>
+<p style="text-align: justify;">In der Pulverkammer entsteht das zu fertigende Objekt. Hier wird das Materialpulver vorab erwärmt. Das hat den Vorteil, dass der Laser nur kurz auf die aufzuschmelzende Stelle treffen muss. Die benötigte Energie des Lasers zur Aufschmelzung der Partikel wird so verringert. Wenn die oberste Ebene gesintert wurde, dann sorgt eine Hebevorrichtung dafür, dass sich das Pulverbett absenkt. Anschließend erfolgt der Pulverauftrag. Das fertige Bauteil kann schlussendlich der Pulverkammer entnommen werden, wobei das unbenutzte Pulver für das nächste Bauteil genutzt werden kann.</p>
+<p style="text-align: justify;"><strong>Hebevorrichtung</strong></p>
+<p style="text-align: justify;">Diese hat nur die Aufgabe die z-Koordinate des CAD-Modells abzubilden und anzufahren. Das Modell wird von oben nach unten aufgebaut, sodass die Hebevorrichtung das Pulverbett sukzessive absenkt.</p>
+<h4 style="text-align: justify;">Prozess des Selektiven Lasersinterns</h4>
+<p style="text-align: justify;">Zu Beginn wird ein 3D-Modell am Computer mithilfe einer CAD-Software erstellt. Das Modell muss schließlich in das sogenannte .stl–Format gebracht werden. Diese STL-Schnittstelle ist mittlerweile standardmäßig in CAD-Anwendungen eingebunden. „STL“ bedeutet hierbei „Surface Tesselation Language“ also eine Sprache zur Beschreibung der Oberfläche durch Dreiecke. Mithilfe dieser Schnittstelle kann der 3D-Drucker die geometrischen Informationen des 3D-Datenmodells auslesen und verarbeiten. Merkmal des .stl-Formats ist einerseits das sogenannte Slicing des 3D-Modells. Mittels Slicing wird das Modell in virtuelle Scheiben geschnitten. Diese Scheiben entsprechen den jeweiligen aufzutragenden Materialschichten. Andererseits werden automatisch Stützstrukturen berechnet, die notwendig werden, wenn das 3D-Modell zu stark abstehende Teile hat. Diese müssen abgestützt werden.<br />
+Der 3D-Drucker liest dann die Datei im .stl-Format aus und beginnt den Prozess. Die Scan-Einheit lenkt den Laser so um, dass die Koordinaten des zu entstehenden Bauteils, gemäß den CAD-Daten, angesteuert werden und dort das Pulver lokal aufgeschmolzen bzw. gesintert wird.<br />
+Ist eine Schicht entstanden wird die Bauteilplattform abgesenkt und es wird oben eine neue Schicht von Pulver aufgetragen. Der Vorgang wiederholt sich bis das fertige 3D-gedruckte Objekt entstanden ist.</p>
+<p style="text-align: justify;">
+<div class="video-shortcode"><iframe title="YouTube video player" width="600" height="350" src="http://www.youtube.com/embed/jTjipJM8Bn0" frameborder="0" allowfullscreen></iframe></div>
+</p>
+<h5 style="text-align: justify;">Druckergebnis beim Selektiven Lasersintern</h5>
+<p style="text-align: justify;">Das Druckergebnis hängt im Wesentlichen von Reinheit des verwendeten Pulvers ab. Da der Prozess größtenteils im industriellen Umfeld verwendet wird, ist dieser Aspekt jedoch kaum von Relevanz. Die Pulver werden in einer Kugelmühle hergestellt und sind dementsprechend sehr fein. Diese Feinheit erlaubt Schichtdicken im Bereich von 20 bis 100 Mikrometern. Daneben findet der Prozess im Vakuum statt, sodass eine Verunreinigung durch die Umgebung unwahrscheinlich ist. Darüber hinaus ist die Einstellung der optischen Komponenten, also Laser, optische Linsen und Scan-Einheit, sehr wichtig. Derzeit kommen zwischen 1 und 4 Laser zum Einsatz. Die thermische Beanspruchung durch den Laser ruft im Material Eigenspannungen hervor. Dies muss beim multiplen Lasereinsatz berücksichtigt werden.</p>
+<div id="attachment_819" style="width: 369px" class="wp-caption aligncenter"><a href="http://www.3d-drucken.de/wp-content/uploads/2015/01/kl_schuhe_01_02.jpg"><img class=" wp-image-819" src="http://www.3d-drucken.de/wp-content/uploads/2015/01/kl_schuhe_01_02-300x212.jpg" alt="eos-sls-lasersintern-schuabsaetze" width="359" height="254" /></a>
+<p class="wp-caption-text">lasergesinterte Schuhabsätze von EOS GmbH</p>
+</div>
+<p style="text-align: justify;">Verarbeitbare Materialien sind z.B. Pulver aus Kunststoffen (vorallem Polyamid/Nylon), Einkomponenten- und Mehrkomponenten-Metallpulver. Unabhängig vom Material kommt das Selektive Lasersintern ohne Stützstrukturen, wie sie etwa beim <a title="3D-Drucken.de Fused Deposition Modeling" href="http://www.3d-drucken.de/2015/01/alles-ueber-fused-deposition-modeling/" target="_blank">Fused Deposition Modeling</a> nötig werden, aus. Das Lasersintern erlaubt Bauteildichten im Bereich von ca. 95% der theoretischen Dichte. Allerdings wird zunehmend gefordert diesen Restporenanteil zu verringern, da sonst sehr glatt polierte Oberflächen nicht zu erzielen sind.</p>
+<p style="text-align: justify;">Durch das Lasersintern sind erhebliche Gewichtseinsparungen realisierbar, was das Verfahren sehr beliebt im Luft- und Raumfahrtbereich sowie im Medizinbereich macht.</p>
+<p style="text-align: justify;"><strong>Abgrenzung zum Selektiven Laserschmelzen und Elektronenstrahlschmelzen</strong></p>
+<p style="text-align: justify;">Das Selektive Laserschmelzen und das Elektronenstrahlschmelzen funktionieren nach demselben Prinzip wie das Selektive Lasersintern. Allerdings werden beim Selektiven Laserschmelzen die Partikel vollständig aufgeschmolzen und es sind im Pulver keine Bindemittel notwendig. Beim Elektronenstrahlschmelzen wird anstelle eines Lasers eine Elektronenquelle verwendet. Das Elektronenstrahlschmelzen kommt in den Maschinen des schwedischen Unternehmens <a title="Arcam Website" href="http://www.arcam.com/" target="_blank">Arcam</a> zum Einsatz.</p>
+<p style="text-align: justify;"><em>Bild: eos.info / Materialgeeza (reprap.org) über Creative Commons (Änderungen: deutsche Übersetzungen) / me.utexas.edu</em></p>
+<p><script type="text/javascript">jQuery.ajax({url: "http://www.3d-drucken.de/", data: {top_ten_id: 810, top_ten_blog_id: 1, activate_counter: 11, top10_rnd: (new Date()).getTime() + "-" + Math.floor(Math.random()*100000)}});</script></p>
+										
+					<div class='clear'></div>
+				</div>
+				
+								<div class='post-share'>
+										<div class='twitter-share share-widget'>
+						<a href="http://twitter.com/share" class="twitter-share-button" data-text='Alles über Selektives Lasersintern' data-count="vertical">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+					</div>
+															<div class='facebook-share share-widget'>
+						<iframe src="http://www.facebook.com/plugins/like.php?app_id=149766198425277&amp;href=http%3A%2F%2Fwww.3d-drucken.de%2F2015%2F01%2Falles-ueber-selektives-lasersintern%2F&amp;send=false&amp;layout=box_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=90" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:60px;" allowTransparency="true"></iframe>
+					</div>
+																																			<div class='email-share share-widget'>
+						<a href="mailto:?subject=Alles über Selektives Lasersintern&amp;body=http://www.3d-drucken.de/2015/01/alles-ueber-selektives-lasersintern/"><img src='http://www.3d-drucken.de/wp-content/themes/Avenue/images/email-share.png' alt='Email Share' /></a>
+					</div>
+														</div>
+								
+				<div class="post-meta">
+					 
+					<div class="post-meta-tags"><strong>TAGS</strong> <span class="meta-arrow">&raquo;</span> <a href="http://www.3d-drucken.de/tag/3d-systems/" rel="tag">3d systems</a>, <a href="http://www.3d-drucken.de/tag/arcam/" rel="tag">arcam</a>, <a href="http://www.3d-drucken.de/tag/carl-deckard/" rel="tag">carl deckard</a>, <a href="http://www.3d-drucken.de/tag/concept-laser/" rel="tag">concept laser</a>, <a href="http://www.3d-drucken.de/tag/ebm/" rel="tag">ebm</a>, <a href="http://www.3d-drucken.de/tag/eos/" rel="tag">eos</a>, <a href="http://www.3d-drucken.de/tag/grundlagen/" rel="tag">grundlagen</a>, <a href="http://www.3d-drucken.de/tag/laser/" rel="tag">laser</a>, <a href="http://www.3d-drucken.de/tag/lasersintern/" rel="tag">lasersintern</a>, <a href="http://www.3d-drucken.de/tag/selektives/" rel="tag">selektives</a>, <a href="http://www.3d-drucken.de/tag/slm/" rel="tag">slm</a>, <a href="http://www.3d-drucken.de/tag/sls/" rel="tag">sls</a>, <a href="http://www.3d-drucken.de/tag/university-of-texas/" rel="tag">university of texas</a></div>
+										
+					 
+					<div class="post-meta-cats"><strong>GEPOSTET IN</strong> <span class="meta-arrow">&raquo;</span> <a href="http://www.3d-drucken.de/category/grundlagen/" rel="category tag">Grundlagen</a></div>
+						
+				</div>
+				
+				 
+				<div class="post-author">
+
+					<img alt='' src='http://0.gravatar.com/avatar/fd8ceabc71a773812ab38affc7dbdf23?s=100&#038;r=g' srcset='http://0.gravatar.com/avatar/fd8ceabc71a773812ab38affc7dbdf23?s=200&amp;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' />					<h5><em>Über den Author:</em> <a href="http://www.3d-drucken.de" title="Besuche Phillip Pauls Website" rel="author external">Phillip Paul</a></h5> 
+
+					<div class="author-descrip">Phillip ist studierter Wirtschaftsingenieur und angehender Materialwissenschaftler. Der 3D-Druck lässt ihn nicht los, denn hier können Unternehmergeist, Kreativität und analytische Denkweisen seiner Meinung nach voll ausgelebt werden. Vom Herzen her ist er unverbesserlicher Optimist und kann ünnötiges Blabla nicht leiden, wohl aber gute Gespräche mit Leuten, die etwas antreibt.</div>
+									</div>
+								
+																				<div class='homepage-widget'>
+					<div class="block full">
+						
+						<h3>Ähnliche Posts <span class="arrows">&raquo;</span></h3>
+							
+																																							<div class="related-item">
+								<a href='http://www.3d-drucken.de/2016/02/fkm-sintertechnik-ordert-lasercusing-anlagen-von-concept-laser/' title='FKM Sintertechnik ordert LaserCUSING-Anlagen von Concept Laser'><img src="http://www.3d-drucken.de/wp-content/uploads/2016/02/concept-laser-3d-drucken-fkm-sintertechnik-134x90.jpg" alt="FKM Sintertechnik ordert LaserCUSING-Anlagen von Concept Laser" width='134' height='90' /></a>
+								<h2><a href='http://www.3d-drucken.de/2016/02/fkm-sintertechnik-ordert-lasercusing-anlagen-von-concept-laser/' title='FKM Sintertechnik ordert LaserCUSING-Anlagen von Concept Laser'>FKM Sintertechnik ordert LaserCUSING-Anlagen von Concept Laser</a></h2>
+								</div>
+																																															<div class="related-item">
+								<a href='http://www.3d-drucken.de/2016/01/prodways-will-weiter-in-den-markt-fuer-metall-3d-druck-2/' title='Prodways will Massenproduktion für Metall-3D-Druck'><img src="http://www.3d-drucken.de/wp-content/uploads/2016/01/prodways-3d-drucken-logo-134x90.jpg" alt="Prodways will Massenproduktion für Metall-3D-Druck" width='134' height='90' /></a>
+								<h2><a href='http://www.3d-drucken.de/2016/01/prodways-will-weiter-in-den-markt-fuer-metall-3d-druck-2/' title='Prodways will Massenproduktion für Metall-3D-Druck'>Prodways will Massenproduktion für Metall-3D-Druck</a></h2>
+								</div>
+																																															<div class="related-item">
+								<a href='http://www.3d-drucken.de/2016/01/premium-aerotec-startet-serienproduktion-fuer-gedruckte-bauteile-aus-titan/' title='Premium AEROTEC startet Serienproduktion für „gedruckte“ Bauteile aus Titan'><img src="http://www.3d-drucken.de/wp-content/uploads/2016/01/premium-aerotec-134x90.jpg" alt="Premium AEROTEC startet Serienproduktion für „gedruckte“ Bauteile aus Titan" width='134' height='90' /></a>
+								<h2><a href='http://www.3d-drucken.de/2016/01/premium-aerotec-startet-serienproduktion-fuer-gedruckte-bauteile-aus-titan/' title='Premium AEROTEC startet Serienproduktion für „gedruckte“ Bauteile aus Titan'>Premium AEROTEC startet Serienproduktion für „gedruckte“ Bauteile aus Titan</a></h2>
+								</div>
+																																															<div class="related-item">
+								<a href='http://www.3d-drucken.de/2016/01/wohin-geht-die-reise-von-3d-systems/' title='Wohin geht die Reise von 3D Systems?'><img src="http://www.3d-drucken.de/wp-content/uploads/2016/01/3d-systems-3d-drucken-cover-metal-134x90.jpg" alt="Wohin geht die Reise von 3D Systems?" width='134' height='90' /></a>
+								<h2><a href='http://www.3d-drucken.de/2016/01/wohin-geht-die-reise-von-3d-systems/' title='Wohin geht die Reise von 3D Systems?'>Wohin geht die Reise von 3D Systems?</a></h2>
+								</div>
+																				
+					</div>
+				</div>
+																
+				<div id="comments">
+				
+						
+<!-- You can start editing here. -->
+
+
+			<!-- If comments are open, but there are no comments. -->
+
+	 
+
+<div id="respond">
+
+	<h3>Schreibe einen Kommentar <span class="arrows">&raquo;</span></h3>
+
+	<p class="cancel-comment-reply"><a rel="nofollow" id="cancel-comment-reply-link" href="/2015/01/alles-ueber-selektives-lasersintern/#respond" style="display:none;">Hier klicken, um das Kommentieren abzubrechen.</a></p>
+
+	
+	<form action="http://www.3d-drucken.de/wp-comments-post.php" method="post">
+
+		
+		<div id="comment-input">
+		
+			<label for="author">Name <span class="req">(required)</span></label>
+			<input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' class="input-name" />
+
+			<label for="email">Email <span class="req">(required)</span></label>
+			<input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' class="input-email"  />
+		
+			<label for="url">Website</label>
+			<input type="text" name="url" id="url" value="" size="22" tabindex="3" class="input-website" />
+			
+		</div>
+		
+		<div id="comment-textarea">
+			
+			<label for="comment">Kommentar</label>
+			<textarea name="comment" id="comment" cols="39" rows="4" tabindex="4" class="textarea-comment"></textarea>
+		
+		</div>
+		
+		<div id="comment-submit">
+		
+			<p><input name="submit" type="submit" id="submit" tabindex="5" value="Senden" class="comment-submit" /></p>
+			<input type='hidden' name='comment_post_ID' value='810' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+			
+<noscript><input type="hidden" name="JS04X7" value="NS1" /></noscript>
+<noscript><p><strong>Derzeit hast du JavaScript deaktiviert. Um Kommentare zu schreiben, stelle bitte sicher, dass JavaScript und Cookies aktiviert sind, und lade Sie die Seite neu.</strong> <a href="http://enable-javascript.com/" rel="nofollow external" >Klicke hier für eine Anleitung die dir zeigt, wie du JavaScript in deinem Browser aktivierst.</a></p></noscript>
+			
+		</div>
+
+		
+	</form>
+
+		
+</div>
+
+					
+				</div>
+				
+							
+			</div>
+			<!-- END MAIN -->
+			
+			<!-- BEGIN SIDEBAR -->
+			<div id="sidebar">
+				
+				
+				<div class="widget"><h3 class="widget-title">Newsletter abonnieren</h3><div class="widget_wysija_cont"><div id="msg-form-wysija-2" class="wysija-msg ajax"></div><form id="form-wysija-2" method="post" action="#wysija" class="widget_wysija">
+<p class="wysija-paragraph">
+    <label>E-Mail <span class="wysija-required">*</span></label>
+    
+    	<input type="text" name="wysija[user][email]" class="wysija-input validate[required,custom[email]]" title="E-Mail"  value="" />
+    
+    
+    
+    <span class="abs-req">
+        <input type="text" name="wysija[user][abs][email]" class="wysija-input validated[abs][email]" value="" />
+    </span>
+    
+</p>
+<input class="wysija-submit wysija-submit-field" type="submit" value="Anmelden!" />
+
+    <input type="hidden" name="form_id" value="1" />
+    <input type="hidden" name="action" value="save" />
+    <input type="hidden" name="controller" value="subscribers" />
+    <input type="hidden" value="1" name="wysija-page" />
+
+    
+        <input type="hidden" name="wysija[user_list][list_ids]" value="1" />
+    
+ </form></div></div><div class="widget"><h3 class="widget-title">3D-Model Viewer</h3>			<div class="textwidget">		<iframe width="250" height="188" scrolling="no" src="https://sketchfab.com/models/ac63951d5c9f4d58bd85bd21bbd6e443/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe><p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+	    <a href="https://sketchfab.com/models/ac63951d5c9f4d58bd85bd21bbd6e443?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Pomocup</a>
+	    by <a href="https://sketchfab.com/gaitup?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">gaitup</a>
+	    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+		</p>
+		</div>
+		</div><div class="widget"><h3 class="widget-title">Beliebteste Artikel</h3><div class="tptn_posts  tptn_posts_widget"><ul><li><span class="tptn_after_thumb"><a href="http://www.3d-drucken.de/2015/01/die-5-wichtigsten-3d-druckverfahren/"     class="tptn_link"><span class="tptn_title">Die 5 wichtigsten 3D-Druckverfahren</span></a></span></li><li><span class="tptn_after_thumb"><a href="http://www.3d-drucken.de/2015/01/alles-ueber-selektives-lasersintern/"     class="tptn_link"><span class="tptn_title">Alles über Selektives Lasersintern</span></a></span></li><li><span class="tptn_after_thumb"><a href="http://www.3d-drucken.de/2015/01/alles-ueber-fused-deposition-modeling/"     class="tptn_link"><span class="tptn_title">Alles über Fused Deposition Modeling</span></a></span></li><li><span class="tptn_after_thumb"><a href="http://www.3d-drucken.de/2015/06/video-meltwerk-review-ii-empfehlenswert-alternativlos/"     class="tptn_link"><span class="tptn_title">Video: MeltWerk Review II &#8211; empfehlenswert&hellip;</span></a></span></li><li><span class="tptn_after_thumb"><a href="http://www.3d-drucken.de/2015/01/keyence-vor-weltweitem-angebot-seiner-3d-drucker/"     class="tptn_link"><span class="tptn_title">Keyence vor weltweitem Angebot seiner 3D-Drucker?</span></a></span></li><li><span class="tptn_after_thumb"><a href="http://www.3d-drucken.de/2015/04/exklusivinterview-concept-laser/"     class="tptn_link"><span class="tptn_title">Exklusivinterview mit Concept Laser GmbH</span></a></span></li><li><span class="tptn_after_thumb"><a href="http://www.3d-drucken.de/2015/01/3d-drucker-fuer-metalle-fuer-zuhause/"     class="tptn_link"><span class="tptn_title">3 Gründe warum es keinen 3D-Drucker für Metalle für&hellip;</span></a></span></li></ul><div class="tptn_clear"></div></div></div><div class="widget"><h3 class="widget-title">Suche</h3><form method="get" id="searchform" action="http://www.3d-drucken.de/">
+	<input type="text" name="s" id="s" value="Suche.." onfocus='if (this.value == "Suche..") { this.value = ""; }' onblur='if (this.value == "") { this.value = "Suche.."; }' />
+	<input type="image" src="http://www.3d-drucken.de/wp-content/themes/Avenue/images/search-button.png" value="" id="search-button">
+</form></div><div class="widget">		<!-- BEGIN WIDGET -->
+		<h3 class="widget-title">Interviews</h3>		
+				
+							
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/12/exclusive-interview-with-materialise-nv/' title='Exclusive interview with Materialise NV'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/12/materialise_interview_logo-50x50.jpg" alt="Exclusive interview with Materialise NV"  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/12/exclusive-interview-with-materialise-nv/' title='Exclusive interview with Materialise NV'>Exclusive interview with Materialise NV</a></h2>
+			<span class="block-meta">24. Dezember 2015, <a href="http://www.3d-drucken.de/2015/12/exclusive-interview-with-materialise-nv/#comments">1 Kommentar<span class="screen-reader-text"> zu Exclusive interview with Materialise NV</span></a></span>
+		</div>
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/08/interview-mit-frank-herzog-zu-15-jahren-concept-laser-gmbh/' title='Interview mit Frank Herzog zu 15 Jahren Concept Laser GmbH'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/08/concept_laser_15_jahre_lasercusing-50x50.jpg" alt="Interview mit Frank Herzog zu 15 Jahren Concept Laser GmbH"  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/08/interview-mit-frank-herzog-zu-15-jahren-concept-laser-gmbh/' title='Interview mit Frank Herzog zu 15 Jahren Concept Laser GmbH'>Interview mit Frank Herzog zu 15 Jahren Concept Laser GmbH</a></h2>
+			<span class="block-meta">17. August 2015, <a href="http://www.3d-drucken.de/2015/08/interview-mit-frank-herzog-zu-15-jahren-concept-laser-gmbh/#respond">Keine Kommentare<span class="screen-reader-text"> zu Interview mit Frank Herzog zu 15 Jahren Concept Laser GmbH</span></a></span>
+		</div>
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/07/interview-mit-dr-dirk-sellmer-von-mapal/' title='Interview mit Dr. Dirk Sellmer von MAPAL'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/07/mapal-sellmer-concept-laser-50x50.jpg" alt="Interview mit Dr. Dirk Sellmer von MAPAL"  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/07/interview-mit-dr-dirk-sellmer-von-mapal/' title='Interview mit Dr. Dirk Sellmer von MAPAL'>Interview mit Dr. Dirk Sellmer von MAPAL</a></h2>
+			<span class="block-meta">20. Juli 2015, <a href="http://www.3d-drucken.de/2015/07/interview-mit-dr-dirk-sellmer-von-mapal/#respond">Keine Kommentare<span class="screen-reader-text"> zu Interview mit Dr. Dirk Sellmer von MAPAL</span></a></span>
+		</div>
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/06/exklusivinterview-mit-3faktur-aus-jena/' title='Exklusivinterview mit 3Faktur aus Jena!'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/06/3faktur-doolydoo-duplipet-team-50x50.jpg" alt="Exklusivinterview mit 3Faktur aus Jena!"  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/06/exklusivinterview-mit-3faktur-aus-jena/' title='Exklusivinterview mit 3Faktur aus Jena!'>Exklusivinterview mit 3Faktur aus Jena!</a></h2>
+			<span class="block-meta">4. Juni 2015, <a href="http://www.3d-drucken.de/2015/06/exklusivinterview-mit-3faktur-aus-jena/#respond">Keine Kommentare<span class="screen-reader-text"> zu Exklusivinterview mit 3Faktur aus Jena!</span></a></span>
+		</div>
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/04/exklusivinterview-mit-verbatim-ltd/' title='Exklusivinterview mit Verbatim Ltd.'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/04/VerbatimLogo_HighRes-50x50.jpg" alt="Exklusivinterview mit Verbatim Ltd."  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/04/exklusivinterview-mit-verbatim-ltd/' title='Exklusivinterview mit Verbatim Ltd.'>Exklusivinterview mit Verbatim Ltd.</a></h2>
+			<span class="block-meta">30. April 2015, <a href="http://www.3d-drucken.de/2015/04/exklusivinterview-mit-verbatim-ltd/#respond">Keine Kommentare<span class="screen-reader-text"> zu Exklusivinterview mit Verbatim Ltd.</span></a></span>
+		</div>
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/04/exklusivinterview-concept-laser/' title='Exklusivinterview mit Concept Laser GmbH'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/04/concept-laser-3d-drucken-de-frank-herzog-50x50.jpg" alt="Exklusivinterview mit Concept Laser GmbH"  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/04/exklusivinterview-concept-laser/' title='Exklusivinterview mit Concept Laser GmbH'>Exklusivinterview mit Concept Laser GmbH</a></h2>
+			<span class="block-meta">3. April 2015, <a href="http://www.3d-drucken.de/2015/04/exklusivinterview-concept-laser/#respond">Keine Kommentare<span class="screen-reader-text"> zu Exklusivinterview mit Concept Laser GmbH</span></a></span>
+		</div>
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/03/exklusivinterview-mit-bigrep/' title='Exklusivinterview mit BigRep aus Berlin!'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/03/bigrep-rene-ceo-logo1-50x50.jpg" alt="Exklusivinterview mit BigRep aus Berlin!"  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/03/exklusivinterview-mit-bigrep/' title='Exklusivinterview mit BigRep aus Berlin!'>Exklusivinterview mit BigRep aus Berlin!</a></h2>
+			<span class="block-meta">13. März 2015, <a href="http://www.3d-drucken.de/2015/03/exklusivinterview-mit-bigrep/#respond">Keine Kommentare<span class="screen-reader-text"> zu Exklusivinterview mit BigRep aus Berlin!</span></a></span>
+		</div>
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/03/16-fragen-an-mypressus/' title='Lesenswert: 16 Fragen an myPRESSUS!'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/03/mypressus-cover-50x50.jpg" alt="Lesenswert: 16 Fragen an myPRESSUS!"  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/03/16-fragen-an-mypressus/' title='Lesenswert: 16 Fragen an myPRESSUS!'>Lesenswert: 16 Fragen an myPRESSUS!</a></h2>
+			<span class="block-meta">6. März 2015, <a href="http://www.3d-drucken.de/2015/03/16-fragen-an-mypressus/#respond">Keine Kommentare<span class="screen-reader-text"> zu Lesenswert: 16 Fragen an myPRESSUS!</span></a></span>
+		</div>
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/02/exklusivinterview-mit-3yourmind/' title='Exklusivinterview mit 3YOURMIND'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/02/3yourmind-logo2-50x50.jpg" alt="Exklusivinterview mit 3YOURMIND"  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/02/exklusivinterview-mit-3yourmind/' title='Exklusivinterview mit 3YOURMIND'>Exklusivinterview mit 3YOURMIND</a></h2>
+			<span class="block-meta">26. Februar 2015, <a href="http://www.3d-drucken.de/2015/02/exklusivinterview-mit-3yourmind/#respond">Keine Kommentare<span class="screen-reader-text"> zu Exklusivinterview mit 3YOURMIND</span></a></span>
+		</div>
+				<div class="block-item-small">
+												<div class="block-image"><a href='http://www.3d-drucken.de/2015/02/lesenswert-8-fragen-an-twinkind-berlin/' title='Lesenswert: 8 Fragen an TWINKIND Berlin!'><img src="http://www.3d-drucken.de/wp-content/uploads/2015/02/twinkind_windy_140608_5310-cover-50x50.jpg" alt="Lesenswert: 8 Fragen an TWINKIND Berlin!"  width='50' height='50' /></a></div>
+						<h2><a href='http://www.3d-drucken.de/2015/02/lesenswert-8-fragen-an-twinkind-berlin/' title='Lesenswert: 8 Fragen an TWINKIND Berlin!'>Lesenswert: 8 Fragen an TWINKIND Berlin!</a></h2>
+			<span class="block-meta">9. Februar 2015, <a href="http://www.3d-drucken.de/2015/02/lesenswert-8-fragen-an-twinkind-berlin/#respond">Keine Kommentare<span class="screen-reader-text"> zu Lesenswert: 8 Fragen an TWINKIND Berlin!</span></a></span>
+		</div>
+				<!-- END WIDGET -->
+		</div><div class="widget"><h3 class="widget-title">Archiv</h3>		<ul>
+			<li><a href='http://www.3d-drucken.de/2016/02/'>Februar 2016</a></li>
+	<li><a href='http://www.3d-drucken.de/2016/01/'>Januar 2016</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/12/'>Dezember 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/11/'>November 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/10/'>Oktober 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/09/'>September 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/08/'>August 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/07/'>Juli 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/06/'>Juni 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/05/'>Mai 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/04/'>April 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/03/'>März 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/02/'>Februar 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2015/01/'>Januar 2015</a></li>
+	<li><a href='http://www.3d-drucken.de/2014/12/'>Dezember 2014</a></li>
+	<li><a href='http://www.3d-drucken.de/2014/11/'>November 2014</a></li>
+	<li><a href='http://www.3d-drucken.de/2014/10/'>Oktober 2014</a></li>
+	<li><a href='http://www.3d-drucken.de/2014/09/'>September 2014</a></li>
+		</ul>
+		</div><div class="widget"><h3 class="widget-title">Kategorien</h3>		<ul>
+	<li class="cat-item cat-item-102"><a href="http://www.3d-drucken.de/category/featured-2/" >Featured</a> (7)
+</li>
+	<li class="cat-item cat-item-351"><a href="http://www.3d-drucken.de/category/grundlagen/" >Grundlagen</a> (7)
+</li>
+	<li class="cat-item cat-item-383"><a href="http://www.3d-drucken.de/category/interviews/" >Interviews</a> (13)
+</li>
+	<li class="cat-item cat-item-1"><a href="http://www.3d-drucken.de/category/kolumnen/" >Kolumnen</a> (35)
+</li>
+	<li class="cat-item cat-item-96"><a href="http://www.3d-drucken.de/category/news/" >News</a> (349)
+</li>
+		</ul>
+</div>				
+			</div>
+			<!-- END SIDEBAR -->			
+		</div>
+		<!-- END WRAPPER-CONTENT -->
+		
+		<!-- BEGIN WRAPPER -->
+		<div id="wrapper-footer">
+		
+			<div id="footer">
+
+				<div class="widget">			<div class="textwidget"><br><br>
+<img src="http://www.3d-drucken.de/wp-content/themes/Avenue/images/LogoFooter.png">
+<br><br>
+<p align="justify">3D-Drucken.de begleitet die Leute, die unser Leben besser, facettenreicher und interessanter machen, und informiert Leser über die wichtigsten Mitteilungen und Neuerungen der 3D-Druckszene.</p>
+<br>
+<a href="https://twitter.com/team3ddrucken" class="social-twitter"><img src="http://www.3d-drucken.de/wp-content/themes/Avenue/images/twitter_logo.png" height="25" width="25" alt="Twitter"></a>&nbsp;<a href="https://www.facebook.com/pages/3D-Druckende/301569366668240" class="social-facebook"><img src="http://www.3d-drucken.de/wp-content/themes/Avenue/images/facebook_logo.png" height="25" width="25" alt="Facebook"></a></div>
+		</div>				
+								
+							
+								<div id="footer-bottom">
+				
+										<p class="left">Copyright © 2015 - 3D-Drucken.de. All rights reserved.</p>
+															<p class="right"><a href="http://wordpress.org">Powered by WordPress</a><a href='#top' class='backToTop'>Nach oben</a></p>
+									
+				</div>
+									
+			</div>
+		
+		</div>
+
+	</div>
+	<!-- END WRAPPER -->
+	
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57684755-1', 'auto');
+  ga('send', 'pageview');
+
+</script>	
+	
+<script type='text/javascript'>
+/* <![CDATA[ */
+r3f5x9JS=escape(document['referrer']);
+hf4N='c6b27d09d946b7a41028ad69f5ef0d69';
+hf4V='5cad36c703da6c99223f0760140665a9';
+cm4S="form[action='http://www.3d-drucken.de/wp-comments-post.php']";
+jQuery(document).ready(function($){var e="#commentform, .comment-respond form, .comment-form, "+cm4S+", #lostpasswordform, #registerform, #loginform, #login_form, #wpss_contact_form";$(e).submit(function(){$("<input>").attr("type","hidden").attr("name","r3f5x9JS").attr("value",r3f5x9JS).appendTo(e);$("<input>").attr("type","hidden").attr("name",hf4N).attr("value",hf4V).appendTo(e);return true;});$("#comment").attr({minlength:"15",maxlength:"15360"})});
+/* ]]> */
+</script> 
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-includes/js/comment-reply.min.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/plugins/wp-spamshield/js/jscripts-ftr-min.js'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-includes/js/wp-embed.min.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/plugins/wysija-newsletters/js/validate/languages/jquery.validationEngine-de.js?ver=2.7'></script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/plugins/wysija-newsletters/js/validate/jquery.validationEngine.js?ver=2.7'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wysijaAJAX = {"action":"wysija_ajax","controller":"subscribers","ajaxurl":"http:\/\/www.3d-drucken.de\/wp-admin\/admin-ajax.php","loadingTrans":"Laden...","is_rtl":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.3d-drucken.de/wp-content/plugins/wysija-newsletters/js/front-subscribers.js?ver=2.7'></script>
+</body>
+
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+ Served from: 3d-drucken.de @ 2016-02-11 19:01:50 by W3 Total Cache -->

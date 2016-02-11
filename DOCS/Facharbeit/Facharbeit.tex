@@ -1,0 +1,78 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{lipsum}
+%\usepackage{eurosym}
+\usepackage[german]{babel}
+
+\usepackage[left=3.50cm, right=2.5cm, top=2.00cm, bottom=2.00cm]{geometry}
+
+\usepackage[backend=biber,
+			style=authoryear,
+			%citestyle=alphabetic,
+			sorting=nyt,
+			language=german]{biblatex}
+			
+\usepackage{setspace}
+
+\bibliography{Quellen.bib}
+
+
+\author{David Bailey}
+\title{Einfluss des 3D Druckes auf unser Leben}
+
+
+% cite 		- Cite the work
+% textcite 	- Cite within text
+% footcite 	- Make a footnote citation
+% parencite	- Cite explicitly in []
+% autocite 	- Cite depending on style
+
+% citeXX	- Cite only XX (Whyyy) (author, year, title)
+
+\newcommand{\company}[1]{{\emph{\textquotedblleft #1\textquotedblright ~}}}
+
+\newcommand{\EURO}{\textbf{EUROEZEICHEN}~}
+\newcommand{\TEMP}{\textbf{GRADZEICHEN}~}
+
+\begin{document}
+\onehalfspacing
+
+%Präliminarien
+\input{Titelblatt.tex}
+
+\pagestyle{empty}
+\tableofcontents
+
+\newpage
+\pagestyle{headings}
+\section{Einleitung}
+\input{Einleitung.tex}
+
+%Hauptteil der Facharbeit
+\newpage
+\section{Momentaner Zustand des 3D Druckes}
+\input{3D_Zustand.tex}
+
+\newpage
+\section{Aktuelle Forschung und Entwicklung}
+\input{Forschung.tex}
+
+\newpage
+\section{Zu erwartende künftige Auswirkungen}
+\input{Auswirkungen.tex}
+
+%Anhang
+
+\newpage
+
+\printbibliography[heading=bibintoc]
+
+\newpage
+\addcontentsline{toc}{section}{Schlusserklärung}
+\section*{Schlusserklärung}
+
+\end{document}

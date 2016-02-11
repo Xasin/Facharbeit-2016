@@ -1,0 +1,2236 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" class="prod body tgu-site en_us desktop">
+    <head>
+        <!-- META TAGS -->
+        <meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQcFVl5SDhAJU1ZQDgEH"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:24,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:11,2:10,3:8,4:12,5:3,6:25,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){if(window.addEventListener){var e=t("handle"),n=t("ee");t(1),window.addEventListener("click",function(){e("inc",["ck"])},!1),window.addEventListener("hashchange",function(){e("inc",["hc"])},!1),n.on("pushState-start",function(){e("inc",["ps"])})}},{1:9,ee:"QJf3ax",handle:"D5DuLP"}],6:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],7:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=Event;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:11,2:10,3:9,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t,e){function n(){return s}if(t[1]){var r=t[1];if("function"==typeof r){var s=a(r,"nr@wrapped",function(){return i(r,"fn-",n,r.name||"anonymous")});this.wrapped=t[1]=s,o.emit("initEventContext",[t,e],this.wrapped)}else"function"==typeof r.handleEvent&&i.inPlace(r,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:26,ee:"QJf3ax",gos:"7eSDFh"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:26,ee:"QJf3ax"}],10:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:26,ee:"QJf3ax"}],11:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){function r(){return a}this.ctx={};var a={"nr@context":this.ctx};o.emit("initTimerContext",[t,n],a),t[0]=i(t[0],"fn-",r,n)}var o=t("ee").create(),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:26,ee:"QJf3ax"}],12:[function(t,e){function n(){f.inPlace(this,p,"fn-",o)}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:8,2:26,ee:"QJf3ax"}],13:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1),u=window.XMLHttpRequest;t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof u&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:14,3:12,4:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],14:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],15:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:24,2:25,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-768.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:24,2:15,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],24:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],25:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],26:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:25,ee:"QJf3ax"}]},{},["G9z0Bl",4,13,7,6,5]);</script>
+                                                                                
+        <title>Best 3D Printer 2016 - Top-Rated 3D Printers - Tom&#039;s Guide</title>
+                    <link rel="canonical" href="http://www.tomsguide.com/us/best-3d-printers,review-2236.html" />
+        
+                    <meta name="content-language" content="en" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index,follow" />
+        <meta name="description" content="What’s the best 3D printer on the market? It depends on your needs. We recommend the best 3D printers for your skills, aspirations and budget." />
+        <meta property="og:url" content="http://www.tomsguide.com/us/best-3d-printers,review-2236.html" />
+        <meta property="og:title" content="Best 3D Printer 2016 - Top-Rated 3D Printers - Tom&#039;s Guide" />
+        <meta property="og:description" content="What’s the best 3D printer on the market? It depends on your needs. We recommend the best 3D printers for your skills, aspirations and budget." />
+        <meta property="og:site_name" content="Tom's Guide" />
+        <meta property="og:image" content="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9UL1MvNTIwNzY4L29yaWdpbmFsLzNELVByaW50ZXItNXgzLTIwMDBweC5qcGc=/w_500.jpg" />        <meta property="og:type" content="article" />
+        <meta property="fb:page_id" content="22359506999" />
+        <meta name="twitter:card" content="product">
+                <meta name="twitter:site" content="@tomsguide">
+                <meta name="twitter:title" content="Best 3D Printer 2016 - Top-Rated 3D Printers - Tom&#039;s Guide">
+        <meta name="twitter:image" content="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9UL1MvNTIwNzY4L29yaWdpbmFsLzNELVByaW50ZXItNXgzLTIwMDBweC5qcGc=/w_500.jpg">        <meta name="twitter:description" content="What’s the best 3D printer on the market? It depends on your needs. We recommend the best 3D printers for your skills, aspirations and budget.">
+        
+<meta property="article:published_time" content="2016-01-13" /><meta property="main_section" content="review"/><meta name="news_keywords" content="best 3d printers"><meta name="twitter:creator" content="@tomsguide">
+    <link rel="apple-touch-icon" sizes="57x57" href="/medias/favicon/apple-touch-icon-57x57.png?v=kPPAMMXoY2">
+<link rel="apple-touch-icon" sizes="60x60" href="/medias/favicon/apple-touch-icon-60x60.png?v=kPPAMMXoY2">
+<link rel="apple-touch-icon" sizes="72x72" href="/medias/favicon/apple-touch-icon-72x72.png?v=kPPAMMXoY2">
+<link rel="apple-touch-icon" sizes="76x76" href="/medias/favicon/apple-touch-icon-76x76.png?v=kPPAMMXoY2">
+<link rel="apple-touch-icon" sizes="114x114" href="/medias/favicon/apple-touch-icon-114x114.png?v=kPPAMMXoY2">
+<link rel="apple-touch-icon" sizes="120x120" href="/medias/favicon/apple-touch-icon-120x120.png?v=kPPAMMXoY2">
+<link rel="apple-touch-icon" sizes="144x144" href="/medias/favicon/apple-touch-icon-144x144.png?v=kPPAMMXoY2">
+<link rel="apple-touch-icon" sizes="152x152" href="/medias/favicon/apple-touch-icon-152x152.png?v=kPPAMMXoY2">
+<link rel="apple-touch-icon" sizes="180x180" href="/medias/favicon/apple-touch-icon-180x180.png?v=kPPAMMXoY2">
+<link rel="icon" type="image/png" href="/medias/favicon/favicon-32x32.png?v=kPPAMMXoY2" sizes="32x32">
+<link rel="icon" type="image/png" href="/medias/favicon/favicon-194x194.png?v=kPPAMMXoY2" sizes="194x194">
+<link rel="icon" type="image/png" href="/medias/favicon/favicon-96x96.png?v=kPPAMMXoY2" sizes="96x96">
+<link rel="icon" type="image/png" href="/medias/favicon/android-chrome-192x192.png?v=kPPAMMXoY2" sizes="192x192">
+<link rel="icon" type="image/png" href="/medias/favicon/favicon-16x16.png?v=kPPAMMXoY2" sizes="16x16">
+<link rel="manifest" href="/medias/favicon/manifest.json?v=kPPAMMXoY2">
+<link rel="mask-icon" href="/medias/favicon/safari-pinned-tab.svg?v=kPPAMMXoY2" color="#279cc9">
+<link rel="shortcut icon" href="/medias/favicon/favicon.ico?v=kPPAMMXoY2">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/medias/favicon/mstile-144x144.png?v=kPPAMMXoY2">
+<meta name="theme-color" content="#279cc9">
+        <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+                <link rel="stylesheet" href="/css/compiled/grunt/tomsguide-us-site.edito.document.review.css?1.0.32-203"/>
+        <!--[if lte IE 8]>
+                <![endif]-->
+
+                <script language="JavaScript" type="text/javascript">
+    var Purch = Purch||{};
+    </script>
+        
+                <script type="text/javascript" src="http://ads.servebom.com/tmnhead.js"></script><script language="JavaScript" type="text/javascript">
+                    var Purch = Purch || {};
+                    Purch.Ramp = Purch.Ramp || {};
+                    Purch.Ramp.account = 'edtContent_edtReviews/best-picks/3d-printing';                    Purch.Ramp.target = {"kw":["3d-printing","page-1","tgus-edt-2-2236"],"stype":"SF_EDITO"};
+                    if (typeof tmntag != 'undefined') {
+                        if (document.location.hash.indexOf('#xtor=') != -1) {
+                            Purch.Ramp.target.xtor = document.location.hash.substr((document.location.hash.indexOf('#xtor=') + 6), document.location.hash.length);
+                        }
+                        tmntag.target(Purch.Ramp.target);
+                        tmntag.account(Purch.Ramp.account);                        tmntag.placement('2326');
+                        tmntag.start();
+                    }
+                </script>    </head>
+
+    <body class="body-main review-page best-picks ">
+                <!-- Google Tag Manager -->
+
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MGSK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script id="gtmScript" data-id="GTM-MGSK">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','gtmDataLayer','GTM-MGSK');</script>
+<!-- End Google Tag Manager -->
+    
+                    <section class="body-section">
+                <section class="page header-container z-layer-9">
+                            <section class="page-top-container nolinks">    <div class="header-wrapper">
+    <input class="header-toggle" id="menuToggle" type="checkbox"/>
+    <input class="header-toggle" id="searchToggle" type="checkbox"/>
+    <input class="header-toggle" id="memberModuleToggle" type="checkbox"/>
+    <header class="header header-main header-tgu z-layer-9">
+        <div class="p-g p-g-bbs header-g">
+            <div class="p-u-22-24 p-u-md-3-24 header-u header-brand">
+                <div class="p-g p-g-bbs">
+                    <label for="menuToggle" class="header-toggle header-toggle-menu">
+                        <s class="bar"></s>
+                        <s class="bar"></s>
+                        <s class="bar"></s>
+                    </label>
+                    <div class="p-u-15-24 p-u-md-1">
+                        <div class="header-item header-brand-logo">
+                            <a href="http://www.tomsguide.com/" class="font-tab-131">
+                                <span class="logos-webfont logo-toms"></span>
+                                <span class="logos-webfont logo-brand"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <label for="searchToggle" class="header-toggle header-toggle-search">
+                        <i class="fa fa-search"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="p-u-1 p-u-md-14-24 header-u header-nav">
+                <div class="p-menu p-menu-horizontal">
+                    <ul class="p-menu-list">
+                                                    <li class="header-item p-menu-item">
+                                                                                                <a class="p-menu-link active" target="" href="http://www.tomsguide.com/articles/best-picks/">
+                                    Best picks
+                                </a>
+                            </li>
+                                                    <li class="header-item p-menu-item">
+                                                                                                <a class="p-menu-link " target="" href="http://www.tomsguide.com/articles/review/">
+                                    Reviews
+                                </a>
+                            </li>
+                                                    <li class="header-item p-menu-item">
+                                                                                                <a class="p-menu-link " target="" href="http://www.tomsguide.com/articles/buying-guide/">
+                                    Buying Guides
+                                </a>
+                            </li>
+                                                    <li class="header-item p-menu-item">
+                                                                                                <a class="p-menu-link " target="" href="http://www.tomsguide.com/articles/news/">
+                                    News
+                                </a>
+                            </li>
+                                                    <li class="header-item p-menu-item">
+                                                                                                <a class="p-menu-link " target="" href="http://www.tomsguide.com/articles/how-to/">
+                                    How to
+                                </a>
+                            </li>
+                                                    <li class="header-item p-menu-item">
+                                                                                                <a class="p-menu-link " target="" href="/forum/">
+                                    Forum
+                                </a>
+                            </li>
+                                                <li class="header-item p-menu-item p-menu-has-children p-menu-allow-hover">
+                            <a href="#" id="menuLink1" class="p-menu-link">MORE</a>
+                            <ul class="p-menu-children">
+                                <li class="p-menu-item">
+                                    <a class="p-menu-link" target="" href="http://www.tomsguide.com/articles/">
+                                        All articles
+                                    </a>
+                                </li>
+                                                                                                        <li class="p-menu-item">
+                                        <a class="p-menu-link" target="" href="http://downloads.tomsguide.com/">
+                                            Downloads
+                                        </a>
+                                    </li>
+                                                                                                        <li class="p-menu-item">
+                                        <a class="p-menu-link" target="" href="http://www.tomsguide.com/us/lists/gift-ideas">
+                                            Gift Ideas
+                                        </a>
+                                    </li>
+                                                                                                        <li class="p-menu-item">
+                                        <a class="p-menu-link" target="" href="http://www.tomsguide.com/static/about-42.html">
+                                            About Tom&#039;s Guide
+                                        </a>
+                                    </li>
+                                                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="p-u-1 p-u-md-4-24 header-u header-search">
+                <meta itemprop="url" content="http://www.tomsguide.com/"/>
+                <form action="/us/quicksearch.php" class="header-item p-form header-search-form">
+                    <label for="searchToggle" class="header-toggle header-toggle-search">
+                        <i class="fa fa-search"></i>
+                    </label>
+                    <div class="header-search-inner">
+                        <input type="text" placeholder="What are you looking for?" type="text" name="quicksearch[s]" maxlength="45" required>
+                        <button class="p-button" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="p-u-1-4 p-u-md-3-24 txt-center header-u header-signin">
+                <div class="p-menu">
+                    <ul class="p-menu-list">
+                        <li class="header-item p-menu-item">
+                            <span data-crlink="aHR0cDovL3d3dy50b21zZ3VpZGUuY29tL2NvbW11bml0eS9sb2dpbg==" class="p-menu-link cr-link">Login</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="status-bar"></div>
+        <progress id="main-progress-bar" class="progress-header"></progress>
+    </header>
+</div>
+</section>
+            </section>
+    <div id="ctBoc">
+        <section class="page">
+            <section class="page-top-promo nolinks">
+                                                    <script type='text/javascript'>
+            if (window.tmntag && tmntag.adTag) {
+            tmntag.adTag('out-of-page');
+        }
+    
+</script>
+                        <script type='text/javascript'>
+            if (window.tmntag && tmntag.adTag) {
+            tmntag.adTag('header_leaderboard');
+        }
+    
+</script>
+                        <script type='text/javascript'>
+            if (window.tmntag && tmntag.adTag) {
+            tmntag.adTag('1x1');
+        }
+    
+</script>
+                
+                </section>
+
+                                        <section class="page-top-content ">    <div class="page-content">
+            <ul class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+        <li class="fa fa-angle-right breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a title="3D Printing" href="/t/3d-printing/" itemprop="item"><span itemprop="name">3D Printing</span></a><meta itemprop="position" content="1" /></li><li class="fa fa-angle-right breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a title="Best Picks" href="/t/3d-printing/best-picks/" itemprop="item"><span itemprop="name">Best Picks</span></a><meta itemprop="position" content="2" /></li>    </ul>
+        <header class="headline space-b20">
+                        <meta itemprop="thumbnailUrl" content="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9UL1MvNTIwNzY4L29yaWdpbmFsLzNELVByaW50ZXItNXgzLTIwMDBweC5qcGc=/w_500.jpg"/>
+            <meta itemprop="image" content="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9UL1MvNTIwNzY4L29yaWdpbmFsLzNELVByaW50ZXItNXgzLTIwMDBweC5qcGc=/w_500.jpg"/>
+                <h1 itemprop="headline" class="h1 space-b10 nolinks">Best 3D Printers 2016</h1>
+                            
+                                                <div class="author nolinks">by <a class="headline-author" href="https://twitter.com/rbaguley" title="">
+                    <span itemprop="author">Richard Baguley</span></a>                     <time date="Jan 13, 2016, 10:05 AM" itemprop="datePublished">Jan 13, 2016, 10:05 AM</time>
+                                                                                    </div>
+                        
+                    <div class="tableton mobon">
+            <div class="share-bar">
+    <ul>
+                                                                        
+                <li class="share-bar-item  st_facebook_custom social-button" st_url="http://www.tomsguide.com/us/best-3d-printers,review-2236.html" st_title="Best 3D Printer 2016 - Top-Rated 3D Printers - Tom&#039;s Guide" st_summary="What’s the best 3D printer on the market? It depends on your needs. We recommend the best 3D printers for your skills, aspirations and budget."  >
+                    <span class="fa-stack fa-lg" title="facebook">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x"></i>
+                    </span>
+                </li>
+                                                                                    
+                <li class="share-bar-item  st_twitter_custom social-button" st_url="http://www.tomsguide.com/us/best-3d-printers,review-2236.html" st_title="Best 3D Printer 2016 - Top-Rated 3D Printers - Tom&#039;s Guide" st_summary="What’s the best 3D printer on the market? It depends on your needs. We recommend the best 3D printers for your skills, aspirations and budget."  st_via="tomsguide">
+                    <span class="fa-stack fa-lg" title="twitter">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x"></i>
+                    </span>
+                </li>
+                                                                                    
+                <li class="share-bar-item  st_reddit_custom social-button" st_url="http://www.tomsguide.com/us/best-3d-printers,review-2236.html" st_title="Best 3D Printer 2016 - Top-Rated 3D Printers - Tom&#039;s Guide" st_summary="What’s the best 3D printer on the market? It depends on your needs. We recommend the best 3D printers for your skills, aspirations and budget."  >
+                    <span class="fa-stack fa-lg" title="reddit">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-reddit fa-stack-1x"></i>
+                    </span>
+                </li>
+                                                                                    
+                <li class="share-bar-item  st_stumbleupon_custom social-button" st_url="http://www.tomsguide.com/us/best-3d-printers,review-2236.html" st_title="Best 3D Printer 2016 - Top-Rated 3D Printers - Tom&#039;s Guide" st_summary="What’s the best 3D printer on the market? It depends on your needs. We recommend the best 3D printers for your skills, aspirations and budget."  >
+                    <span class="fa-stack fa-lg" title="stumbleupon">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-stumbleupon fa-stack-1x"></i>
+                    </span>
+                </li>
+                                                <li class="share-bar-item st_sharethis_custom stMore social-button share"  st_url="http://www.tomsguide.com/us/best-3d-printers,review-2236.html"   st_title="Best 3D Printer 2016 - Top-Rated 3D Printers - Tom&#039;s Guide"   st_summary="What’s the best 3D printer on the market? It depends on your needs. We recommend the best 3D printers for your skills, aspirations and budget." >
+                    <span class="fa-stack fa-lg" title="share">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-share-alt fa-stack-1x"></i>
+                    </span>
+                </li>
+                        </ul>
+</div>        </div>
+            </header>        
+            </div>
+    <div class="best-picks-container moboff">
+        <div class="page-content space-b40">
+
+            <div>
+            		
+		
+
+                                                                                     
+
+    <style>
+            
+
+       #carousel-multi-css--reponsive-table-346857- .carousel-multi-css-arrow.plc-right{
+           right: -25px;
+       }
+
+       #carousel-multi-css--reponsive-table-346857- .carousel-multi-css-arrow.plc-left{
+           left: -25px;
+       }
+        
+            #carousel-multi-css--reponsive-table-346857- .carousel-multi-css-wrapper {
+                width: 200%;
+            }
+
+            #carousel-multi-css--reponsive-table-346857- .carousel-multi-css-item-ctn {
+                width: 16.666666666667%;
+            }
+
+                            #cml-reponsive-table-346857-0:checked ~ .carousel-multi-css-ctn .carousel-multi-css-wrapper {left: -0%;  }
+                #cml-reponsive-table-346857-0:checked ~ .carousel-multi-css-navs .carousel-multi-css-bullets label[for="cml-reponsive-table-346857-0"] { opacity:1; box-shadow: none;   }
+                #carousel-multi-css--reponsive-table-346857- .carousel-multi-css-bullet-0 { display: inline-block; }
+                            #cml-reponsive-table-346857-1:checked ~ .carousel-multi-css-ctn .carousel-multi-css-wrapper {left: -100%;  }
+                #cml-reponsive-table-346857-1:checked ~ .carousel-multi-css-navs .carousel-multi-css-bullets label[for="cml-reponsive-table-346857-1"] { opacity:1; box-shadow: none;   }
+                #carousel-multi-css--reponsive-table-346857- .carousel-multi-css-bullet-1 { display: inline-block; }
+            
+            
+                
+                #cml-reponsive-table-346857-0:checked ~ .carousel-multi-css-ctn #cml-reponsive-table-346857--label1 {display: block; left:inherit ; right: -25px;}
+                #cml-reponsive-table-346857-0:checked ~ .carousel-multi-css-ctn #cml-reponsive-table-346857--label1:before { content: '\f105'; }
+
+                
+            
+                
+                #cml-reponsive-table-346857-1:checked ~ .carousel-multi-css-ctn #cml-reponsive-table-346857--label0 {display: block; left:-25px ; right: inherit;}
+                #cml-reponsive-table-346857-1:checked ~ .carousel-multi-css-ctn #cml-reponsive-table-346857--label0:before { content: '\f104'; }
+
+                
+            
+        
+    
+
+        .responsive-table .responsive-table-sponsored:before { content: 'Sponsored'; }
+
+                #carousel-multi-css--reponsive-table-346857- .carousel-multi-css-item-ctn { width: auto; }
+        #carousel-multi-css--reponsive-table-346857- .carousel-multi-css-wrapper > li { width: 16.666666666667%; }
+	                                                            #cml-reponsive-table-346857-0:checked ~ .carousel-multi-css-ctn .carousel-multi-css-wrapper #carousel-multi-css-item3 { opacity: 0.2; }
+                            #cml-reponsive-table-346857-0:checked ~ .carousel-multi-css-ctn .carousel-multi-css-wrapper #carousel-multi-css-item4 { opacity: 0.2; }
+                            #cml-reponsive-table-346857-0:checked ~ .carousel-multi-css-ctn .carousel-multi-css-wrapper #carousel-multi-css-item5 { opacity: 0.2; }
+            
+                                                            #cml-reponsive-table-346857-1:checked ~ .carousel-multi-css-ctn .carousel-multi-css-wrapper #carousel-multi-css-item6 { opacity: 0.2; }
+                            #cml-reponsive-table-346857-1:checked ~ .carousel-multi-css-ctn .carousel-multi-css-wrapper #carousel-multi-css-item7 { opacity: 0.2; }
+                            #cml-reponsive-table-346857-1:checked ~ .carousel-multi-css-ctn .carousel-multi-css-wrapper #carousel-multi-css-item8 { opacity: 0.2; }
+            
+                                                        #cml-reponsive-table-346857-1:checked ~ .carousel-multi-css-ctn .carousel-multi-css-wrapper #carousel-multi-css-item0 { opacity: 0.2; }
+                                            #cml-reponsive-table-346857-1:checked ~ .carousel-multi-css-ctn .carousel-multi-css-wrapper #carousel-multi-css-item1 { opacity: 0.2; }
+                                            #cml-reponsive-table-346857-1:checked ~ .carousel-multi-css-ctn .carousel-multi-css-wrapper #carousel-multi-css-item2 { opacity: 0.2; }
+                                
+        		                            #carousel-multi-css--reponsive-table-346857- .responsive-table-steps > ul { width: 100%; }
+            #carousel-multi-css--reponsive-table-346857- .responsive-table-steps-item-ctn { width: 50%; }
+
+                        
+                
+                #cml-reponsive-table-346857-0:checked ~ .responsive-table-steps .responsive-table-step0 .responsive-table-steps-item-ctn { font-weight: bold; color: #252525; }
+                #cml-reponsive-table-346857-0:checked ~ .responsive-table-steps .responsive-table-step0 .responsive-table-steps-item-ctn:before { opacity: 1; }
+                #cml-reponsive-table-346857-0:checked ~ .responsive-table-steps > ul { left: -0%;  }
+                #cml-reponsive-table-346857-0:checked ~ .responsive-table-steps > ul { left: -0%;  }
+                #cml-reponsive-table-346857-0:checked ~ .responsive-table-steps .responsive-table-step2 ~ li { opacity: 0; }
+
+                            
+                
+                #cml-reponsive-table-346857-1:checked ~ .responsive-table-steps .responsive-table-step1 .responsive-table-steps-item-ctn { font-weight: bold; color: #252525; }
+                #cml-reponsive-table-346857-1:checked ~ .responsive-table-steps .responsive-table-step1 .responsive-table-steps-item-ctn:before { opacity: 1; }
+                #cml-reponsive-table-346857-0:checked ~ .responsive-table-steps > ul { left: -0%;  }
+                #cml-reponsive-table-346857-1:checked ~ .responsive-table-steps > ul { left: -0%;  }
+                #cml-reponsive-table-346857-1:checked ~ .responsive-table-steps .responsive-table-step2 ~ li { opacity: 0; }
+
+                                    
+        </style>
+
+        <div id="carousel-multi-css--reponsive-table-346857-" class="responsive-table moboff nolinks carousel-multi-css carousel-multi-css-side  carousel-multi-css-mini ">
+
+
+                                                <input type="radio" name="carousel-multi-css--reponsive-table-346857--radio" id="cml-reponsive-table-346857-0" class="carousel-multi-css-radio" checked="">
+                            <input type="radio" name="carousel-multi-css--reponsive-table-346857--radio" id="cml-reponsive-table-346857-1" class="carousel-multi-css-radio" >
+                                    <input type="checkbox" id="toggle-responsive-table-346857-" class="toggle-check-responsive-table"   />
+        <input type="checkbox" id="dekToggler-346857-" class="toggle-check-dek"/>
+                <div class="carousel-multi-css-ctn line">
+            
+                                    <label for="" class="carousel-multi-css-arrow plc plc-right fa plc-disabled"></label>
+                    <label for="" class="carousel-multi-css-arrow plc plc-left fa plc-disabled"></label>
+                                            <label for="cml-reponsive-table-346857-0" id="cml-reponsive-table-346857--label0" class="carousel-multi-css-arrow fa"></label>
+                                            <label for="cml-reponsive-table-346857-1" id="cml-reponsive-table-346857--label1" class="carousel-multi-css-arrow fa"></label>
+                                    
+
+                        <ul class="carousel-multi-css-wrapper">
+                                                                                                <li id="carousel-multi-css-item0">
+                        <div class="carousel-multi-css-item-ctn">
+                            <div class="carousel-multi-css-item-wrapper">
+                                                    <div class="shopping-blocks-x2">
+                                <section class="shopping-block   nolinks" itemscope itemtype="http://schema.org/Product" data-status='{"title": "Best Budget 3D Printer", "rating": "7", "image" : "http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9DL0cvNTUyNTQ0L29yaWdpbmFsL20zZF9wcmludGVyLmpwZw==/rc_38x38.jpg", "augmentedTitle":"M3D Micro 3D Printer" }'>
+
+                    <meta itemprop="image" content="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9DL0cvNTUyNTQ0L29yaWdpbmFsL20zZF9wcmludGVyLmpwZw==/r_750x450.jpg"/>
+            <meta itemprop="name" content="Best Budget 3D Printer"/>
+            <meta itemprop="url" content="http://www.tomsguide.com/us/m3d-micro-3d-printer,review-3327.html"/>            <meta itemprop="description" content="If you want to give 3D printing a try but you don&#039;t want to put too big a dent in your bank account to do so, the $349 M3D Micro 3D Printer is your best budget-friendly choice. Apart from the attractive price tag, the M3D Micro offers easy setup and intuitive software that lets novices jump right into 3D printing. Though it comes in a small frame, the M3D Micro can produce surprisingly big prints for its size, with a build volume of 85 cubic inches. The printer also supports a variety of materials — PLA, ABS, nylon and more — giving you some flexibility. You&#039;ll make some tradeoffs with the M3D Micro. It&#039;s one of the slowest 3D printers we&#039;ve come across. And while the M3D Micro produces decent-looking prints, we did notice a few blemishes and the printer&#039;s prone to leaving behind whiskers of material. These are the sorts of compromises you can live with for a low price tag, though, especially if you&#039;re just getting started with 3D printing."/>
+        
+                    <div class="shopping-block-sheet p-g p-g-bbs">
+                                    <figure class="p-u-1 shopping-block-figure">
+                        <a href="http://www.tkqlhce.com/click-7260568-10428703?url=http%3A%2F%2Fwww.staples.com%2Foffice%2Fsupplies%2FStaplesProductDisplay%3FstoreId%3D10001%26catalogIdentifier%3D2%26partNumber%3D1967969" title="Best Budget 3D Printer" target="_blank">                            <div class="shopping-block-figure-image cover">
+                                                                                                                                                                        <img class="p-u-1" src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9DL0cvNTUyNTQ0L29yaWdpbmFsL20zZF9wcmludGVyLmpwZw==/r_750x450.jpg" />
+                                                            </div>
+                            <div class="shopping-block-figure-title">
+                                                                    <h2 class="shopping-block-figure-title-top">Best Budget 3D Printer</h2>
+                                                                <span class="shopping-block-figure-title-main">M3D Micro 3D Printer</span>
+                            </div>
+                            </a>                    </figure>
+                                                    <div class="review-bar">
+    <div class="p-g p-g-bbs">
+                                            <div class="p-u-1-3 p-u-sm-3-24 inner10 review-bar-rating">7/10</div>
+            <div class="p-u-sm-5-24 inner10 moboff review-bar-progress">
+                <div class="progress-label">Very good</div>
+                <progress class="progress-bar" value="7" max="10"></progress>
+            </div>
+                                        <div class="p-u-2-3 p-u-sm-4-24 inner10 font-mob-123 review-bar-url">
+                <a title="Review" itemprop="url" href="http://www.tomsguide.com/us/m3d-micro-3d-printer,review-3327.html">Review <span class="fa fa-angle-right"></span></a>
+            </div>
+        
+
+                            <div class="p-u-1 p-u-sm-12-24 review-bar-btn">
+                                        
+                <div data-fallback="{&quot;url&quot;:&quot;http:\/\/www.tkqlhce.com\/click-7260568-10428703?url=http%3A%2F%2Fwww.staples.com%2Foffice%2Fsupplies%2FStaplesProductDisplay%3FstoreId%3D10001%26catalogIdentifier%3D2%26partNumber%3D1967969&quot;,&quot;more&quot;:&quot;http:\/\/www.tomsguide.com\/us\/m3d-micro-3d-printer,review-3327.html&quot;,&quot;formatted_price&quot;:&quot;$516.69&quot;,&quot;price&quot;:&quot;516.69&quot;,&quot;name&quot;:&quot;M3D Micro 3D Printer&quot;,&quot;merchant_name&quot;:&quot;Staples&quot;,&quot;guid&quot;:&quot;12837&quot;,&quot;id&quot;:&quot;&quot;,&quot;serviceUrl&quot;:&quot;http:\/\/www.tkqlhce.com\/click-7260568-10428703?url=http%3A%2F%2Fwww.staples.com%2Foffice%2Fsupplies%2FStaplesProductDisplay%3FstoreId%3D10001%26catalogIdentifier%3D2%26partNumber%3D1967969&quot;,&quot;trackingUrl&quot;:&quot;http:\/\/out.tomsguide.fr\/clic.php?m=116270&amp;zone=new&amp;id_site=21&amp;e=provider~Staples%template%~%product%@%xtPage%&amp;go=%url%&quot;,&quot;shopping_template&quot;:&quot;ShoppingBlock_responsive_table_carousel&quot;}" class="price-lazy" data-shopping-template="ProductTable" data-tmpl="price" data-src="http://www.tkqlhce.com/click-7260568-10428703?url=http%3A%2F%2Fwww.staples.com%2Foffice%2Fsupplies%2FStaplesProductDisplay%3FstoreId%3D10001%26catalogIdentifier%3D2%26partNumber%3D1967969" data-tracking="http://out.tomsguide.fr/clic.php?m=116270&amp;zone=new&amp;id_site=21&amp;e=provider~Staples%template%~%product%@%xtPage%&amp;go=%url%" data-type="fallback" data-pid="14552133698812">
+                <a href="http://www.tkqlhce.com/click-7260568-10428703?url=http%3A%2F%2Fwww.staples.com%2Foffice%2Fsupplies%2FStaplesProductDisplay%3FstoreId%3D10001%26catalogIdentifier%3D2%26partNumber%3D1967969" title="M3D Micro 3D Printer" class="p-button button-shopping omniture-tracking" data-omniture-tracking="{&quot;event&quot;:10,&quot;evars&quot;:{&quot;eVar43&quot;:&quot;516.69&quot;,&quot;eVar23&quot;:&quot;ProductTable&quot;,&quot;eVar34&quot;:&quot;Staples&quot;,&quot;eVar18&quot;:&quot;tgus-12837&quot;,&quot;transactionID&quot;:&quot;14552133698812&quot;}}" target="_blank" rel="nofollow">
+                $516.69 <span class="merchant"> Staples</span>
+                </a>
+                </div>
+                        </div>
+                    </div>
+</div>                                                                                                        <ul class="shopping-block-specs p-u-1">
+                                                                                                                                                                                    <li>
+                                            <dl>
+                                                <dt class="unit">Printer type</dt>
+                                                <dd class="unit-right">FFM</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                                                                        <li>
+                                            <dl>
+                                                <dt class="unit">Layer resolution</dt>
+                                                <dd class="unit-right">50 microns</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                                                                        <li>
+                                            <dl>
+                                                <dt class="unit">Materials</dt>
+                                                <dd class="unit-right">PLA, ABS, Nylon and others</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                                                                        <li>
+                                            <dl>
+                                                <dt class="unit">Build volume</dt>
+                                                <dd class="unit-right">4.2 x 4.4 x 4.6 inches</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                                <input type="checkbox" id="toggle-973618" class="toggle-check toggle-custom"/>                                        <li>
+                                            <dl>
+                                                <dt class="unit">Layer height range</dt>
+                                                <dd class="unit-right"> 0.002 to 0.014 inches</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                </ul>
+                                                                        </div>
+                        </section>
+            </div>
+                                        </div>
+                        </div>
+                    </li>
+                                                                                                <li id="carousel-multi-css-item1">
+                        <div class="carousel-multi-css-item-ctn">
+                            <div class="carousel-multi-css-item-wrapper">
+                                                    <div class="shopping-blocks-x2">
+                                <section class="shopping-block   nolinks" itemscope itemtype="http://schema.org/Product" data-status='{"title": "Best Intermediate 3D Printer", "rating": "8", "image" : "http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9RL0MvNDgzMDYwL29yaWdpbmFsL2x1bHpib3QtbWluaS5qcGc=/rc_38x38.jpg", "augmentedTitle":"Lulzbot Mini" }'>
+
+                    <meta itemprop="image" content="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9RL0MvNDgzMDYwL29yaWdpbmFsL2x1bHpib3QtbWluaS5qcGc=/r_750x450.jpg"/>
+            <meta itemprop="name" content="Best Intermediate 3D Printer"/>
+            <meta itemprop="url" content="http://www.tomsguide.com/us/lulzbot-mini-3d-printer,review-2744.html"/>            <meta itemprop="description" content="The Lulzbot Mini offers big performance in a small package, with high quality prints in our tests and the ability to print in several materials beyond the standard PLA and ABS plastic. The Mini is a smaller, cheaper version of the Lulzbot TAZ printers that is built for portability (there is a carrying handle on the top), but which still has the tough construction of the previous models. The Mini also includes an auto-leveling sensor and a large 6 x 6 x 6.2-inch build area. There is also a high temperature extruder, which can heat up to 572 degrees Fahrenheit for using high-temp print materials such as Nylon and metal-filled plastic filament. The print bed can also handle higher temperatures, up to a toasty 248 F. The Lulzbot Mini only supports a single extruder, though, so you have to manually swap the filament out if you want to use more than one color or type in a print job. The user-friendly Cura software makes your projects easy to execute."/>
+        
+                    <div class="shopping-block-sheet p-g p-g-bbs">
+                                    <figure class="p-u-1 shopping-block-figure">
+                        <a href="http://www.amazon.com/LulzBot-Mini-Desktop-3D-Printer/dp/B00S54E1AI/?tag=bom-tomsguide-20" title="Best Intermediate 3D Printer" target="_blank">                            <div class="shopping-block-figure-image cover">
+                                                                                                                                                                        <img class="p-u-1" src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9RL0MvNDgzMDYwL29yaWdpbmFsL2x1bHpib3QtbWluaS5qcGc=/r_750x450.jpg" />
+                                                            </div>
+                            <div class="shopping-block-figure-title">
+                                                                    <h2 class="shopping-block-figure-title-top">Best Intermediate 3D Printer</h2>
+                                                                <span class="shopping-block-figure-title-main">Lulzbot Mini</span>
+                            </div>
+                            </a>                    </figure>
+                                                    <div class="review-bar">
+    <div class="p-g p-g-bbs">
+                                            <div class="p-u-1-3 p-u-sm-3-24 inner10 review-bar-rating">8/10</div>
+            <div class="p-u-sm-5-24 inner10 moboff review-bar-progress">
+                <div class="progress-label">Totally worth it</div>
+                <progress class="progress-bar" value="8" max="10"></progress>
+            </div>
+                                        <div class="p-u-2-3 p-u-sm-4-24 inner10 font-mob-123 review-bar-url">
+                <a title="Review" itemprop="url" href="http://www.tomsguide.com/us/lulzbot-mini-3d-printer,review-2744.html">Review <span class="fa fa-angle-right"></span></a>
+            </div>
+        
+
+                            <div class="p-u-1 p-u-sm-12-24 review-bar-btn">
+                                        
+                <div data-fallback="{&quot;url&quot;:&quot;http:\/\/www.amazon.com\/LulzBot-Mini-Desktop-3D-Printer\/dp\/B00S54E1AI\/?tag=bom-tomsguide-20&quot;,&quot;more&quot;:&quot;http:\/\/www.tomsguide.com\/us\/lulzbot-mini-3d-printer,review-2744.html&quot;,&quot;formatted_price&quot;:&quot;$1350&quot;,&quot;price&quot;:&quot;1350&quot;,&quot;name&quot;:&quot;Lulzbot Mini&quot;,&quot;merchant_name&quot;:&quot;Amazon&quot;,&quot;id&quot;:&quot;B00S54E1AI&quot;,&quot;guid&quot;:&quot;4963&quot;,&quot;serviceUrl&quot;:&quot;\/price?masterid=B00S54E1AI&amp;e=shopping_generic_Lulzbot-Mini&amp;provider=amazon&amp;partnerId=tguus&amp;tzd=21&quot;,&quot;trackingUrl&quot;:&quot;http:\/\/out.tomsguide.fr\/clic.php?m=116270&amp;zone=new&amp;id_site=21&amp;e=provider~Amazon%template%~%product%@%xtPage%&amp;go=%url%&quot;,&quot;shopping_template&quot;:&quot;ShoppingBlock_responsive_table_carousel&quot;}" class="price-lazy" data-shopping-template="ProductTable" data-tmpl="price" data-src="/price?masterid=B00S54E1AI&amp;e=shopping_generic_Lulzbot-Mini&amp;provider=amazon&amp;partnerId=tguus&amp;tzd=21" data-tracking="http://out.tomsguide.fr/clic.php?m=116270&amp;zone=new&amp;id_site=21&amp;e=provider~Amazon%template%~%product%@%xtPage%&amp;go=%url%" data-type="jsonp" data-pid="B00S54E1AI">
+                <a href="http://www.amazon.com/LulzBot-Mini-Desktop-3D-Printer/dp/B00S54E1AI/?tag=bom-tomsguide-20" title="Lulzbot Mini" class="p-button button-shopping omniture-tracking" data-omniture-tracking="{&quot;event&quot;:10,&quot;evars&quot;:{&quot;eVar43&quot;:&quot;1350&quot;,&quot;eVar23&quot;:&quot;ProductTable&quot;,&quot;eVar34&quot;:&quot;Amazon&quot;,&quot;eVar18&quot;:&quot;tgus-B00S54E1AI&quot;,&quot;transactionID&quot;:&quot;14552133694435&quot;}}" target="_blank" rel="nofollow">
+                $1350 <span class="merchant"> Amazon</span>
+                </a>
+                </div>
+                        </div>
+                    </div>
+</div>                                                                                                        <ul class="shopping-block-specs p-u-1">
+                                                                                                                                                                                    <li>
+                                            <dl>
+                                                <dt class="unit">Printer type</dt>
+                                                <dd class="unit-right">FFM</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                                                                        <li>
+                                            <dl>
+                                                <dt class="unit">Layer resolution</dt>
+                                                <dd class="unit-right">100 microns</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                                                                        <li>
+                                            <dl>
+                                                <dt class="unit">Materials</dt>
+                                                <dd class="unit-right">PLA, ABS, Nylon and others</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                                                                        <li>
+                                            <dl>
+                                                <dt class="unit">Build volume</dt>
+                                                <dd class="unit-right">6 x 6 x 6.2 inches</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                                <input type="checkbox" id="toggle-630944" class="toggle-check toggle-custom"/>                                        <li>
+                                            <dl>
+                                                <dt class="unit">Layer height range</dt>
+                                                <dd class="unit-right">0.002 to 0.020 inches</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                </ul>
+                                                                        </div>
+                        </section>
+            </div>
+                                        </div>
+                        </div>
+                    </li>
+                                                                                                <li id="carousel-multi-css-item2">
+                        <div class="carousel-multi-css-item-ctn">
+                            <div class="carousel-multi-css-item-wrapper">
+                                                    <div class="shopping-blocks-x2">
+                                <section class="shopping-block   nolinks" itemscope itemtype="http://schema.org/Product" data-status='{"title": "Best Enthusiast 3D Printer", "rating": "8", "image" : "http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9WL0gvNTI0NzE3L29yaWdpbmFsL2x1bHpib3QtdGF6NS1iYi5qcGc=/rc_38x38.jpg", "augmentedTitle":"LulzBot TAZ 5 3D Printer " }'>
+
+                    <meta itemprop="image" content="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9WL0gvNTI0NzE3L29yaWdpbmFsL2x1bHpib3QtdGF6NS1iYi5qcGc=/r_750x450.jpg"/>
+            <meta itemprop="name" content="Best Enthusiast 3D Printer"/>
+            <meta itemprop="url" content="http://www.tomsguide.com/us/lulzbot-taz-5-3d-printer,review-3045.html"/>            <meta itemprop="description" content="When it comes to producing a lot of high-quality 3D prints, the TAZ 5 3D printer from LulzBot can&#039;t be beat. It’s one of the fastest filament deposit manufacturing printers we&#039;ve tested, producing prints at its highest-quality setting in nearly the same amount of time it takes rival 3D printers to produce low-quality models. And it&#039;s not just speed where the TAZ 5 excels: The printer is quite reliable, with few print errors in our testing, and removing finished products from the printer is a snap. Because the TAZ 5 can also handle a large range of temperatures, it&#039;s capable of working with more materials, giving you greater flexibility. Setting up the TAZ 5 can be a chore, and that price tag isn&#039;t for the casual user. But people with demanding 3D printing needs will find that the TAZ 5 is up to just about any task they can throw at it."/>
+        
+                    <div class="shopping-block-sheet p-g p-g-bbs">
+                                    <figure class="p-u-1 shopping-block-figure">
+                        <a href="http://www.amazon.com/gp/product/B01143UJK2/?tag=bom_tomsguide-20" title="Best Enthusiast 3D Printer" target="_blank">                            <div class="shopping-block-figure-image cover">
+                                                                                                                                                                        <img class="p-u-1" src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9WL0gvNTI0NzE3L29yaWdpbmFsL2x1bHpib3QtdGF6NS1iYi5qcGc=/r_750x450.jpg" />
+                                                            </div>
+                            <div class="shopping-block-figure-title">
+                                                                    <h2 class="shopping-block-figure-title-top">Best Enthusiast 3D Printer</h2>
+                                                                <span class="shopping-block-figure-title-main">LulzBot TAZ 5 3D Printer </span>
+                            </div>
+                            </a>                    </figure>
+                                                    <div class="review-bar">
+    <div class="p-g p-g-bbs">
+                                            <div class="p-u-1-3 p-u-sm-3-24 inner10 review-bar-rating">8/10</div>
+            <div class="p-u-sm-5-24 inner10 moboff review-bar-progress">
+                <div class="progress-label">Totally worth it</div>
+                <progress class="progress-bar" value="8" max="10"></progress>
+            </div>
+                                        <div class="p-u-2-3 p-u-sm-4-24 inner10 font-mob-123 review-bar-url">
+                <a title="Review" itemprop="url" href="http://www.tomsguide.com/us/lulzbot-taz-5-3d-printer,review-3045.html">Review <span class="fa fa-angle-right"></span></a>
+            </div>
+        
+
+                            <div class="p-u-1 p-u-sm-12-24 review-bar-btn">
+                                        
+                <div data-fallback="{&quot;url&quot;:&quot;http:\/\/www.amazon.com\/gp\/product\/B01143UJK2\/?tag=bom_tomsguide-20&quot;,&quot;more&quot;:&quot;http:\/\/www.tomsguide.com\/us\/lulzbot-taz-5-3d-printer,review-3045.html&quot;,&quot;formatted_price&quot;:&quot;$2283.00&quot;,&quot;price&quot;:&quot;2283.00&quot;,&quot;name&quot;:&quot;LulzBot TAZ 5 3D Printer &quot;,&quot;merchant_name&quot;:&quot;Amazon.com&quot;,&quot;id&quot;:&quot;B01143UJK2&quot;,&quot;guid&quot;:&quot;8960&quot;,&quot;serviceUrl&quot;:&quot;\/price?masterid=B01143UJK2&amp;e=shopping_generic_LulzBot-TAZ-5-3D-Printer-&amp;provider=amazon&amp;partnerId=tguus&amp;tzd=21&quot;,&quot;trackingUrl&quot;:&quot;http:\/\/out.tomsguide.fr\/clic.php?m=116270&amp;zone=new&amp;id_site=21&amp;e=provider~Amazon.com%template%~%product%@%xtPage%&amp;go=%url%&quot;,&quot;shopping_template&quot;:&quot;ShoppingBlock_responsive_table_carousel&quot;}" class="price-lazy" data-shopping-template="ProductTable" data-tmpl="price" data-src="/price?masterid=B01143UJK2&amp;e=shopping_generic_LulzBot-TAZ-5-3D-Printer-&amp;provider=amazon&amp;partnerId=tguus&amp;tzd=21" data-tracking="http://out.tomsguide.fr/clic.php?m=116270&amp;zone=new&amp;id_site=21&amp;e=provider~Amazon.com%template%~%product%@%xtPage%&amp;go=%url%" data-type="jsonp" data-pid="B01143UJK2">
+                <a href="http://www.amazon.com/gp/product/B01143UJK2/?tag=bom_tomsguide-20" title="LulzBot TAZ 5 3D Printer " class="p-button button-shopping omniture-tracking" data-omniture-tracking="{&quot;event&quot;:10,&quot;evars&quot;:{&quot;eVar43&quot;:&quot;2283.00&quot;,&quot;eVar23&quot;:&quot;ProductTable&quot;,&quot;eVar34&quot;:&quot;Amazon.com&quot;,&quot;eVar18&quot;:&quot;tgus-B01143UJK2&quot;,&quot;transactionID&quot;:&quot;14552133698867&quot;}}" target="_blank" rel="nofollow">
+                $2283.00 <span class="merchant"> Amazon.com</span>
+                </a>
+                </div>
+                        </div>
+                    </div>
+</div>                                                                                                        <ul class="shopping-block-specs p-u-1">
+                                                                                                                                                                                    <li>
+                                            <dl>
+                                                <dt class="unit">Printer type</dt>
+                                                <dd class="unit-right">FFM</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                                                                        <li>
+                                            <dl>
+                                                <dt class="unit">Layer resolution</dt>
+                                                <dd class="unit-right">50 microns</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                                                                        <li>
+                                            <dl>
+                                                <dt class="unit">Materials</dt>
+                                                <dd class="unit-right">ABS, PLA, HDPS, Nylon and others</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                                                                        <li>
+                                            <dl>
+                                                <dt class="unit">Build volume</dt>
+                                                <dd class="unit-right">11.7 x 10.8 x 9.8 inches</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                                <input type="checkbox" id="toggle-809696" class="toggle-check toggle-custom"/>                                        <li>
+                                            <dl>
+                                                <dt class="unit">Layer height range</dt>
+                                                <dd class="unit-right">0.003 to 0.0138 inches</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                </ul>
+                                                                        </div>
+                        </section>
+            </div>
+                                        </div>
+                        </div>
+                    </li>
+                                                                                                <li id="carousel-multi-css-item3">
+                        <div class="carousel-multi-css-item-ctn">
+                            <div class="carousel-multi-css-item-wrapper">
+                                                    <div class="shopping-blocks-x2">
+                                <section class="shopping-block   nolinks" itemscope itemtype="http://schema.org/Product" data-status='{"title": "Best Resin Printer", "rating": "9", "image" : "http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS82L0svNTQzMjYwL29yaWdpbmFsL2Zvcm1fM2RfcHJpbnRlci5qcGc=/rc_38x38.jpg", "augmentedTitle":"Formlabs Form 2" }'>
+
+                    <meta itemprop="image" content="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS82L0svNTQzMjYwL29yaWdpbmFsL2Zvcm1fM2RfcHJpbnRlci5qcGc=/r_750x450.jpg"/>
+            <meta itemprop="name" content="Best Resin Printer"/>
+            <meta itemprop="url" content="http://www.tomsguide.com/us/formlabs-form-2-3d-printer,review-3235.html"/>            <meta itemprop="description" content="The latest SLA printer from Formlabs improves on its predecessor by expanding the print area to 224 cubic inches, up from 156 cubic inches on the Form 1+. An updated print mechanism means greater print consistency, and the Form 2 can handle third-party resins — both improvements over past versions. Most importantly, though, the Form 2 produces excellent prints featuring fine detail with clean, sharp edges. Its price tag puts it out of the reach of casual users, but engineers, artists and jewelers will appreciate the Form 2&#039;s performance."/>
+        
+                    <div class="shopping-block-sheet p-g p-g-bbs">
+                                    <figure class="p-u-1 shopping-block-figure">
+                        <a href="http://formlabs.com/store/us/form-2/buy-printer/" title="Best Resin Printer" target="_blank">                            <div class="shopping-block-figure-image cover">
+                                                                                                                                                                        <img class="p-u-1 lazy" data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS82L0svNTQzMjYwL29yaWdpbmFsL2Zvcm1fM2RfcHJpbnRlci5qcGc=/r_750x450.jpg" />
+                                                            </div>
+                            <div class="shopping-block-figure-title">
+                                                                    <h2 class="shopping-block-figure-title-top">Best Resin Printer</h2>
+                                                                <span class="shopping-block-figure-title-main">Formlabs Form 2</span>
+                            </div>
+                            </a>                    </figure>
+                                                    <div class="review-bar">
+    <div class="p-g p-g-bbs">
+                                            <div class="p-u-1-3 p-u-sm-3-24 inner10 review-bar-rating">9/10</div>
+            <div class="p-u-sm-5-24 inner10 moboff review-bar-progress">
+                <div class="progress-label">Superior</div>
+                <progress class="progress-bar" value="9" max="10"></progress>
+            </div>
+                                        <div class="p-u-2-3 p-u-sm-4-24 inner10 font-mob-123 review-bar-url">
+                <a title="Review" itemprop="url" href="http://www.tomsguide.com/us/formlabs-form-2-3d-printer,review-3235.html">Review <span class="fa fa-angle-right"></span></a>
+            </div>
+        
+
+                            <div class="p-u-1 p-u-sm-12-24 review-bar-btn">
+                                        
+                <div data-fallback="{&quot;url&quot;:&quot;http:\/\/formlabs.com\/store\/us\/form-2\/buy-printer\/&quot;,&quot;more&quot;:&quot;http:\/\/www.tomsguide.com\/us\/formlabs-form-2-3d-printer,review-3235.html&quot;,&quot;formatted_price&quot;:&quot;$3499&quot;,&quot;price&quot;:&quot;3499&quot;,&quot;name&quot;:&quot;Formlabs Form 2&quot;,&quot;merchant_name&quot;:&quot;Formlabs&quot;,&quot;guid&quot;:&quot;11789&quot;,&quot;id&quot;:&quot;&quot;,&quot;serviceUrl&quot;:&quot;http:\/\/formlabs.com\/store\/us\/form-2\/buy-printer\/&quot;,&quot;trackingUrl&quot;:&quot;http:\/\/out.tomsguide.fr\/clic.php?m=116270&amp;zone=new&amp;id_site=21&amp;e=provider~Formlabs%template%~%product%@%xtPage%&amp;go=%url%&quot;,&quot;shopping_template&quot;:&quot;ShoppingBlock_responsive_table_carousel&quot;}" class="price-lazy" data-shopping-template="ProductTable" data-tmpl="price" data-src="http://formlabs.com/store/us/form-2/buy-printer/" data-tracking="http://out.tomsguide.fr/clic.php?m=116270&amp;zone=new&amp;id_site=21&amp;e=provider~Formlabs%template%~%product%@%xtPage%&amp;go=%url%" data-type="fallback" data-pid="14552133692592">
+                <a href="http://formlabs.com/store/us/form-2/buy-printer/" title="Formlabs Form 2" class="p-button button-shopping omniture-tracking" data-omniture-tracking="{&quot;event&quot;:10,&quot;evars&quot;:{&quot;eVar43&quot;:&quot;3499&quot;,&quot;eVar23&quot;:&quot;ProductTable&quot;,&quot;eVar34&quot;:&quot;Formlabs&quot;,&quot;eVar18&quot;:&quot;tgus-11789&quot;,&quot;transactionID&quot;:&quot;14552133692592&quot;}}" target="_blank" rel="nofollow">
+                $3499 <span class="merchant"> Formlabs</span>
+                </a>
+                </div>
+                        </div>
+                    </div>
+</div>                                                                                                        <ul class="shopping-block-specs p-u-1">
+                                                                                                                                                                                    <li>
+                                            <dl>
+                                                <dt class="unit">Printer type</dt>
+                                                <dd class="unit-right">SLA</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                                                                        <li>
+                                            <dl>
+                                                <dt class="unit">Layer resolution</dt>
+                                                <dd class="unit-right">25 microns</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                                                                        <li>
+                                            <dl>
+                                                <dt class="unit">Materials</dt>
+                                                <dd class="unit-right">Resin</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                                                                        <li>
+                                            <dl>
+                                                <dt class="unit">Build volume</dt>
+                                                <dd class="unit-right">5.7 x 5.7 x 6.9 inches</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                                <input type="checkbox" id="toggle-291263" class="toggle-check toggle-custom"/>                                        <li>
+                                            <dl>
+                                                <dt class="unit">Layer height range</dt>
+                                                <dd class="unit-right">0.001 to 0.08 inches</dd>
+                                            </dl>
+                                        </li>
+                                                                                                                                </ul>
+                                                                        </div>
+                        </section>
+            </div>
+                                        </div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+        
+                <label for="toggle-responsive-table-346857-" class="toggle-btn">
+            <span class="fa-plus-thin"></span>
+            <span class="space-l40 toggle-btn-label" data-label-more="Show more" data-label-less="Show less"></span>
+        </label>
+                            <div class="carousel-multi-css-ctn responsive-table-steps">
+                <ul>
+                                    <li class="responsive-table-step0">
+                        <label for="cml-reponsive-table-346857-0">
+                            <div class="responsive-table-steps-item-ctn">
+                                                                                                <span>Best Budget 3D Printer</span>
+                                                                                                                                <span>Best Intermediate 3D Printer</span>
+                                                                                                                                <span>Best Enthusiast 3D Printer</span>
+                                                                                        </div>
+                        </label>
+                    </li>
+                                    <li class="responsive-table-step1">
+                        <label for="cml-reponsive-table-346857-1">
+                            <div class="responsive-table-steps-item-ctn">
+                                                                                                <span>Best Resin Printer</span>
+                                                                                        </div>
+                        </label>
+                    </li>
+                                </ul>
+            </div>
+                                        </div>
+         
+
+
+</div>
+
+
+
+                </div>
+    </div>
+</section>
+            
+                                                                <section class="page-content flex ">				<section class="page-content-leftcol flex-1">        <article id="en_US_21_Review_2236" class="edt-content vibrantContent" data-canonical="/us/best-3d-printers,review-2236.html" data-status="{}" itemscope itemtype="http://schema.org/Article">
+                        <meta itemprop="headline" content="Best 3D Printer 2016 - Top-Rated 3D Printers - Tom's Guide"/>
+            <meta itemprop="image" content="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9UL1MvNTIwNzY4L29yaWdpbmFsLzNELVByaW50ZXItNXgzLTIwMDBweC5qcGc=/w_500.jpg" alt="Best 3D Printer 2016 - Top-Rated 3D Printers - Tom's Guide"/>
+            <meta itemprop="datePublished" content="2016-01-13"/>
+        
+    
+                    <div class="statusbar-lazy" data-status="{}"></div>
+                            <div class="content" itemprop="articleBody">
+                                    <p>3D printers make up one of the most exciting areas of the current technology landscape. Every few months, a slew of new models arrive that cost less, print things faster and produce larger objects than ever before. </p>
+
+<p>Based on our extensive evaluations of more than a dozen models in different price ranges and hours of testing, our top overall pick for those on a budget is the Printrbot Simple Metal ($599), because it offers an easy-to-use entry into the world of 3D printing. Those looking to print in a variety of materials should check out the LulzBot Mini ($1,350), which supports ABS, nylon, polycarbonate and polystyrene. 3D-printing enthusiasts will like the speed and reliability of the TAZ 5 from LulzBot ($2,200). </p>
+
+<p>To make it easier to know which 3D printer is right for you, here are a few things to look out for, along with more information on all of our top picks.</p>
+
+<h3><strong>What to Look for in a 3D Printer</strong> </h3>
+
+<p><strong>Printer type</strong>: There are two main types of 3D printers: FFM (fused filament manufacturing) and SLA (stereo lithography). FFM printers work by melting a plastic filament in a moving printhead to form the model. SLA printers use an ultraviolet (UV) laser to solidify a resin, focusing the laser to form the solid model. FFM printers are generally cheaper, simpler and easier to use, although new SLA models like the $1,499 <a href="http://www.tomsguide.com/us/xyzprinting-nobel-1.0-resin-3d-printer,review-2955.html">XYZprinting Nobel 1.0</a> are lowering the price difference. </p>
+
+<p><strong>Printing materials</strong>: Whichever type of printer you choose, pay attention to the type of material it can use to print. The filament material used by FFM printers like the <a href="http://www.tomsguide.com/us/lulzbot-taz-5-3d-printer,review-3045.html">LulzBot TAZ 5</a> is available in several different materials, such as PLA (a brittle, biodegradable material), ABS (the same plastic used in Lego blocks), nylon, TPE (a soft, rubberlike material) and HDPE (a light, tough polystyrene). Many of these materials, particularly PLA and ABS, are available in a huge range of colors. Filaments come in two sizes: 1.75 mm and 3 mm, which are not interchangeable. </p>
+
+<p>SLA printers have fewer options than their FFM counterparts, but printers like the <a href="http://www.tomsguide.com/us/formlab-form-1-3d-printer,review-2408.html">Form 1+</a> can use resins that produce models ranging from very rigid to flexible and rubbery.</p>
+
+<p>The best printers can use a wide range of materials, each of which comes with its own strengths and weaknesses. (HDPE, for example, is light and tough, but not suitable for food use, while nylon is food-safe.) However, some printers only allow the use of approved materials or materials produced by the same company that made the printer. In that sense, those types of 3D printers are like more traditional paper printers: The manufacturers sell the hardware cheaply and then make money back on the consumables. Still, some 3D printers place no restrictions on the type or origin of the material. </p>
+
+<p><strong>Print volume</strong>: All printers have limits on the size of the 3D print they can produce. That limit is defined by the size of the print bed and how far the printer can move the printhead. This is usually measured in cubic inches, but you should also pay attention to each of the individual dimensions, which determine the maximum size 3D print the device can create. So, for example, if a printer like the <a href="http://www.tomsguide.com/us/lulzbot-mini-3d-printer,review-2744.html">LulzBot Mini</a> has a print volume of 223 cubic inches (6.2 x 6 x 6 inches), it can print objects that are up to just less than 6 inches high, wide and deep. </p>
+
+<p><strong>Print speed and quality</strong>: 3D printing is a slow business, and at present, there's no way to get around this. You should expect a 3- to 4-inch model to typically take between 6 and 12 hours to print, depending on the print quality you select. That's because of the way 3D printing works: The print is constructed in layers. The thicker these layers are, the quicker the print is produced but the lower the print quality is, as the layers become more visible. So, there is a trade-off between print speed and print quality. The best printers will allow you to determine which way you want to go with this, producing prints quickly or more slowly but at higher quality. The best printers offer a wide range of quality settings, from fast (but low quality) to slow (but high quality). </p>
+
+<p></p>
+
+<p>            <section class="shopping-block shopping-block-v2  statusbar-lazy  nolinks" itemscope itemtype="http://schema.org/Product" data-status='{"title": "Best Budget 3D Printer", "rating": "7", "image" : "http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9DL0cvNTUyNTQ0L29yaWdpbmFsL20zZF9wcmludGVyLmpwZw==/rc_38x38.jpg", "augmentedTitle":"M3D Micro 3D Printer" }'>
+
+            <meta itemprop="image" content="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9DL0cvNTUyNTQ0L29yaWdpbmFsL20zZF9wcmludGVyLmpwZw==/r_750x450.jpg"/>
+        <meta itemprop="name" content="Best Budget 3D Printer"/>
+        <meta itemprop="url" content="http://www.tomsguide.com/us/m3d-micro-3d-printer,review-3327.html"/>        <meta itemprop="description" content="If you want to give 3D printing a try but you don&#039;t want to put too big a dent in your bank account to do so, the $349 M3D Micro 3D Printer is your best budget-friendly choice. Apart from the attractive price tag, the M3D Micro offers easy setup and intuitive software that lets novices jump right into 3D printing. Though it comes in a small frame, the M3D Micro can produce surprisingly big prints for its size, with a build volume of 85 cubic inches. The printer also supports a variety of materials — PLA, ABS, nylon and more — giving you some flexibility. You&#039;ll make some tradeoffs with the M3D Micro. It&#039;s one of the slowest 3D printers we&#039;ve come across. And while the M3D Micro produces decent-looking prints, we did notice a few blemishes and the printer&#039;s prone to leaving behind whiskers of material. These are the sorts of compromises you can live with for a low price tag, though, especially if you&#039;re just getting started with 3D printing."/>
+    
+            <div class="shopping-block-sheet p-g p-g-bbs">
+                            <figure class="p-u-1 p-u-sm-1-2 shopping-block-figure">
+                    <a href="http://www.tkqlhce.com/click-7260568-10428703?url=http%3A%2F%2Fwww.staples.com%2Foffice%2Fsupplies%2FStaplesProductDisplay%3FstoreId%3D10001%26catalogIdentifier%3D2%26partNumber%3D1967969" title="Best Budget 3D Printer" target="_blank">                        <div class="shopping-block-figure-image cover">
+                                                                                                                                                    <img class="p-u-1 lazy" data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9DL0cvNTUyNTQ0L29yaWdpbmFsL20zZF9wcmludGVyLmpwZw==/r_750x450.jpg" />
+                                                    </div>
+                        </a>                </figure>
+                        <div class="p-u-1 p-u-sm-1-2 shopping-block-content">
+                <div class="shopping-block-content-title">
+                    <div class="shopping-block-content-title-main">M3D Micro 3D Printer</div>
+                                            <h2 class="shopping-block-content-title-top">Best Budget 3D Printer</h2>
+                                    </div>
+                                    
+<div class="review-bar review-bar-v2">
+    <div class="p-g p-g-bbs">
+                                <div class="p-u-1-3 p-u-sm-7-24 inner10 review-bar-rating review-bar-item">7/10</div>
+            <div class="p-u-2-3 p-u-sm-9-24 inner10  moboff review-bar-progress review-bar-item">
+                <div class="progress-label">Very good</div>
+                <progress class="progress-bar" value="7" max="10"></progress>
+            </div>
+                                        <div class="p-u-2-3 p-u-sm-8-24  review-bar-url review-bar-item">
+                <a class="font-mob-123" title="Review" itemprop="url" href="http://www.tomsguide.com/us/m3d-micro-3d-printer,review-3327.html">Review <span class="fa fa-angle-right"></span></a>
+            </div>
+                                    <div class="p-u-1 review-bar-btn review-bar-item ">
+                                        
+                <div data-fallback="{&quot;url&quot;:&quot;http:\/\/www.tkqlhce.com\/click-7260568-10428703?url=http%3A%2F%2Fwww.staples.com%2Foffice%2Fsupplies%2FStaplesProductDisplay%3FstoreId%3D10001%26catalogIdentifier%3D2%26partNumber%3D1967969&quot;,&quot;more&quot;:&quot;http:\/\/www.tomsguide.com\/us\/m3d-micro-3d-printer,review-3327.html&quot;,&quot;formatted_price&quot;:&quot;$516.69&quot;,&quot;price&quot;:&quot;516.69&quot;,&quot;name&quot;:&quot;M3D Micro 3D Printer&quot;,&quot;merchant_name&quot;:&quot;Staples&quot;,&quot;guid&quot;:&quot;12837&quot;,&quot;id&quot;:&quot;&quot;,&quot;serviceUrl&quot;:&quot;http:\/\/www.tkqlhce.com\/click-7260568-10428703?url=http%3A%2F%2Fwww.staples.com%2Foffice%2Fsupplies%2FStaplesProductDisplay%3FstoreId%3D10001%26catalogIdentifier%3D2%26partNumber%3D1967969&quot;,&quot;trackingUrl&quot;:&quot;http:\/\/out.tomsguide.fr\/clic.php?m=116270&amp;zone=new&amp;id_site=21&amp;e=provider~Staples%template%~%product%@%xtPage%&amp;go=%url%&quot;,&quot;shopping_template&quot;:&quot;ShoppingBlock_template_v2&quot;}" class="price-lazy" data-shopping-template="ShoppingBlock_template" data-tmpl="price" data-src="http://www.tkqlhce.com/click-7260568-10428703?url=http%3A%2F%2Fwww.staples.com%2Foffice%2Fsupplies%2FStaplesProductDisplay%3FstoreId%3D10001%26catalogIdentifier%3D2%26partNumber%3D1967969" data-tracking="http://out.tomsguide.fr/clic.php?m=116270&amp;zone=new&amp;id_site=21&amp;e=provider~Staples%template%~%product%@%xtPage%&amp;go=%url%" data-type="fallback" data-pid="14552133691158">
+                <a href="http://www.tkqlhce.com/click-7260568-10428703?url=http%3A%2F%2Fwww.staples.com%2Foffice%2Fsupplies%2FStaplesProductDisplay%3FstoreId%3D10001%26catalogIdentifier%3D2%26partNumber%3D1967969" title="M3D Micro 3D Printer" class="p-button button-shopping omniture-tracking" data-omniture-tracking="{&quot;event&quot;:10,&quot;evars&quot;:{&quot;eVar43&quot;:&quot;516.69&quot;,&quot;eVar23&quot;:&quot;ShoppingBlock_template&quot;,&quot;eVar34&quot;:&quot;Staples&quot;,&quot;eVar18&quot;:&quot;tgus-12837&quot;,&quot;transactionID&quot;:&quot;14552133691158&quot;}}" target="_blank" rel="nofollow">
+                $516.69 <span class="merchant"> Staples</span>
+                </a>
+                </div>
+                        </div>
+                    </div>
+</div>                            </div>
+
+                                                <ul class="shopping-block-specs p-u-1">
+                                                                                                                                            <li>
+                                    <dl>
+                                        <dt class="unit">Printer type</dt>
+                                        <dd class="unit-right">FFM</dd>
+                                    </dl>
+                                </li>
+                                                                                                                                                <li>
+                                    <dl>
+                                        <dt class="unit">Layer resolution</dt>
+                                        <dd class="unit-right">50 microns</dd>
+                                    </dl>
+                                </li>
+                                                                                                                                                <li>
+                                    <dl>
+                                        <dt class="unit">Materials</dt>
+                                        <dd class="unit-right">PLA, ABS, Nylon and others</dd>
+                                    </dl>
+                                </li>
+                                                                                                                                                <li>
+                                    <dl>
+                                        <dt class="unit">Build volume</dt>
+                                        <dd class="unit-right">4.2 x 4.4 x 4.6 inches</dd>
+                                    </dl>
+                                </li>
+                                                                                                                <input type="checkbox" id="toggle-515505" class="toggle-check"/>                                <li>
+                                    <dl>
+                                        <dt class="unit">Layer height range</dt>
+                                        <dd class="unit-right"> 0.002 to 0.014 inches</dd>
+                                    </dl>
+                                </li>
+                                                                                                        <label for="toggle-515505" class="toggle-btn  button-more">
+                                <span class="fa-plus-thin"></span>
+                                <span class="space-l20 toggle-btn-label" data-label-more="Show more" data-label-less="Show less"></span>
+                            </label>
+                                            </ul>
+                                    </div>
+                    <div class="shopping-block-desc">
+                <p class="font-family-1 font-123 font-tab-131 font-mob-153">If you want to give 3D printing a try but you don't want to put too big a dent in your bank account to do so, the $349 M3D Micro 3D Printer is your best budget-friendly choice. Apart from the attractive price tag, the M3D Micro offers easy setup and intuitive software that lets novices jump right into 3D printing. Though it comes in a small frame, the M3D Micro can produce surprisingly big prints for its size, with a build volume of 85 cubic inches. The printer also supports a variety of materials — PLA, ABS, nylon and more — giving you some flexibility. You'll make some tradeoffs with the M3D Micro. It's one of the slowest 3D printers we've come across. And while the M3D Micro produces decent-looking prints, we did notice a few blemishes and the printer's prone to leaving behind whiskers of material. These are the sorts of compromises you can live with for a low price tag, though, especially if you're just getting started with 3D printing.</p>
+            </div>
+                </section>
+    </p>
+
+<p>            <section class="shopping-block shopping-block-v2  statusbar-lazy  nolinks" itemscope itemtype="http://schema.org/Product" data-status='{"title": "Best Intermediate 3D Printer", "rating": "8", "image" : "http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9RL0MvNDgzMDYwL29yaWdpbmFsL2x1bHpib3QtbWluaS5qcGc=/rc_38x38.jpg", "augmentedTitle":"Lulzbot Mini" }'>
+
+            <meta itemprop="image" content="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9RL0MvNDgzMDYwL29yaWdpbmFsL2x1bHpib3QtbWluaS5qcGc=/r_750x450.jpg"/>
+        <meta itemprop="name" content="Best Intermediate 3D Printer"/>
+        <meta itemprop="url" content="http://www.tomsguide.com/us/lulzbot-mini-3d-printer,review-2744.html"/>        <meta itemprop="description" content="The Lulzbot Mini offers big performance in a small package, with high quality prints in our tests and the ability to print in several materials beyond the standard PLA and ABS plastic. The Mini is a smaller, cheaper version of the Lulzbot TAZ printers that is built for portability (there is a carrying handle on the top), but which still has the tough construction of the previous models. The Mini also includes an auto-leveling sensor and a large 6 x 6 x 6.2-inch build area. There is also a high temperature extruder, which can heat up to 572 degrees Fahrenheit for using high-temp print materials such as Nylon and metal-filled plastic filament. The print bed can also handle higher temperatures, up to a toasty 248 F. The Lulzbot Mini only supports a single extruder, though, so you have to manually swap the filament out if you want to use more than one color or type in a print job. The user-friendly Cura software makes your projects easy to execute."/>
+    
+            <div class="shopping-block-sheet p-g p-g-bbs">
+                            <figure class="p-u-1 p-u-sm-1-2 shopping-block-figure">
+                    <a href="http://www.amazon.com/LulzBot-Mini-Desktop-3D-Printer/dp/B00S54E1AI/?tag=bom-tomsguide-20" title="Best Intermediate 3D Printer" target="_blank">                        <div class="shopping-block-figure-image cover">
+                                                                                                <div class="editor-pick-container p-u-4-24">
+                                        <div class="editor-pick">
+    Editor&#039;s choice
+    <span class="editor-pick-brand logos-webfont"></span>
+</div>                                    </div>
+                                                                                                                        <img class="p-u-1 lazy" data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9RL0MvNDgzMDYwL29yaWdpbmFsL2x1bHpib3QtbWluaS5qcGc=/r_750x450.jpg" />
+                                                    </div>
+                        </a>                </figure>
+                        <div class="p-u-1 p-u-sm-1-2 shopping-block-content">
+                <div class="shopping-block-content-title">
+                    <div class="shopping-block-content-title-main">Lulzbot Mini</div>
+                                            <h2 class="shopping-block-content-title-top">Best Intermediate 3D Printer</h2>
+                                    </div>
+                                    
+<div class="review-bar review-bar-v2">
+    <div class="p-g p-g-bbs">
+                                <div class="p-u-1-3 p-u-sm-7-24 inner10 review-bar-rating review-bar-item">8/10</div>
+            <div class="p-u-2-3 p-u-sm-9-24 inner10  moboff review-bar-progress review-bar-item">
+                <div class="progress-label">Totally worth it</div>
+                <progress class="progress-bar" value="8" max="10"></progress>
+            </div>
+                                        <div class="p-u-2-3 p-u-sm-8-24  review-bar-url review-bar-item">
+                <a class="font-mob-123" title="Review" itemprop="url" href="http://www.tomsguide.com/us/lulzbot-mini-3d-printer,review-2744.html">Review <span class="fa fa-angle-right"></span></a>
+            </div>
+                                    <div class="p-u-1 review-bar-btn review-bar-item ">
+                                        
+                <div data-fallback="{&quot;url&quot;:&quot;http:\/\/www.amazon.com\/LulzBot-Mini-Desktop-3D-Printer\/dp\/B00S54E1AI\/?tag=bom-tomsguide-20&quot;,&quot;more&quot;:&quot;http:\/\/www.tomsguide.com\/us\/lulzbot-mini-3d-printer,review-2744.html&quot;,&quot;formatted_price&quot;:&quot;$1350&quot;,&quot;price&quot;:&quot;1350&quot;,&quot;name&quot;:&quot;Lulzbot Mini&quot;,&quot;merchant_name&quot;:&quot;Amazon&quot;,&quot;id&quot;:&quot;B00S54E1AI&quot;,&quot;guid&quot;:&quot;4963&quot;,&quot;serviceUrl&quot;:&quot;\/price?masterid=B00S54E1AI&amp;e=shopping_generic_Lulzbot-Mini&amp;provider=amazon&amp;partnerId=tguus&amp;tzd=21&quot;,&quot;trackingUrl&quot;:&quot;http:\/\/out.tomsguide.fr\/clic.php?m=116270&amp;zone=new&amp;id_site=21&amp;e=provider~Amazon%template%~%product%@%xtPage%&amp;go=%url%&quot;,&quot;shopping_template&quot;:&quot;ShoppingBlock_template_v2&quot;}" class="price-lazy" data-shopping-template="ShoppingBlock_template" data-tmpl="price" data-src="/price?masterid=B00S54E1AI&amp;e=shopping_generic_Lulzbot-Mini&amp;provider=amazon&amp;partnerId=tguus&amp;tzd=21" data-tracking="http://out.tomsguide.fr/clic.php?m=116270&amp;zone=new&amp;id_site=21&amp;e=provider~Amazon%template%~%product%@%xtPage%&amp;go=%url%" data-type="jsonp" data-pid="B00S54E1AI">
+                <a href="http://www.amazon.com/LulzBot-Mini-Desktop-3D-Printer/dp/B00S54E1AI/?tag=bom-tomsguide-20" title="Lulzbot Mini" class="p-button button-shopping omniture-tracking" data-omniture-tracking="{&quot;event&quot;:10,&quot;evars&quot;:{&quot;eVar43&quot;:&quot;1350&quot;,&quot;eVar23&quot;:&quot;ShoppingBlock_template&quot;,&quot;eVar34&quot;:&quot;Amazon&quot;,&quot;eVar18&quot;:&quot;tgus-B00S54E1AI&quot;,&quot;transactionID&quot;:&quot;14552133692370&quot;}}" target="_blank" rel="nofollow">
+                $1350 <span class="merchant"> Amazon</span>
+                </a>
+                </div>
+                        </div>
+                    </div>
+</div>                            </div>
+
+                                                <ul class="shopping-block-specs p-u-1">
+                                                                                                                                            <li>
+                                    <dl>
+                                        <dt class="unit">Printer type</dt>
+                                        <dd class="unit-right">FFM</dd>
+                                    </dl>
+                                </li>
+                                                                                                                                                <li>
+                                    <dl>
+                                        <dt class="unit">Layer resolution</dt>
+                                        <dd class="unit-right">100 microns</dd>
+                                    </dl>
+                                </li>
+                                                                                                                                                <li>
+                                    <dl>
+                                        <dt class="unit">Materials</dt>
+                                        <dd class="unit-right">PLA, ABS, Nylon and others</dd>
+                                    </dl>
+                                </li>
+                                                                                                                                                <li>
+                                    <dl>
+                                        <dt class="unit">Build volume</dt>
+                                        <dd class="unit-right">6 x 6 x 6.2 inches</dd>
+                                    </dl>
+                                </li>
+                                                                                                                <input type="checkbox" id="toggle-962553" class="toggle-check"/>                                <li>
+                                    <dl>
+                                        <dt class="unit">Layer height range</dt>
+                                        <dd class="unit-right">0.002 to 0.020 inches</dd>
+                                    </dl>
+                                </li>
+                                                                                                        <label for="toggle-962553" class="toggle-btn  button-more">
+                                <span class="fa-plus-thin"></span>
+                                <span class="space-l20 toggle-btn-label" data-label-more="Show more" data-label-less="Show less"></span>
+                            </label>
+                                            </ul>
+                                    </div>
+                    <div class="shopping-block-desc">
+                <p class="font-family-1 font-123 font-tab-131 font-mob-153">The Lulzbot Mini offers big performance in a small package, with high quality prints in our tests and the ability to print in several materials beyond the standard PLA and ABS plastic. The Mini is a smaller, cheaper version of the Lulzbot TAZ printers that is built for portability (there is a carrying handle on the top), but which still has the tough construction of the previous models. The Mini also includes an auto-leveling sensor and a large 6 x 6 x 6.2-inch build area. There is also a high temperature extruder, which can heat up to 572 degrees Fahrenheit for using high-temp print materials such as Nylon and metal-filled plastic filament. The print bed can also handle higher temperatures, up to a toasty 248 F. The Lulzbot Mini only supports a single extruder, though, so you have to manually swap the filament out if you want to use more than one color or type in a print job. The user-friendly Cura software makes your projects easy to execute.</p>
+            </div>
+                </section>
+    </p>
+
+<p>            <section class="shopping-block shopping-block-v2  statusbar-lazy  nolinks" itemscope itemtype="http://schema.org/Product" data-status='{"title": "Best Enthusiast 3D Printer", "rating": "8", "image" : "http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9WL0gvNTI0NzE3L29yaWdpbmFsL2x1bHpib3QtdGF6NS1iYi5qcGc=/rc_38x38.jpg", "augmentedTitle":"LulzBot TAZ 5 3D Printer " }'>
+
+            <meta itemprop="image" content="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9WL0gvNTI0NzE3L29yaWdpbmFsL2x1bHpib3QtdGF6NS1iYi5qcGc=/r_750x450.jpg"/>
+        <meta itemprop="name" content="Best Enthusiast 3D Printer"/>
+        <meta itemprop="url" content="http://www.tomsguide.com/us/lulzbot-taz-5-3d-printer,review-3045.html"/>        <meta itemprop="description" content="When it comes to producing a lot of high-quality 3D prints, the TAZ 5 3D printer from LulzBot can&#039;t be beat. It’s one of the fastest filament deposit manufacturing printers we&#039;ve tested, producing prints at its highest-quality setting in nearly the same amount of time it takes rival 3D printers to produce low-quality models. And it&#039;s not just speed where the TAZ 5 excels: The printer is quite reliable, with few print errors in our testing, and removing finished products from the printer is a snap. Because the TAZ 5 can also handle a large range of temperatures, it&#039;s capable of working with more materials, giving you greater flexibility. Setting up the TAZ 5 can be a chore, and that price tag isn&#039;t for the casual user. But people with demanding 3D printing needs will find that the TAZ 5 is up to just about any task they can throw at it."/>
+    
+            <div class="shopping-block-sheet p-g p-g-bbs">
+                            <figure class="p-u-1 p-u-sm-1-2 shopping-block-figure">
+                    <a href="http://www.amazon.com/gp/product/B01143UJK2/?tag=bom_tomsguide-20" title="Best Enthusiast 3D Printer" target="_blank">                        <div class="shopping-block-figure-image cover">
+                                                                                                <div class="editor-pick-container p-u-4-24">
+                                        <div class="editor-pick">
+    Editor&#039;s choice
+    <span class="editor-pick-brand logos-webfont"></span>
+</div>                                    </div>
+                                                                                                                        <img class="p-u-1 lazy" data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9WL0gvNTI0NzE3L29yaWdpbmFsL2x1bHpib3QtdGF6NS1iYi5qcGc=/r_750x450.jpg" />
+                                                    </div>
+                        </a>                </figure>
+                        <div class="p-u-1 p-u-sm-1-2 shopping-block-content">
+                <div class="shopping-block-content-title">
+                    <div class="shopping-block-content-title-main">LulzBot TAZ 5 3D Printer </div>
+                                            <h2 class="shopping-block-content-title-top">Best Enthusiast 3D Printer</h2>
+                                    </div>
+                                    
+<div class="review-bar review-bar-v2">
+    <div class="p-g p-g-bbs">
+                                <div class="p-u-1-3 p-u-sm-7-24 inner10 review-bar-rating review-bar-item">8/10</div>
+            <div class="p-u-2-3 p-u-sm-9-24 inner10  moboff review-bar-progress review-bar-item">
+                <div class="progress-label">Totally worth it</div>
+                <progress class="progress-bar" value="8" max="10"></progress>
+            </div>
+                                        <div class="p-u-2-3 p-u-sm-8-24  review-bar-url review-bar-item">
+                <a class="font-mob-123" title="Review" itemprop="url" href="http://www.tomsguide.com/us/lulzbot-taz-5-3d-printer,review-3045.html">Review <span class="fa fa-angle-right"></span></a>
+            </div>
+                                    <div class="p-u-1 review-bar-btn review-bar-item ">
+                                        
+                <div data-fallback="{&quot;url&quot;:&quot;http:\/\/www.amazon.com\/gp\/product\/B01143UJK2\/?tag=bom_tomsguide-20&quot;,&quot;more&quot;:&quot;http:\/\/www.tomsguide.com\/us\/lulzbot-taz-5-3d-printer,review-3045.html&quot;,&quot;formatted_price&quot;:&quot;$2283.00&quot;,&quot;price&quot;:&quot;2283.00&quot;,&quot;name&quot;:&quot;LulzBot TAZ 5 3D Printer &quot;,&quot;merchant_name&quot;:&quot;Amazon.com&quot;,&quot;id&quot;:&quot;B01143UJK2&quot;,&quot;guid&quot;:&quot;8960&quot;,&quot;serviceUrl&quot;:&quot;\/price?masterid=B01143UJK2&amp;e=shopping_generic_LulzBot-TAZ-5-3D-Printer-&amp;provider=amazon&amp;partnerId=tguus&amp;tzd=21&quot;,&quot;trackingUrl&quot;:&quot;http:\/\/out.tomsguide.fr\/clic.php?m=116270&amp;zone=new&amp;id_site=21&amp;e=provider~Amazon.com%template%~%product%@%xtPage%&amp;go=%url%&quot;,&quot;shopping_template&quot;:&quot;ShoppingBlock_template_v2&quot;}" class="price-lazy" data-shopping-template="ShoppingBlock_template" data-tmpl="price" data-src="/price?masterid=B01143UJK2&amp;e=shopping_generic_LulzBot-TAZ-5-3D-Printer-&amp;provider=amazon&amp;partnerId=tguus&amp;tzd=21" data-tracking="http://out.tomsguide.fr/clic.php?m=116270&amp;zone=new&amp;id_site=21&amp;e=provider~Amazon.com%template%~%product%@%xtPage%&amp;go=%url%" data-type="jsonp" data-pid="B01143UJK2">
+                <a href="http://www.amazon.com/gp/product/B01143UJK2/?tag=bom_tomsguide-20" title="LulzBot TAZ 5 3D Printer " class="p-button button-shopping omniture-tracking" data-omniture-tracking="{&quot;event&quot;:10,&quot;evars&quot;:{&quot;eVar43&quot;:&quot;2283.00&quot;,&quot;eVar23&quot;:&quot;ShoppingBlock_template&quot;,&quot;eVar34&quot;:&quot;Amazon.com&quot;,&quot;eVar18&quot;:&quot;tgus-B01143UJK2&quot;,&quot;transactionID&quot;:&quot;14552133699480&quot;}}" target="_blank" rel="nofollow">
+                $2283.00 <span class="merchant"> Amazon.com</span>
+                </a>
+                </div>
+                        </div>
+                    </div>
+</div>                            </div>
+
+                                                <ul class="shopping-block-specs p-u-1">
+                                                                                                                                            <li>
+                                    <dl>
+                                        <dt class="unit">Printer type</dt>
+                                        <dd class="unit-right">FFM</dd>
+                                    </dl>
+                                </li>
+                                                                                                                                                <li>
+                                    <dl>
+                                        <dt class="unit">Layer resolution</dt>
+                                        <dd class="unit-right">50 microns</dd>
+                                    </dl>
+                                </li>
+                                                                                                                                                <li>
+                                    <dl>
+                                        <dt class="unit">Materials</dt>
+                                        <dd class="unit-right">ABS, PLA, HDPS, Nylon and others</dd>
+                                    </dl>
+                                </li>
+                                                                                                                                                <li>
+                                    <dl>
+                                        <dt class="unit">Build volume</dt>
+                                        <dd class="unit-right">11.7 x 10.8 x 9.8 inches</dd>
+                                    </dl>
+                                </li>
+                                                                                                                <input type="checkbox" id="toggle-282393" class="toggle-check"/>                                <li>
+                                    <dl>
+                                        <dt class="unit">Layer height range</dt>
+                                        <dd class="unit-right">0.003 to 0.0138 inches</dd>
+                                    </dl>
+                                </li>
+                                                                                                        <label for="toggle-282393" class="toggle-btn  button-more">
+                                <span class="fa-plus-thin"></span>
+                                <span class="space-l20 toggle-btn-label" data-label-more="Show more" data-label-less="Show less"></span>
+                            </label>
+                                            </ul>
+                                    </div>
+                    <div class="shopping-block-desc">
+                <p class="font-family-1 font-123 font-tab-131 font-mob-153">When it comes to producing a lot of high-quality 3D prints, the TAZ 5 3D printer from LulzBot can't be beat. It’s one of the fastest filament deposit manufacturing printers we've tested, producing prints at its highest-quality setting in nearly the same amount of time it takes rival 3D printers to produce low-quality models. And it's not just speed where the TAZ 5 excels: The printer is quite reliable, with few print errors in our testing, and removing finished products from the printer is a snap. Because the TAZ 5 can also handle a large range of temperatures, it's capable of working with more materials, giving you greater flexibility. Setting up the TAZ 5 can be a chore, and that price tag isn't for the casual user. But people with demanding 3D printing needs will find that the TAZ 5 is up to just about any task they can throw at it.</p>
+            </div>
+                </section>
+    </p>
+
+<p>            <section class="shopping-block shopping-block-v2  statusbar-lazy  nolinks" itemscope itemtype="http://schema.org/Product" data-status='{"title": "Best Resin Printer", "rating": "9", "image" : "http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS82L0svNTQzMjYwL29yaWdpbmFsL2Zvcm1fM2RfcHJpbnRlci5qcGc=/rc_38x38.jpg", "augmentedTitle":"Formlabs Form 2" }'>
+
+            <meta itemprop="image" content="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS82L0svNTQzMjYwL29yaWdpbmFsL2Zvcm1fM2RfcHJpbnRlci5qcGc=/r_750x450.jpg"/>
+        <meta itemprop="name" content="Best Resin Printer"/>
+        <meta itemprop="url" content="http://www.tomsguide.com/us/formlabs-form-2-3d-printer,review-3235.html"/>        <meta itemprop="description" content="The latest SLA printer from Formlabs improves on its predecessor by expanding the print area to 224 cubic inches, up from 156 cubic inches on the Form 1+. An updated print mechanism means greater print consistency, and the Form 2 can handle third-party resins — both improvements over past versions. Most importantly, though, the Form 2 produces excellent prints featuring fine detail with clean, sharp edges. Its price tag puts it out of the reach of casual users, but engineers, artists and jewelers will appreciate the Form 2&#039;s performance."/>
+    
+            <div class="shopping-block-sheet p-g p-g-bbs">
+                            <figure class="p-u-1 p-u-sm-1-2 shopping-block-figure">
+                    <a href="http://formlabs.com/store/us/form-2/buy-printer/" title="Best Resin Printer" target="_blank">                        <div class="shopping-block-figure-image cover">
+                                                                                                <div class="editor-pick-container p-u-4-24">
+                                        <div class="editor-pick">
+    Editor&#039;s choice
+    <span class="editor-pick-brand logos-webfont"></span>
+</div>                                    </div>
+                                                                                                                        <img class="p-u-1 lazy" data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS82L0svNTQzMjYwL29yaWdpbmFsL2Zvcm1fM2RfcHJpbnRlci5qcGc=/r_750x450.jpg" />
+                                                    </div>
+                        </a>                </figure>
+                        <div class="p-u-1 p-u-sm-1-2 shopping-block-content">
+                <div class="shopping-block-content-title">
+                    <div class="shopping-block-content-title-main">Formlabs Form 2</div>
+                                            <h2 class="shopping-block-content-title-top">Best Resin Printer</h2>
+                                    </div>
+                                    
+<div class="review-bar review-bar-v2">
+    <div class="p-g p-g-bbs">
+                                <div class="p-u-1-3 p-u-sm-7-24 inner10 review-bar-rating review-bar-item">9/10</div>
+            <div class="p-u-2-3 p-u-sm-9-24 inner10  moboff review-bar-progress review-bar-item">
+                <div class="progress-label">Superior</div>
+                <progress class="progress-bar" value="9" max="10"></progress>
+            </div>
+                                        <div class="p-u-2-3 p-u-sm-8-24  review-bar-url review-bar-item">
+                <a class="font-mob-123" title="Review" itemprop="url" href="http://www.tomsguide.com/us/formlabs-form-2-3d-printer,review-3235.html">Review <span class="fa fa-angle-right"></span></a>
+            </div>
+                                    <div class="p-u-1 review-bar-btn review-bar-item ">
+                                        
+                <div data-fallback="{&quot;url&quot;:&quot;http:\/\/formlabs.com\/store\/us\/form-2\/buy-printer\/&quot;,&quot;more&quot;:&quot;http:\/\/www.tomsguide.com\/us\/formlabs-form-2-3d-printer,review-3235.html&quot;,&quot;formatted_price&quot;:&quot;$3499&quot;,&quot;price&quot;:&quot;3499&quot;,&quot;name&quot;:&quot;Formlabs Form 2&quot;,&quot;merchant_name&quot;:&quot;Formlabs&quot;,&quot;guid&quot;:&quot;11789&quot;,&quot;id&quot;:&quot;&quot;,&quot;serviceUrl&quot;:&quot;http:\/\/formlabs.com\/store\/us\/form-2\/buy-printer\/&quot;,&quot;trackingUrl&quot;:&quot;http:\/\/out.tomsguide.fr\/clic.php?m=116270&amp;zone=new&amp;id_site=21&amp;e=provider~Formlabs%template%~%product%@%xtPage%&amp;go=%url%&quot;,&quot;shopping_template&quot;:&quot;ShoppingBlock_template_v2&quot;}" class="price-lazy" data-shopping-template="ShoppingBlock_template" data-tmpl="price" data-src="http://formlabs.com/store/us/form-2/buy-printer/" data-tracking="http://out.tomsguide.fr/clic.php?m=116270&amp;zone=new&amp;id_site=21&amp;e=provider~Formlabs%template%~%product%@%xtPage%&amp;go=%url%" data-type="fallback" data-pid="14552133696629">
+                <a href="http://formlabs.com/store/us/form-2/buy-printer/" title="Formlabs Form 2" class="p-button button-shopping omniture-tracking" data-omniture-tracking="{&quot;event&quot;:10,&quot;evars&quot;:{&quot;eVar43&quot;:&quot;3499&quot;,&quot;eVar23&quot;:&quot;ShoppingBlock_template&quot;,&quot;eVar34&quot;:&quot;Formlabs&quot;,&quot;eVar18&quot;:&quot;tgus-11789&quot;,&quot;transactionID&quot;:&quot;14552133696629&quot;}}" target="_blank" rel="nofollow">
+                $3499 <span class="merchant"> Formlabs</span>
+                </a>
+                </div>
+                        </div>
+                    </div>
+</div>                            </div>
+
+                                                <ul class="shopping-block-specs p-u-1">
+                                                                                                                                            <li>
+                                    <dl>
+                                        <dt class="unit">Printer type</dt>
+                                        <dd class="unit-right">SLA</dd>
+                                    </dl>
+                                </li>
+                                                                                                                                                <li>
+                                    <dl>
+                                        <dt class="unit">Layer resolution</dt>
+                                        <dd class="unit-right">25 microns</dd>
+                                    </dl>
+                                </li>
+                                                                                                                                                <li>
+                                    <dl>
+                                        <dt class="unit">Materials</dt>
+                                        <dd class="unit-right">Resin</dd>
+                                    </dl>
+                                </li>
+                                                                                                                                                <li>
+                                    <dl>
+                                        <dt class="unit">Build volume</dt>
+                                        <dd class="unit-right">5.7 x 5.7 x 6.9 inches</dd>
+                                    </dl>
+                                </li>
+                                                                                                                <input type="checkbox" id="toggle-623281" class="toggle-check"/>                                <li>
+                                    <dl>
+                                        <dt class="unit">Layer height range</dt>
+                                        <dd class="unit-right">0.001 to 0.08 inches</dd>
+                                    </dl>
+                                </li>
+                                                                                                        <label for="toggle-623281" class="toggle-btn  button-more">
+                                <span class="fa-plus-thin"></span>
+                                <span class="space-l20 toggle-btn-label" data-label-more="Show more" data-label-less="Show less"></span>
+                            </label>
+                                            </ul>
+                                    </div>
+                    <div class="shopping-block-desc">
+                <p class="font-family-1 font-123 font-tab-131 font-mob-153">The latest SLA printer from Formlabs improves on its predecessor by expanding the print area to 224 cubic inches, up from 156 cubic inches on the Form 1+. An updated print mechanism means greater print consistency, and the Form 2 can handle third-party resins — both improvements over past versions. Most importantly, though, the Form 2 produces excellent prints featuring fine detail with clean, sharp edges. Its price tag puts it out of the reach of casual users, but engineers, artists and jewelers will appreciate the Form 2's performance.</p>
+            </div>
+                </section>
+    </p>
+
+<p><strong>MORE: <a href="http://www.tomsguide.com/us/new-resin-3d-printers,news-17590.html">Resin: The Next Little Thing for 3D Printing</a></strong></p>
+
+<h3>New &amp; Notable</h3>
+
+<p>            <section class="shopping-block shopping-block-v2  statusbar-lazy  nolinks" itemscope itemtype="http://schema.org/Product" data-status='{"title": "da Vinci Mini", "rating": "-1", "image" : "http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9DL0svNTUyNTQ4L29yaWdpbmFsL2RhX3ZpbmNpXzNkX3ByaW50ZXIuanBn/rc_38x38.jpg", "augmentedTitle":"da Vinci Mini" }'>
+
+            <meta itemprop="image" content="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9DL0svNTUyNTQ4L29yaWdpbmFsL2RhX3ZpbmNpXzNkX3ByaW50ZXIuanBn/r_750x450.jpg"/>
+        <meta itemprop="name" content="da Vinci Mini"/>
+                <meta itemprop="description" content="XYZprinting has an attractively priced 3D printer for homes and schools coming later this year. The $269 da Vinci Mini is 30 percent smaller than the company&#039;s da Vinci Jr. printer while maintaining the same 5.9 x 5.9 x 5.9-inch build area. The Mini will come fully assembled and offer user-friendly features like auto-calibration of the print bed when it arrives sometime during the third quarter of 2016."/>
+    
+            <div class="shopping-block-sheet p-g p-g-bbs">
+                            <figure class="p-u-1 p-u-sm-1-2 shopping-block-figure">
+                                            <div class="shopping-block-figure-image cover">
+                                                                                                                                                    <img class="p-u-1 lazy" data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9DL0svNTUyNTQ4L29yaWdpbmFsL2RhX3ZpbmNpXzNkX3ByaW50ZXIuanBn/r_750x450.jpg" />
+                                                    </div>
+                                        </figure>
+                        <div class="p-u-1 p-u-sm-1-2 shopping-block-content">
+                <div class="shopping-block-content-title">
+                    <div class="shopping-block-content-title-main">da Vinci Mini</div>
+                                    </div>
+                                    
+<div class="review-bar review-bar-v2">
+    <div class="p-g p-g-bbs">
+                                                                <div class="p-u-1 review-bar-btn review-bar-item alone">
+                                </div>
+                    </div>
+</div>                            </div>
+
+                    </div>
+                    <div class="shopping-block-desc">
+                <p class="font-family-1 font-123 font-tab-131 font-mob-153">XYZprinting has an attractively priced 3D printer for homes and schools coming later this year. The $269 da Vinci Mini is 30 percent smaller than the company's da Vinci Jr. printer while maintaining the same 5.9 x 5.9 x 5.9-inch build area. The Mini will come fully assembled and offer user-friendly features like auto-calibration of the print bed when it arrives sometime during the third quarter of 2016.</p>
+            </div>
+                </section>
+    </p>
+
+<p>            <section class="shopping-block shopping-block-v2  statusbar-lazy  nolinks" itemscope itemtype="http://schema.org/Product" data-status='{"title": "Ultimaker 2+", "rating": "-1", "image" : "http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9ML1AvNTUwMjg1L29yaWdpbmFsL3VsdGltYWtlcl8ycGx1c19leHRlbmRlZC5qcGc=/rc_38x38.jpg", "augmentedTitle":"Ultimaker 2+" }'>
+
+            <meta itemprop="image" content="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9ML1AvNTUwMjg1L29yaWdpbmFsL3VsdGltYWtlcl8ycGx1c19leHRlbmRlZC5qcGc=/r_750x450.jpg"/>
+        <meta itemprop="name" content="Ultimaker 2+"/>
+                <meta itemprop="description" content="Ultimaker listened to its users when it upgraded its new 3D Printer, Ultimaker 2+. The price hasn&#039;t changed ($2,499), but it has new features. Specifically, it&#039;s now easier to change nozzles, and the model has an improved geared feeder so that printing materials are less likely to skip."/>
+    
+            <div class="shopping-block-sheet p-g p-g-bbs">
+                            <figure class="p-u-1 p-u-sm-1-2 shopping-block-figure">
+                    <a href="https://ultimaker.com/en/products/ultimaker-2-plus" title="" target="_blank">                        <div class="shopping-block-figure-image cover">
+                                                                                                                                                    <img class="p-u-1 lazy" data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9ML1AvNTUwMjg1L29yaWdpbmFsL3VsdGltYWtlcl8ycGx1c19leHRlbmRlZC5qcGc=/r_750x450.jpg" />
+                                                    </div>
+                        </a>                </figure>
+                        <div class="p-u-1 p-u-sm-1-2 shopping-block-content">
+                <div class="shopping-block-content-title">
+                    <div class="shopping-block-content-title-main">Ultimaker 2+</div>
+                                    </div>
+                                    
+<div class="review-bar review-bar-v2">
+    <div class="p-g p-g-bbs">
+                                                                <div class="p-u-1 review-bar-btn review-bar-item alone">
+                                        
+                <div data-fallback="{&quot;url&quot;:&quot;https:\/\/ultimaker.com\/en\/products\/ultimaker-2-plus&quot;,&quot;more&quot;:null,&quot;formatted_price&quot;:&quot;$2499&quot;,&quot;price&quot;:&quot;2499&quot;,&quot;name&quot;:&quot;Ultimaker 2+&quot;,&quot;merchant_name&quot;:&quot;Ultimaker&quot;,&quot;guid&quot;:&quot;12660&quot;,&quot;id&quot;:&quot;&quot;,&quot;serviceUrl&quot;:&quot;https:\/\/ultimaker.com\/en\/products\/ultimaker-2-plus&quot;,&quot;trackingUrl&quot;:&quot;http:\/\/out.tomsguide.fr\/clic.php?m=116270&amp;zone=new&amp;id_site=21&amp;e=provider~Ultimaker%template%~%product%@%xtPage%&amp;go=%url%&quot;,&quot;shopping_template&quot;:&quot;ShoppingBlock_template_v2&quot;}" class="price-lazy" data-shopping-template="ShoppingBlock_template" data-tmpl="price" data-src="https://ultimaker.com/en/products/ultimaker-2-plus" data-tracking="http://out.tomsguide.fr/clic.php?m=116270&amp;zone=new&amp;id_site=21&amp;e=provider~Ultimaker%template%~%product%@%xtPage%&amp;go=%url%" data-type="fallback" data-pid="14552133692436">
+                <a href="https://ultimaker.com/en/products/ultimaker-2-plus" title="Ultimaker 2+" class="p-button button-shopping omniture-tracking" data-omniture-tracking="{&quot;event&quot;:10,&quot;evars&quot;:{&quot;eVar43&quot;:&quot;2499&quot;,&quot;eVar23&quot;:&quot;ShoppingBlock_template&quot;,&quot;eVar34&quot;:&quot;Ultimaker&quot;,&quot;eVar18&quot;:&quot;tgus-12660&quot;,&quot;transactionID&quot;:&quot;14552133692436&quot;}}" target="_blank" rel="nofollow">
+                $2499 <span class="merchant"> Ultimaker</span>
+                </a>
+                </div>
+                        </div>
+                    </div>
+</div>                            </div>
+
+                    </div>
+                    <div class="shopping-block-desc">
+                <p class="font-family-1 font-123 font-tab-131 font-mob-153">Ultimaker listened to its users when it upgraded its new 3D Printer, Ultimaker 2+. The price hasn't changed ($2,499), but it has new features. Specifically, it's now easier to change nozzles, and the model has an improved geared feeder so that printing materials are less likely to skip.</p>
+            </div>
+                </section>
+    </p>
+
+<table class="editorTblTable editorTblSize10 editorTblStyledefault"><tbody><tr><td><strong>Related Buying Guides:</strong><br /></td></tr><tr><td><a href="http://www.tomsguide.com/us/best-all-in-one-printers,review-2026.html">Best All-in-One Printers</a><br /></td></tr><tr><td><a href="http://www.tomsguide.com/us/shapeways-3d-printing-service,review-2313.html">Best 3D Printing Service</a><br /></td></tr><tr><td><a href="http://www.tomsguide.com/us/3d-printer-buyers-guide,news-17651.html">How to Buy a 3D Printer</a><br /></td></tr></tbody></table>
+        
+    
+                                <script type='text/javascript'>
+            if (window.tmntag && tmntag.adTag) {
+            tmntag.adTag('in_article',false);
+        }
+    
+</script>
+        
+    </div>
+        
+            <div class="p-g font-138 font-family-2 upper bold font-mob-153 space-b40">
+                <span class="p-u-1-2"></span>
+                <span class="p-u-1-2"></span>
+    </div>    
+    
+            <script type='text/javascript'>
+            if (window.tmntag && tmntag.adTag) {
+            tmntag.adTag('below_the_article');
+        }
+    
+</script>
+
+    <div class="space-b10 nolinks">
+        <div class="p-g space--l20">
+        <div class="p-u-1 p-u-md-2-3">
+        <div class="space-l20">            <div class="author-bio">
+        <div class="title-underline">
+	         <span class="title-underline-item">About the author</span>
+		</div>        <div class="p-g">
+            <div class="p-u-3-4">
+                <span class="author-bio-name">
+                    <a href="https://twitter.com/rbaguley" title="Richard Baguley">Richard Baguley</a>
+                                    </span>
+                <span class="author-bio-account">@rbaguley</span>                            </div>
+                    </div>
+        <script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Person","name":"Richard Baguley","url":"https:\/\/twitter.com\/rbaguley","sameAs":["https:\/\/twitter.com\/rbaguley"]}</script>
+    </div>
+</div>
+    </div>
+        <div class="p-u-1 p-u-md-1-3">
+        <div class="space-l20"><div class="tags-block">
+    <div class="title-underline">
+	         <span class="title-underline-item">Read more</span>
+		</div>    <ul>
+                <li><a title="3D Printing" href="http://www.tomsguide.com/t/3d-printing/">3D Printing</a></li>
+                    </ul>
+</div>
+</div>
+    </div>
+</div>    </div>
+
+                <div class="comment-widget" id="comments-tpc_en_2918502" data-type="callback">
+
+        
+<div class="tabs-container comments-forms-tabs">
+            <div class="tab-panel comment-creation-tab">
+            <input type="radio" class="tab-open" id="comment-creation-form-tab-tpc_en_2918502" name="tab-wrap-tpc_en_2918502" autocomplete="off"/>
+            <label class="button-primary p-button" for="comment-creation-form-tab-tpc_en_2918502">Add a comment</label>
+            <div class="tab-inner">
+                
+    
+    <div class="comments comment-creation-form-container comment-form-top ">
+                    
+        <form name="comment" method="post" action="http://www.tomsguide.com/comments/comment/create" class="comment-creation-form" autocomplete="off" id="comment-creation-form-top-tpc_en_2918502">
+        
+
+        <div class="avatar">
+            <img src="http://m.bestofmedia.com/sfp/images/design/noimg/no-profil-100x100.jpg"/>
+        </div>
+        <ul>
+                                                                                                    <li class="">                                    
+    <label class="resizable-v  required" for="comment_772aecb2390542a4685b0f18b7">Comment</label>
+    <textarea id="comment_772aecb2390542a4685b0f18b7" name="comment[772aecb2390542a4685b0f18b7]" required="required" placeholder="Add your voice" class="formBox wide bdr resizable-v"></textarea>
+        
+</li>
+                                                                                                                    <li class="h"><input type="hidden" id="comment_265fc28e088d5bc8c5c8138f69" name="comment[265fc28e088d5bc8c5c8138f69]" hidden="hidden" /></li>
+                                                                                                                    <li class="h"><input type="hidden" id="comment_323d289a70fe60e6ea8a88546e" name="comment[323d289a70fe60e6ea8a88546e]" hidden="hidden" value="en_US_21_Review_2236" /></li>
+                                                                                                                    <li class="h"><input type="hidden" id="comment_fbcd495695311e77b168779776" name="comment[fbcd495695311e77b168779776]" hidden="hidden" value="tpc_en_2918502" /></li>
+                                                                                                                    <li class="">                                    
+    <label class="mandatory " for="comment_0608fe990111c179b3899568f6">Firstname</label>
+    <input type="text" id="comment_0608fe990111c179b3899568f6" name="comment[0608fe990111c179b3899568f6]" class="formBox wide bdr mandatory" />
+        
+</li>
+                                                                                                                    <li class="">        <button type="submit" class="button-primary p-button" id="comment_save" name="comment[save]" spinner="spinner"><span class="fa fa-spinner fa-pulse"></span>Submit</button>
+
+</li>
+                                                                                                                    <li class=""><input type="hidden" id="comment__token" name="comment[_token]" value="3cbf8ddaebbadabdebd5f9fdf06dbfba9b8d421b" /></li>
+                                    </ul>
+
+        </form>
+    </div>  
+            </div>
+        </div>
+        <div class="tab-panel topic-creation-tab">
+        <input type="radio" class="tab-open" id="topic-creation-form-tab-tpc_en_2918502" name="tab-wrap-tpc_en_2918502" autocomplete="off"/>
+        <label class="button-primary p-button" for="topic-creation-form-tab-tpc_en_2918502">Ask a Category Expert</label>
+        <div class="tab-inner">
+            <div class="topic-creation-form-container">
+    <header class="modHeaderAlt">Create a new thread in the <strong>Off-Topic / General Discussion</strong> forum about this subject</header>
+        
+    <form name="topic" method="post" action="http://www.tomsguide.com/comments/topic/create" class="topic-creation-form" autocomplete="off" data-parsley-validate="" id="topic-creation-form-top-tpc_en_2918502">
+    
+    <ul>
+                                                                            <li class="">                        
+    <label class="h required" for="topic_5ac9558f8260cb12e2ee9007d5">Title</label>
+    <input type="text" id="topic_5ac9558f8260cb12e2ee9007d5" name="topic[5ac9558f8260cb12e2ee9007d5]" required="required" 0="required" placeholder="Message title" class="formBox wide bdr " data-parsley-minwords="3" data-parsley-trigger="focusout" data-parsley-error-message="Please provide a detailed title (3 words required)" />
+        
+</li>
+                                                                                        <li class="">                        
+    <label class="mandatory h" for="topic_5801d93a595ebffe6b87b0524a">Subject</label>
+    <input type="text" id="topic_5801d93a595ebffe6b87b0524a" name="topic[5801d93a595ebffe6b87b0524a]" class="formBox wide bdr mandatory" />
+        
+</li>
+                                                                                        <li class="">                        
+    <label class="resizable-v h required" for="topic_772aecb2390542a4685b0f18b7">Title</label>
+    <textarea id="topic_772aecb2390542a4685b0f18b7" name="topic[772aecb2390542a4685b0f18b7]" required="required" 0="required" placeholder="Ask your question" class="formBox wide bdr resizable-v" data-parsley-minwords="3" data-parsley-trigger="focusout" data-parsley-error-message="Please provide more details"></textarea>
+        
+</li>
+                                                                                        <li class="h"><input type="hidden" id="topic_265fc28e088d5bc8c5c8138f69" name="topic[265fc28e088d5bc8c5c8138f69]" hidden="hidden" class="" /></li>
+                                                                                        <li class="h"><input type="hidden" id="topic_fe7c867930054e415c7c14c078" name="topic[fe7c867930054e415c7c14c078]" hidden="hidden" class="" value="2126" /></li>
+                                                                                        <li class=" txtR">        <button type="submit" class="button-primary p-button" id="topic_save" name="topic[save]" spinner="spinner"><span class="fa fa-spinner fa-pulse"></span>Publish</button>
+
+</li>
+                                                                                        <li class=""><input type="hidden" id="topic__token" name="topic[_token]" value="0288e41e72869d0e013cd13106a877722e22ce2b" /></li>
+                        </ul>
+
+    </form>
+</div>        </div>
+    </div>
+</div>
+        
+
+
+<header class="nb-comments modHeader">
+    <span class="modTitle">
+        2 comments
+    </span>
+</header>
+
+    
+    <ul id="comment-list" class="comments-list">
+        
+<div class="your-comment">
+    <div class="title-your-comment">Your comment</div>
+    <div class="new-comment"></div>
+</div>
+
+    
+    
+                
+
+<li class="comment line defaultComment " id="comment-rsp_en_17223271" itemtype="http://schema.org/Comment" itemscope="itemscope" itemprop="comment">
+    <div class="p-g">
+        <div class="p-u-md-1-12 avatar">
+            <div class="fa fa-user"></div>
+        </div>
+        <div class="p-u-1 p-u-md-11-12 comment-content">
+            <header class="headline-infos">
+                <cite class="author-bio-name" itemprop="author">seoguy</cite> <a class="date" href="#comment-rsp_en_17223271" title="">
+                                        <time date="Dec 30, 2015, 9:03 AM" itemprop="dateCreated" content="Dec 30, 2015, 9:03 AM">Dec 30, 2015, 9:03 AM</time>
+                </a>
+            </header>
+            <input type="checkbox" id="toggle-rsp_en_17223271" class="toggle-check collapse-comment" checked="checked" />
+            <label for="toggle-rsp_en_17223271" class="toggle-btn">
+                <span class="fa fa-plus-thin"></span>
+            </label>
+            <div class="bbcode comment-text">
+                <input type="checkbox" id="toggle-expand-rsp_en_17223271" class="toggle-check toggle-expand"/>
+                <div class="toggle-expand-content" itemprop="text">Archived comments are found here: <a rel="nofollow" href="http://www.tomsguide.com/forum/id-2275433/printers-2014.html">http://www.tomsguide.com/forum/id-2275433/printers-2014.html</a></div>
+                <label for="toggle-expand-rsp_en_17223271" class="toggle-btn">
+                    <span class="toggle-btn-label" data-label-more="See more" data-label-less="See less"></span>
+                </label>
+            </div>
+            <div class="action-buttons p-g noselect">
+                <div class="p-u-1-2 align-left">
+                                            <div class="p-u">
+                                                        <span class="vote-counter">0</span>
+                                                    </div>
+                                                        </div>
+                <div class="p-u-1-2 align-right">
+                    <ul class="action-items">
+                        
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+            
+
+<li class="comment line defaultComment " id="comment-rsp_en_17377627" itemtype="http://schema.org/Comment" itemscope="itemscope" itemprop="comment">
+    <div class="p-g">
+        <div class="p-u-md-1-12 avatar">
+            <div class="fa fa-user"></div>
+        </div>
+        <div class="p-u-1 p-u-md-11-12 comment-content">
+            <header class="headline-infos">
+                <cite class="author-bio-name" itemprop="author">Phillip Taringa</cite> <a class="date" href="#comment-rsp_en_17377627" title="">
+                                        <time date="Jan 24, 2016, 5:04 AM" itemprop="dateCreated" content="Jan 24, 2016, 5:04 AM">Jan 24, 2016, 5:04 AM</time>
+                </a>
+            </header>
+            <input type="checkbox" id="toggle-rsp_en_17377627" class="toggle-check collapse-comment" checked="checked" />
+            <label for="toggle-rsp_en_17377627" class="toggle-btn">
+                <span class="fa fa-plus-thin"></span>
+            </label>
+            <div class="bbcode comment-text">
+                <input type="checkbox" id="toggle-expand-rsp_en_17377627" class="toggle-check toggle-expand"/>
+                <div class="toggle-expand-content" itemprop="text">Re: Best 3D Printers 2016 by Richard Baguley<br/>Can this be true? "HDPE, for example, is light and tough, but not suitable for food use, while nylon is food-safe." This statement seems to be the opposite of everything else I have read on the subject. I would like this explained or corrected. People's health is at stake.<br/>Phillip Cox</div>
+                <label for="toggle-expand-rsp_en_17377627" class="toggle-btn">
+                    <span class="toggle-btn-label" data-label-more="See more" data-label-less="See less"></span>
+                </label>
+            </div>
+            <div class="action-buttons p-g noselect">
+                <div class="p-u-1-2 align-left">
+                                            <div class="p-u">
+                                                        <span class="vote-counter">0</span>
+                                                    </div>
+                                                        </div>
+                <div class="p-u-1-2 align-right">
+                    <ul class="action-items">
+                        
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+    
+    </ul>
+
+
+
+
+        
+
+    
+    
+    <div class="comments comment-creation-form-container comment-form-bottom ">
+                    <a id="react_tpc_en_2918502"></a>
+                    
+        <form name="comment" method="post" action="http://www.tomsguide.com/comments/comment/create" class="comment-creation-form" autocomplete="off" id="comment-creation-form-bottom-tpc_en_2918502">
+        
+
+        <div class="avatar">
+            <img src="http://m.bestofmedia.com/sfp/images/design/noimg/no-profil-100x100.jpg"/>
+        </div>
+        <ul>
+                                                                                                    <li class="">                                    
+    <label class="resizable-v  required" for="comment_772aecb2390542a4685b0f18b7">Comment</label>
+    <textarea id="comment_772aecb2390542a4685b0f18b7" name="comment[772aecb2390542a4685b0f18b7]" required="required" placeholder="Add your voice" class="formBox wide bdr resizable-v"></textarea>
+        
+</li>
+                                                                                                                    <li class="h"><input type="hidden" id="comment_265fc28e088d5bc8c5c8138f69" name="comment[265fc28e088d5bc8c5c8138f69]" hidden="hidden" /></li>
+                                                                                                                    <li class="h"><input type="hidden" id="comment_323d289a70fe60e6ea8a88546e" name="comment[323d289a70fe60e6ea8a88546e]" hidden="hidden" value="en_US_21_Review_2236" /></li>
+                                                                                                                    <li class="">                                    
+    <label class="mandatory " for="comment_0608fe990111c179b3899568f6">Firstname</label>
+    <input type="text" id="comment_0608fe990111c179b3899568f6" name="comment[0608fe990111c179b3899568f6]" class="formBox wide bdr mandatory" />
+        
+</li>
+                                                                                                                    <li class="h"><input type="hidden" id="comment_fbcd495695311e77b168779776" name="comment[fbcd495695311e77b168779776]" hidden="hidden" value="tpc_en_2918502" /></li>
+                                                                                                                    <li class="">        <button type="submit" class="button-primary p-button" id="comment_save" name="comment[save]" spinner="spinner"><span class="fa fa-spinner fa-pulse"></span>Submit</button>
+
+</li>
+                                                                                                                    <li class=""><input type="hidden" id="comment__token" name="comment[_token]" value="3cbf8ddaebbadabdebd5f9fdf06dbfba9b8d421b" /></li>
+                                    </ul>
+
+        </form>
+    </div>  
+
+        <script type="text/javascript" language="JavaScript">
+                var Purch = Purch || {};
+                Purch.CommentsWidget = {
+                    topForm:  true ,
+                    nbComments:  2 ,
+                    isTopicClosed:  false ,
+                    topicId: 'tpc_en_2918502'
+                };
+
+                if (typeof jQuery !== 'undefined') {
+                    jQuery(document).trigger('comments-widget.loaded');
+                }
+            </script>    </div>
+
+    
+    </article>
+        <div class="sticky-unstick"></div>
+</section>
+	
+	
+			<section class="page-content-rightcol">
+				                
+        <div class="is-sticky nolinks">
+                        <div class="share-bar">
+    <ul>
+                                                                        
+                <li class="share-bar-item  st_facebook_custom social-button" st_url="http://www.tomsguide.com/us/best-3d-printers,review-2236.html" st_title="Best 3D Printer 2016 - Top-Rated 3D Printers - Tom&#039;s Guide" st_summary="What’s the best 3D printer on the market? It depends on your needs. We recommend the best 3D printers for your skills, aspirations and budget."  >
+                    <span class="fa-stack fa-lg" title="facebook">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x"></i>
+                    </span>
+                </li>
+                                                                                    
+                <li class="share-bar-item  st_twitter_custom social-button" st_url="http://www.tomsguide.com/us/best-3d-printers,review-2236.html" st_title="Best 3D Printer 2016 - Top-Rated 3D Printers - Tom&#039;s Guide" st_summary="What’s the best 3D printer on the market? It depends on your needs. We recommend the best 3D printers for your skills, aspirations and budget."  st_via="tomsguide">
+                    <span class="fa-stack fa-lg" title="twitter">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x"></i>
+                    </span>
+                </li>
+                                                                                    
+                <li class="share-bar-item  st_reddit_custom social-button" st_url="http://www.tomsguide.com/us/best-3d-printers,review-2236.html" st_title="Best 3D Printer 2016 - Top-Rated 3D Printers - Tom&#039;s Guide" st_summary="What’s the best 3D printer on the market? It depends on your needs. We recommend the best 3D printers for your skills, aspirations and budget."  >
+                    <span class="fa-stack fa-lg" title="reddit">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-reddit fa-stack-1x"></i>
+                    </span>
+                </li>
+                                                                                    
+                <li class="share-bar-item  st_stumbleupon_custom social-button" st_url="http://www.tomsguide.com/us/best-3d-printers,review-2236.html" st_title="Best 3D Printer 2016 - Top-Rated 3D Printers - Tom&#039;s Guide" st_summary="What’s the best 3D printer on the market? It depends on your needs. We recommend the best 3D printers for your skills, aspirations and budget."  >
+                    <span class="fa-stack fa-lg" title="stumbleupon">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-stumbleupon fa-stack-1x"></i>
+                    </span>
+                </li>
+                                                <li class="share-bar-item st_sharethis_custom stMore social-button share"  st_url="http://www.tomsguide.com/us/best-3d-printers,review-2236.html"   st_title="Best 3D Printer 2016 - Top-Rated 3D Printers - Tom&#039;s Guide"   st_summary="What’s the best 3D printer on the market? It depends on your needs. We recommend the best 3D printers for your skills, aspirations and budget." >
+                    <span class="fa-stack fa-lg" title="share">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-share-alt fa-stack-1x"></i>
+                    </span>
+                </li>
+                        </ul>
+</div>
+            
+            									    <script type='text/javascript'>
+            if (window.tmntag && tmntag.adTag) {
+            tmntag.adTag('rightcol_top_anchor');
+        }
+    
+</script>
+							
+        </div>
+			</section>
+	</section>
+                            
+                                                                <section class="page-bottom-content nolinks">    <div class="page-content">
+ 
+        
+                    <div class="space-t40 nolinks review-page-latests">
+                         <div class="review-page-latests">
+             <div class="title-underline">
+	         <span class="title-underline-item">Latest in 3D Printing</span>
+		</div>                 <div class="featured-blocks featured-latest featured-type featured-latest-extended">
+                    <ul class="p-g space--l20">
+                									<li class="p-u-1 p-u-sm-1-3">
+				<div class="space-l20 featured-main">
+					
+<a href="http://www.tomsguide.com/us/m3d-micro-3d-printer,review-3327.html" title="M3D Micro 3D Printer Review">
+    <article>
+                    							<header>
+								<span class="ctype">Review</span>
+								<h3 class="title">M3D Micro 3D Printer Review</h3>
+							</header>
+						            							<div class="cover">
+								<img src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9CLzMvNTUyNDk1L29yaWdpbmFsL3NjZW5lMy1URy5qcGc=/rc_360x250.jpg" class="lazy" alt="M3D Micro 3D Printer Review" />
+							</div>
+						            </article>
+</a>
+				</div>
+			</li>
+							<li class="p-u-1 p-u-sm-2-3">
+				<div class="space-l20 featured-listing p-g p-g-bbs">
+                                 <div class="p-u-1-2 featured-listing-item">
+        
+<a href="http://www.tomsguide.com/us/xyz-davinc-mini-specs-price,news-22079.html" title="The $269 da Vinci Mini Could Be Your First 3D Printer">
+    <article>
+        <div class="inner-t20">    <div class="p-g space--l15">
+        <div class="p-u-1 p-u-sm-1-4">
+            <div class="space-l15 space-b10">
+                                <figure class="thumbnail">
+                                            <img data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9DL1gvNTUxMjY1L29yaWdpbmFsL3h5enByaW50aW5nX2RhdmluY2lfbWluaS5qcGc=/c_360x250.jpg" class="lazy" alt="The $269 da Vinci Mini Could Be Your First 3D Printer" />
+                                    </figure>
+                        </div>
+        </div>
+        <div class="p-u-1 p-u-sm-3-4">
+            <div class="space-l15">
+                                <header>
+                    <span class="ctype">News</span>
+                    <div class="desc">
+                                                <h3 class="title">The $269 da Vinci Mini Could Be Your First 3D Printer</h3>
+                                                                            <div class="author inner-t20">
+                                                                by <span itemprop="author">Philip Michaels</span> <time date="Jan 7, 2016, 7:08 PM" itemprop="datePublished">Jan 7, 2016, 7:08 PM</time>
+                            </div>
+                                            </div>
+                </header>
+                        </div>
+        </div>
+    </div>
+</div>    </article>
+</a>
+        </div>
+             <div class="p-u-1-2 featured-listing-item">
+        
+<a href="http://www.tomsguide.com/us/lulzbot-dual-extruder,news-22066.html" title="LulzBot Dual Extruder Means 3D Prints May Get More Colorful">
+    <article>
+        <div class="inner-t20">    <div class="p-g space--l15">
+        <div class="p-u-1 p-u-sm-1-4">
+            <div class="space-l15 space-b10">
+                                <figure class="thumbnail">
+                                            <img data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9BL0UvNTUxMTc0L29yaWdpbmFsL2x1bHpib3RfZXh0cmFjdG9yLmpwZw==/c_360x250.jpg" class="lazy" alt="LulzBot Dual Extruder Means 3D Prints May Get More Colorful" />
+                                    </figure>
+                        </div>
+        </div>
+        <div class="p-u-1 p-u-sm-3-4">
+            <div class="space-l15">
+                                <header>
+                    <span class="ctype">News</span>
+                    <div class="desc">
+                                                <h3 class="title">LulzBot Dual Extruder Means 3D Prints May Get More Colorful</h3>
+                                                                            <div class="author inner-t20">
+                                                                by <span itemprop="author">Philip Michaels</span> <time date="Jan 7, 2016, 1:22 PM" itemprop="datePublished">Jan 7, 2016, 1:22 PM</time>
+                            </div>
+                                            </div>
+                </header>
+                        </div>
+        </div>
+    </div>
+</div>    </article>
+</a>
+        </div>
+             <div class="p-u-1-2 featured-listing-item">
+        
+<a href="http://www.tomsguide.com/us/modt-3d-printer-handson,news-22030.html" title="Mod-t 3D Printer Has Classroom Appeal">
+    <article>
+        <div class="inner-t20">    <div class="p-g space--l15">
+        <div class="p-u-1 p-u-sm-1-4">
+            <div class="space-l15 space-b10">
+                                <figure class="thumbnail">
+                                            <img data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS8wLzYvNTUwODA2L29yaWdpbmFsL21vZHRfaGVhZGVyLmpwZw==/c_360x250.jpg" class="lazy" alt="Mod-t 3D Printer Has Classroom Appeal" />
+                                    </figure>
+                        </div>
+        </div>
+        <div class="p-u-1 p-u-sm-3-4">
+            <div class="space-l15">
+                                <header>
+                    <span class="ctype">Hands-On</span>
+                    <div class="desc">
+                                                <h3 class="title">Mod-t 3D Printer Has Classroom Appeal</h3>
+                                                                            <div class="author inner-t20">
+                                                                by <span itemprop="author">Philip Michaels</span> <time date="Jan 6, 2016, 9:36 AM" itemprop="datePublished">Jan 6, 2016, 9:36 AM</time>
+                            </div>
+                                            </div>
+                </header>
+                        </div>
+        </div>
+    </div>
+</div>    </article>
+</a>
+        </div>
+             <div class="p-u-1-2 featured-listing-item">
+        
+<a href="http://www.tomsguide.com/us/sculpteo-flexible-plastic-3d-printing,news-22024.html" title="New 3D Printing Material Bends Without Breaking ">
+    <article>
+        <div class="inner-t20">    <div class="p-g space--l15">
+        <div class="p-u-1 p-u-sm-1-4">
+            <div class="space-l15 space-b10">
+                                <figure class="thumbnail">
+                                            <img data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9XL1IvNTUwNjgzL29yaWdpbmFsL3NjdWxwdGVvX3doZWVscy5qcGc=/c_360x250.jpg" class="lazy" alt="New 3D Printing Material Bends Without Breaking " />
+                                    </figure>
+                        </div>
+        </div>
+        <div class="p-u-1 p-u-sm-3-4">
+            <div class="space-l15">
+                                <header>
+                    <span class="ctype">News</span>
+                    <div class="desc">
+                                                <h3 class="title">New 3D Printing Material Bends Without Breaking </h3>
+                                                                            <div class="author inner-t20">
+                                                                by <span itemprop="author">Philip Michaels</span> <time date="Jan 6, 2016, 9:00 AM" itemprop="datePublished">Jan 6, 2016, 9:00 AM</time>
+                            </div>
+                                            </div>
+                </header>
+                        </div>
+        </div>
+    </div>
+</div>    </article>
+</a>
+        </div>
+             <div class="p-u-1-2 featured-listing-item">
+        
+<a href="http://www.tomsguide.com/us/ultimaker-2-plus-update,news-22004.html" title="Ultimaker Tweaks 3D Printer to Add User Requests">
+    <article>
+        <div class="inner-t20">    <div class="p-g space--l15">
+        <div class="p-u-1 p-u-sm-1-4">
+            <div class="space-l15 space-b10">
+                                <figure class="thumbnail">
+                                            <img data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9ML1AvNTUwMjg1L29yaWdpbmFsL3VsdGltYWtlcl8ycGx1c19leHRlbmRlZC5qcGc=/c_360x250.jpg" class="lazy" alt="Ultimaker Tweaks 3D Printer to Add User Requests" />
+                                    </figure>
+                        </div>
+        </div>
+        <div class="p-u-1 p-u-sm-3-4">
+            <div class="space-l15">
+                                <header>
+                    <span class="ctype">News</span>
+                    <div class="desc">
+                                                <h3 class="title">Ultimaker Tweaks 3D Printer to Add User Requests</h3>
+                                                                            <div class="author inner-t20">
+                                                                by <span itemprop="author">Philip Michaels</span> <time date="Jan 5, 2016, 9:02 AM" itemprop="datePublished">Jan 5, 2016, 9:02 AM</time>
+                            </div>
+                                            </div>
+                </header>
+                        </div>
+        </div>
+    </div>
+</div>    </article>
+</a>
+        </div>
+             <div class="p-u-1-2 featured-listing-item">
+        
+<a href="http://www.tomsguide.com/us/makerbot-smart-extruder-plus-handson,news-21963.html" title="MakerBot Smart Extruder+ Helps 3D Printing Woes">
+    <article>
+        <div class="inner-t20">    <div class="p-g space--l15">
+        <div class="p-u-1 p-u-sm-1-4">
+            <div class="space-l15 space-b10">
+                                <figure class="thumbnail">
+                                            <img data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS84L04vNTQ5ODE1L29yaWdpbmFsL3NtYXJ0ZXh0cnVkZXJfcGx1c19oZWFkZXIuanBn/c_360x250.jpg" class="lazy" alt="MakerBot Smart Extruder+ Helps 3D Printing Woes" />
+                                    </figure>
+                        </div>
+        </div>
+        <div class="p-u-1 p-u-sm-3-4">
+            <div class="space-l15">
+                                <header>
+                    <span class="ctype">News</span>
+                    <div class="desc">
+                                                <h3 class="title">MakerBot Smart Extruder+ Helps 3D Printing Woes</h3>
+                                                                            <div class="author inner-t20">
+                                                                by <span itemprop="author">Richard Baguley</span> <time date="Jan 4, 2016, 7:54 AM" itemprop="datePublished">Jan 4, 2016, 7:54 AM</time>
+                            </div>
+                                            </div>
+                </header>
+                        </div>
+        </div>
+    </div>
+</div>    </article>
+</a>
+        </div>
+     				</div>
+			</li>
+			            </ul>
+                    </div>
+         </div>
+             </div>
+        
+        <div class="space-t40 space-b10 nolinks">
+                    <div class="title-underline">
+	         <span class="title-underline-item">The Latest On Tom’s Guide</span>
+		</div>    <ul class="p-g tile-effect nolinks">
+                    <li class="p-u-1-2 p-u-sm-1-2 p-u-md-1-4 p-u-lg-1-4">
+                <figure class="tile prim">
+                    <a href="/us/trending-in-tech-hearthstone-starcraft2,news-22243.html" title="Watch This Gamer Play Hearthstone and Starcraft at Once">
+                        <img data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS8xLzIvNTU4NjE0L29yaWdpbmFsL0hlYXJ0aHN0b25lU0MyLmpwZw==/c_350x350.jpg" class="p-img lazy" alt="Watch This Gamer Play Hearthstone and Starcraft at Once">
+                        <figcaption class="desc">
+                            <span class="content-type">News</span>
+                            <time date="Feb 11, 2016, 9:50 AM" itemprop="datePublished">6 mn</time>
+                            <div class="h3 title" title="Watch This Gamer Play Hearthstone and Starcraft at Once">Watch This Gamer Play Hearthstone and Starcraft at Once</div>
+                        </figcaption>
+                    </a>
+                </figure>
+            </li>
+                    <li class="p-u-1-2 p-u-sm-1-2 p-u-md-1-4 p-u-lg-1-4">
+                <figure class="tile ter">
+                    <a href="/us/skype-malvertising,news-22241.html" title="Malicious Ads Move from Browsers to Skype">
+                        <img data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS8wL1ovNTU4NjExL29yaWdpbmFsL3ZpZGVvLWNoYXQtc2hzdC5qcGc=/c_350x350.jpg" class="p-img lazy" alt="Malicious Ads Move from Browsers to Skype">
+                        <figcaption class="desc">
+                            <span class="content-type">News</span>
+                            <time date="Feb 11, 2016, 9:38 AM" itemprop="datePublished">18 mn</time>
+                            <div class="h3 title" title="Malicious Ads Move from Browsers to Skype">Malicious Ads Move from Browsers to Skype</div>
+                        </figcaption>
+                    </a>
+                </figure>
+            </li>
+                    <li class="p-u-1-2 p-u-sm-1-2 p-u-md-1-4 p-u-lg-1-4">
+                <figure class="tile sec">
+                    <a href="/us/eyesense-virtual-reality,news-22242.html" title="Breakthrough Adds Eye Tracking to Virtual Reality">
+                        <img data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS8wL1YvNTU4NjA3L29yaWdpbmFsL2V5ZWZsdWVuY2UuanBn/c_350x350.jpg" class="p-img lazy" alt="Breakthrough Adds Eye Tracking to Virtual Reality">
+                        <figcaption class="desc">
+                            <span class="content-type">News</span>
+                            <time date="Feb 11, 2016, 9:22 AM" itemprop="datePublished">34 mn</time>
+                            <div class="h3 title" title="Breakthrough Adds Eye Tracking to Virtual Reality">Breakthrough Adds Eye Tracking to Virtual Reality</div>
+                        </figcaption>
+                    </a>
+                </figure>
+            </li>
+                    <li class="p-u-1-2 p-u-sm-1-2 p-u-md-1-4 p-u-lg-1-4">
+                <figure class="tile ter">
+                    <a href="/us/xbox-one-backward-compatibility-list,news-21795.html" title="Here&#039;s Every Xbox 360 Game You Can Play on Xbox One">
+                        <img data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9ML0EvNTQ2MzgyL29yaWdpbmFsL2RlY2VtYmVyLWJjX2xhcmdlLXRpbGUuanBn/c_350x350.jpg" class="p-img lazy" alt="Here&#039;s Every Xbox 360 Game You Can Play on Xbox One">
+                        <figcaption class="desc">
+                            <span class="content-type">Reference</span>
+                            <time date="Feb 11, 2016, 9:12 AM" itemprop="datePublished">44 mn</time>
+                            <div class="h3 title" title="Here&#039;s Every Xbox 360 Game You Can Play on Xbox One">Here&#039;s Every Xbox 360 Game You Can Play on Xbox One</div>
+                        </figcaption>
+                    </a>
+                </figure>
+            </li>
+                    <li class="p-u-1-2 p-u-sm-1-2 p-u-md-1-4 p-u-lg-1-4">
+                <figure class="tile sec">
+                    <a href="/us/alcatel-onetouch-idol-4s-vr-headset,news-22240.html" title="Alcatel Idol 4S Will Ship in VR Viewer (Report)">
+                        <img data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS8xLzMvNTU4NjE1L29yaWdpbmFsL2FsY2F0ZWwtaWRvbC00cy12ci5wbmc=/c_350x350.png" class="p-img lazy" alt="Alcatel Idol 4S Will Ship in VR Viewer (Report)">
+                        <figcaption class="desc">
+                            <span class="content-type">News</span>
+                            <time date="Feb 11, 2016, 8:34 AM" itemprop="datePublished">1 hr</time>
+                            <div class="h3 title" title="Alcatel Idol 4S Will Ship in VR Viewer (Report)">Alcatel Idol 4S Will Ship in VR Viewer (Report)</div>
+                        </figcaption>
+                    </a>
+                </figure>
+            </li>
+                    <li class="p-u-1-2 p-u-sm-1-2 p-u-md-1-4 p-u-lg-1-4">
+                <figure class="tile prim">
+                    <a href="/us/lg-g5-rumors,news-22131.html" title="LG G5: Will Always-on Display, Modular Design Wow?">
+                        <img data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9RLzMvNDkzNDE5L29yaWdpbmFsL0xHLUc0LTUtLmpwZw==/c_350x350.jpg" class="p-img lazy" alt="LG G5: Will Always-on Display, Modular Design Wow?">
+                        <figcaption class="desc">
+                            <span class="content-type">News</span>
+                            <time date="Feb 11, 2016, 7:54 AM" itemprop="datePublished">2 hr</time>
+                            <div class="h3 title" title="LG G5: Will Always-on Display, Modular Design Wow?">LG G5: Will Always-on Display, Modular Design Wow?</div>
+                        </figcaption>
+                    </a>
+                </figure>
+            </li>
+                    <li class="p-u-1-2 p-u-sm-1-2 p-u-md-1-4 p-u-lg-1-4">
+                <figure class="tile ter">
+                    <a href="/us/quantum-break-windows-10-xbox-one,news-22239.html" title="Quantum Break Hitting Windows 10 Same Day as Xbox One">
+                        <img data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9aL0ovNTU4NTU5L29yaWdpbmFsL3F1YW50dW0uSlBH/c_350x350.JPG" class="p-img lazy" alt="Quantum Break Hitting Windows 10 Same Day as Xbox One">
+                        <figcaption class="desc">
+                            <span class="content-type">News</span>
+                            <time date="Feb 11, 2016, 7:44 AM" itemprop="datePublished">2 hr</time>
+                            <div class="h3 title" title="Quantum Break Hitting Windows 10 Same Day as Xbox One">Quantum Break Hitting Windows 10 Same Day as Xbox One</div>
+                        </figcaption>
+                    </a>
+                </figure>
+            </li>
+                    <li class="p-u-1-2 p-u-sm-1-2 p-u-md-1-4 p-u-lg-1-4">
+                <figure class="tile prim">
+                    <a href="/us/pictures-story/639-best-dating-apps.html" title="10 Best Dating Apps">
+                        <img data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9ILzMvNTM0NTY3L29yaWdpbmFsL3NodXR0ZXJzdG9ja18yNTMzMTY1MDkuanBn/c_350x350.jpg" class="p-img lazy" alt="10 Best Dating Apps">
+                        <figcaption class="desc">
+                            <span class="content-type">Round-Up</span>
+                            <time date="Feb 11, 2016, 7:40 AM" itemprop="datePublished">2 hr</time>
+                            <div class="h3 title" title="10 Best Dating Apps">10 Best Dating Apps</div>
+                        </figcaption>
+                    </a>
+                </figure>
+            </li>
+                    <li class="p-u-1-2 p-u-sm-1-2 p-u-md-1-4 p-u-lg-1-4">
+                <figure class="tile ter">
+                    <a href="/us/unity-epic-virtual-reality,news-22238.html" title="Unity and Epic Game Engines to Support Oculus Rift, HTC Vive">
+                        <img data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9TL1ovNTU4MzIzL29yaWdpbmFsL2h0Yy12aXZlLmpwZw==/c_350x350.jpg" class="p-img lazy" alt="Unity and Epic Game Engines to Support Oculus Rift, HTC Vive">
+                        <figcaption class="desc">
+                            <span class="content-type">News</span>
+                            <time date="Feb 10, 2016, 2:48 PM" itemprop="datePublished">19 hr</time>
+                            <div class="h3 title" title="Unity and Epic Game Engines to Support Oculus Rift, HTC Vive">Unity and Epic Game Engines to Support Oculus Rift, HTC...</div>
+                        </figcaption>
+                    </a>
+                </figure>
+            </li>
+                    <li class="p-u-1-2 p-u-sm-1-2 p-u-md-1-4 p-u-lg-1-4">
+                <figure class="tile sec">
+                    <a href="/us/more-sex-music-out-loud,news-22236.html" title="Want More Sex? Listen To Music Out Loud">
+                        <img data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9SL0YvNTU4MjY3L29yaWdpbmFsL3NleHktZmVldC1jb3VwbGUtc2hzdC5qcGc=/c_350x350.jpg" class="p-img lazy" alt="Want More Sex? Listen To Music Out Loud">
+                        <figcaption class="desc">
+                            <span class="content-type">News</span>
+                            <time date="Feb 10, 2016, 12:44 PM" itemprop="datePublished">21 hr</time>
+                            <div class="h3 title" title="Want More Sex? Listen To Music Out Loud">Want More Sex? Listen To Music Out Loud</div>
+                        </figcaption>
+                    </a>
+                </figure>
+            </li>
+                    <li class="p-u-1-2 p-u-sm-1-2 p-u-md-1-4 p-u-lg-1-4">
+                <figure class="tile ter">
+                    <a href="/us/trending-in-tech-icape,news-22235.html" title="You Can Finally Text While Getting a Haircut">
+                        <img data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9QL00vNTU4MjAyL29yaWdpbmFsLzYxSkRBb1NHaUJMLl9TTDEyODBfLmpwZw==/c_350x350.jpg" class="p-img lazy" alt="You Can Finally Text While Getting a Haircut">
+                        <figcaption class="desc">
+                            <span class="content-type">News</span>
+                            <time date="Feb 10, 2016, 11:05 AM" itemprop="datePublished">22 hr</time>
+                            <div class="h3 title" title="You Can Finally Text While Getting a Haircut">You Can Finally Text While Getting a Haircut</div>
+                        </figcaption>
+                    </a>
+                </figure>
+            </li>
+                    <li class="p-u-1-2 p-u-sm-1-2 p-u-md-1-4 p-u-lg-1-4">
+                <figure class="tile sec">
+                    <a href="/us/where-watch-walking-dead-online,news-17723.html" title="Where to Watch The Walking Dead Online">
+                        <img data-src="http://media.bestofmicro.com/ext/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9DL0svNDYzMTI0L29yaWdpbmFsL3dhbGtpbmdfZGVhZF9zZWFzb25fNV9jb3Zlci5qcGc=/c_350x350.jpg" class="p-img lazy" alt="Where to Watch The Walking Dead Online">
+                        <figcaption class="desc">
+                            <span class="content-type">News</span>
+                            <time date="Feb 10, 2016, 11:02 AM" itemprop="datePublished">22 hr</time>
+                            <div class="h3 title" title="Where to Watch The Walking Dead Online">Where to Watch The Walking Dead Online</div>
+                        </figcaption>
+                    </a>
+                </figure>
+            </li>
+            </ul>
+        </div>
+    </div>
+</section>
+                            
+                                        <section class="page-footer nolinks">    
+<section  class="footer footer-main footer-tgu">
+  <div class="footer-main-content">
+      <div class="p-g p-g-bbs footer-content footer-content-1">
+          <div class="p-u-1 p-u-sm-1-3 p-u-md-1-4 footer-content-logo">
+              <a href="http://www.tomsguide.com/" class="font-tab-131">
+                  <span class="logos-webfont logo-toms"></span>
+                  <span class="logos-webfont logo-brand"></span>
+              </a>
+          </div>
+                    <div class="p-u-1 p-u-sm-2-3 p-u-md-1-4 footer-content-nl font-mob-130">
+              <div class="footer-content-title">Get our newsletter</div>
+              <form class="p-form" action="/community/newsletters.html">
+                  <input type="text" class="p-input-rounded" id="email" placeholder="Your email">
+                  <button type="submit" class="p-button"><i class="fa  fa-long-arrow-right"></i></button>
+              </form>
+          </div>
+                              <div class="p-u-1-2 p-u-sm-1-3 p-u-md-1-4 footer-content-about font-mob-130">
+              <div class="footer-content-title">About Tom’s Guide</div>
+              <ul class="footer-content-list">
+                                        <li>
+                                                    <a href="http://www.tomsguide.com/static/about-42.html" >About Us</a>
+                      </li>
+                                        <li>
+                                                    <span data-crlink="aHR0cDovL3B1cmNoLmNvbS9hYm91dC8jY29udGFjdA==" class="cr-link">Contact Us</span>
+                      </li>
+                                </ul>
+          </div>
+                              <div class="p-u-1-2 p-u-sm-1-3 p-u-md-1-4 footer-content-more font-mob-130">
+              <div class="footer-content-title">More Sites</div>
+              <ul class="footer-content-list">
+                                        <li>
+                                                    <a target="" href="http://www.tomshardware.com">
+                              Tom&#039;s Hardware
+                          </a>
+                      </li>
+                                        <li>
+                                                    <a target="" href="http://www.tomsitpro.com">
+                              Tom&#039;s IT Pro
+                          </a>
+                      </li>
+                                </ul>
+          </div>
+                              <div class="p-u-1 p-u-sm-1-3 p-u-md-1-2 footer-content-follow">
+              <div class="footer-content-title">Follow Us</div>
+              <div class="footer-content-social">
+                                                                                <a target="" href="http://www.facebook.com/Tomsguide">
+                        <span class="fa-stack fa-lg" title="Facebook">
+                          <i class="fa fa-circle-thin fa-stack-2x"></i>
+                          <i class="fa fa-facebook fa-stack-1x"></i>
+                        </span>
+                      </a>
+                                                              <a target="" href="http://twitter.com/tomsguide">
+                        <span class="fa-stack fa-lg" title="Twitter">
+                          <i class="fa fa-circle-thin fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x"></i>
+                        </span>
+                      </a>
+                                                              <a target="" href="http://www.tomsguide.com/us/rss.php">
+                        <span class="fa-stack fa-lg" title="RSS">
+                          <i class="fa fa-circle-thin fa-stack-2x"></i>
+                          <i class="fa fa-rss fa-stack-1x"></i>
+                        </span>
+                      </a>
+                                    <script type="application/ld+json">
+                    { "@context" : "http://schema.org",
+                      "@type" : "Organization",
+                      "logo" : "http://www.tomsguide.com/medias/img/tgu_pic.jpg",
+                      "name" : "Purch",
+                      "url" : "http://www.tomsguide.com/",
+                      "sameAs" : ["http://www.facebook.com/Tomsguide","http://twitter.com/tomsguide","http://www.tomsguide.com/us/rss.php"]
+                    }
+                    </script>
+              </div>
+          </div>
+                </div>
+      <div class="p-g footer-content footer-content-2 font-mob-130">
+                    <div class="p-u-1 p-u-sm-2-3  footer-content-terms">
+              <div class="p-g">
+                                                              <a href="http://purch.com/terms-of-use-and-sale/"  class="footer-content-terms-item p-u-1-4">Terms Of Use and Sale</a>
+                                                              <a href="http://purch.com/copyright-policy/"  class="footer-content-terms-item p-u-1-4">Copyright Policy</a>
+                                                              <a href="http://purch.com/privacy-policy/"  class="footer-content-terms-item p-u-1-4">Purch Privacy Policy</a>
+                                                              <span data-crlink="aHR0cDovL3B1cmNoLmNvbS9hZHZlcnRpc2Uv" class="footer-content-terms-item p-u-1-4 cr-link">Advertising</span>
+                                </div>
+          </div>
+                              <div class="p-u-1 p-u-sm-1-3 footer-content-edition">
+              <div class="p-g">
+                  <div class="p-u-3-4 footer-content-label">
+                      U.S. Edition
+                  </div>
+                  <div class="p-menu p-menu-horizontal p-u-1-4">
+                      <ul class="p-menu-list">
+                          <li class="p-menu-item p-menu-has-children p-menu-allow-click p-menu-dropup p-menu-left">
+                              <input type="checkbox" id="menuEdition" class="p-menu-checkbox"/>
+                              <label for="menuEdition"><span  id="menuLink1" class="p-menu-link fa fa-chevron-up"></span></label>
+                              <ul class="p-menu-children">
+                                                                        
+                                      <li class="p-menu-item">
+                                          <a href="http://www.tomsguide.fr" class="p-menu-link">French Edition</a>
+                                      </li>
+                                                                </ul>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+                </div>
+      <div class="p-g footer-content footer-content-3 font-mob-130">
+          <div class="p-u-1  txt-center footer-content-copyright">
+              Copyright © 2016 Purch Group, Inc. All Rights Reserved 
+          </div>
+      </div>
+  </div>
+        <script type="application/ld+json">
+    { "@context" : "http://schema.org",
+      "@type" : "Website",
+      "name" : "Tom&#039;s Guide",
+      "url" : "http://www.tomsguide.com/",
+      "alternateName" : "Tom&#039;s Guide: Tech Product Reviews, Top Picks and How To",
+      "potentialAction":{"@type":"SearchAction","target":"http://www.tomsguide.com/s/{search_term}","query-input":"required name=search_term"}
+    }
+    </script>
+    </section>
+</section>
+                    </section>
+    </div>
+        </section>
+            
+                
+    
+    
+
+
+<script language="JavaScript" type="text/javascript">
+    var Purch = Purch || {};
+    Purch.Omniture = Purch.Omniture || {};
+    Purch.Omniture.account = 'tmn-prod-tomsguide.com,ttrglobalproduction';
+</script>
+
+    <script type="text/javascript" src="/js/vendor/scitylana/VisitorAPI.js"></script>
+    <script type="text/javascript" src="/js/vendor/scitylana/AppMeasurement.js"></script>
+
+<script class="omnitureProperties" language="JavaScript" type="text/javascript">
+            Purch.Omniture.s.pageName='tgus\x3Aedt\x3A2\x2D2236\x3ABest\x203D\x20Printer\x3A1';
+                Purch.Omniture.s.channel='Editorial';
+                Purch.Omniture.s.prop15='D\x3Dv15';
+                        Purch.Omniture.s.prop26='D\x3Dv36';
+                Purch.Omniture.s.prop27='D\x3Dv37';
+                Purch.Omniture.s.prop33='Tom\x27s\x20Guide\x20EN';
+                Purch.Omniture.s.eVar36='TechMediaNetwork';
+                Purch.Omniture.s.eVar37='Tomsguide.com';
+                Purch.Omniture.s.eVar49='1.0.32\x2D203';
+                        Purch.Omniture.s.eVar4='Reviews';
+                Purch.Omniture.s.prop4='D\x3Dv4';
+                Purch.Omniture.s.eVar5='Best\x203D\x20Printers\x202016';
+                Purch.Omniture.s.prop5='D\x3Dv5';
+                Purch.Omniture.s.eVar6='tgus\x2Dedt\x2D2\x2D2236';
+                Purch.Omniture.s.prop6='D\x3Dv6';
+                Purch.Omniture.s.eVar45='tgus\x2Dedt\x2D2\x2D2236';
+                Purch.Omniture.s.prop45='D\x3Dv45';
+                Purch.Omniture.s.prop34='3D\x20Printing';
+                Purch.Omniture.s.eVar17='Best\x20Picks';
+                Purch.Omniture.s.prop17='D\x3Dv17';
+                Purch.Omniture.s.eVar2='3D\x20Printing';
+                Purch.Omniture.s.prop2='D\x3Dv2';
+            Purch.Omniture.s.eVar15 = (Purch && Purch.User && Purch.User.Status ? Purch.User.Status : 'Non Member');
+    Purch.Omniture.s.prop35 = (Purch && Purch.User && Purch.User.Id ? 'toms-en'+Purch.User.Id : '');
+    Purch.Omniture.s.pageURL = window.location.href;
+
+    if (window.location.hash != "") {
+        Purch.Omniture.s.campaign = window.location.hash.replace('#','');
+    }
+
+        try {
+        Purch.Omniture.s = s_gi(Purch.Omniture.account);
+        var s = Purch.Omniture.s;
+        var s_code = Purch.Omniture.s.t();
+    }
+    catch(err){
+        console.log(err);
+    }
+    </script>
+
+<noscript>
+    <img src="http://metrics.toptenreviews.com/b/ss/tmn-prod-tomsguide.com,ttrglobalproduction/1/G.4--NS/14552133696129?ns=toptenreviews&g=http%3A%2F%2Fwww.tomsguide.com%2Fus%2Fbest-3d-printers%2Creview-2236.html&v=N&ndh=0&ce=UTF-8&pageName=tgus%3Aedt%3A2-2236%3ABest+3D+Printer%3A1&ch=Editorial&c15=D%3Dv15&v15=Non+Member&c26=D%3Dv36&c27=D%3Dv37&c33=Tom%27s+Guide+EN&v36=TechMediaNetwork&v37=Tomsguide.com&v49=1.0.32-203&v4=Reviews&c4=D%3Dv4&v5=Best+3D+Printers+2016&c5=D%3Dv5&v6=tgus-edt-2-2236&c6=D%3Dv6&v45=tgus-edt-2-2236&c45=D%3Dv45&c34=3D+Printing&v17=Best+Picks&c17=D%3Dv17&v2=3D+Printing&c2=D%3Dv2" height="1" width="1" border="0" alt="" />
+</noscript>
+    
+                <script type="text/javascript" src="/js/vendor/requirejs/require.js"></script>
+        <script type="text/javascript" src="/js/Purch/Utils/RequireErr.js"></script>
+        <script type="text/javascript" language="JavaScript">
+            var Purch = Purch || {};
+                                        requirejs.config({
+                    baseUrl: '/js',
+	                  urlArgs: 'v=1.0.32-203',
+		                paths: {
+                      jquery: '/js/vendor/jquery/jquery.min'
+                    }
+                });
+
+                require(['Purch/Link/DecodeLive']);
+                require(['Purch/Utils/Lazy'], function(Lazy) {
+                    new Lazy({init: true, offsetY:150, delegateOn: 'body'});
+                });
+            
+    require(['Purch/UI/Sticky'], function(Sticky) {
+		new Sticky({
+			stickyClass: 'sticky-header'
+		});
+	});    require(['Purch/User/MemberModule'], function(MemberModule) {
+        new MemberModule();
+    });
+    	    require(['Purch/Shopping/PriceOffer', 'Purch/Omniture/Tracking/ShoppingButton'], function(PriceOffer, ShoppingButtonTracking) {
+        var SBT = ShoppingButtonTracking.initModule({
+            'selector':".omniture-tracking"
+        });
+        PriceOffer.initModule({
+            "tradsOn": "On",
+            "sitecode": "tgus",
+            "subtag": "[site|tguus[cat|[art|[pid|@pid@[tid|@tid@[bbc|LESPRIX",
+            "currency": "$0.00",
+            "analyticsTracker": SBT
+        });
+    });	    require(['Purch/UI/StatusBar'], function(StatusBar) {
+				StatusBar.initModule();
+    });        require(['Purch/UI/Zoom'], function(Zoom) {
+        Zoom.initModule();
+    });
+    require(['Purch/UI/ScrollProgressBar'], function(ScrollProgressBar){ return new ScrollProgressBar();});
+
+    
+            
+requirejs.config({
+    paths: {
+        'jquery.form': 'vendor/jquery-form/jquery.form',
+        'parsley': 'vendor/parsleyjs/parsley',
+        'parsley-words': 'vendor/parsleyjs/words',
+        'jquery-resize': 'vendor/jquery-resize/jquery.ba-resize.min'
+    },
+    shim: {
+        'parsley-words': {
+            deps: ['parsley']
+        },
+        'jquery-resize': {
+            deps: ['jquery']
+        }
+    }
+});
+
+if (window.Purch.User){
+    require(['Purch/Utils/ModalLauncher'], function(ModalLauncher) {
+        var ml = new ModalLauncher({
+            modalId: 'alert-comment-modal'
+        });
+        ml.init();
+    });
+
+    require(['Purch/Comments/Vote'], function(Vote) {
+        var vote = new Vote();
+        vote.init();
+    });
+}
+
+require(['Purch/UI/ExtendedTabs'], function(ExtendedTabs) {
+    var et = new ExtendedTabs({
+        tabsAccessor: '.comments-forms-tabs',
+        delegateOn: document
+    });
+    et.init();
+});
+
+require(['Purch/Comments/CreateTopicForm'], function(CreateTopicForm) {
+    var createTopicForm = new CreateTopicForm({});
+    createTopicForm.init();
+});
+
+require(['Purch/Comments/CreateForm'], function(CreateForm) {
+    var createForm = new CreateForm({
+        countCommentRoute : 'http\x3A\x2F\x2Fwww.tomsguide.com\x2Fcomments\x2Fcount',
+        genericErrorMsg: 'Sorry\x20\x2D\x20an\x20unexpected\x20error\x20has\x20occurred.\x20Please\x20try\x20again\x20in\x20a\x20moment.'
+    });
+    createForm.init();
+});
+
+
+require(['Purch/Comments/Pagination'], function(Pagination) {
+    var pagination = new Pagination({
+        'accessor': '.comments-show-more > a',
+        'nbElementsPerPage': 20
+    });
+    pagination.init();
+});
+
+require(['Purch/Comments/Expand'], function(Expand) {
+    var expand = new Expand({
+        'accessor': '.comments-expand',
+    });
+    expand.init();
+});
+
+require(['Purch/UI/HideUselessTogglers'], function(HideUselessTogglers) {
+    var hideUselessTogglers = new HideUselessTogglers({
+        'toggleButtonAccessor': '.comments-list .toggle-btn'
+    });
+    hideUselessTogglers.init();
+});
+
+require(['Purch/Comments/ResizableTextarea'], function(resizableTextarea) {
+    var obj = resizableTextarea({
+        accessor: '.comments-forms-tabs .resizable-v'
+    });
+    obj.init();
+});
+
+require(['Purch/Comments/ArchiveForm'], function(archiveForm) {
+    var obj = archiveForm({
+        confirmMessage: 'Are\x20you\x20sure\x20you\x20want\x20to\x20archive\x20all\x20current\x20comments\x20to\x20a\x20new\x20forum\x20thread\x3F\x20All\x20comments\x20will\x20be\x20removed\x20from\x20this\x20news.',
+        genericErrorMsg: 'Sorry\x20\x2D\x20an\x20unexpected\x20error\x20has\x20occurred.\x20Please\x20try\x20again\x20in\x20a\x20moment.',
+        successMsg: 'You\x20chose\x20to\x20archive\x20these\x20comments.\x20Your\x20request\x20will\x20be\x20processed\x20within\x20a\x20few\x20minutes.'
+    });
+    obj.init();
+});
+
+require(['Purch/User/InlineSignin'], function(InlineSignin) {
+    // Context preservation on comment creation forms
+    var commentOptions = {
+        authUrl: 'http\x3A\x2F\x2Fwww.tomsguide.com\x2Fcommunity\x2Flogin',
+        excludedFields: ['comment[_token]'],
+        restorationCallback: function() {
+            window.location.reload();
+        }
+    };
+    InlineSignin.bulkInit('.comment-creation-form', commentOptions, 'comments-widget.loaded');
+
+    // Context preservation on thread creation forms
+    var threadOptions = {
+        authUrl: 'http\x3A\x2F\x2Fwww.tomsguide.com\x2Fcommunity\x2Flogin',
+        excludedFields: ['topic[_token]'],
+        restorationCallback: function() {
+            window.location.reload();
+        }
+    };
+    InlineSignin.bulkInit('.topic-creation-form', threadOptions, 'comments-widget.loaded');
+});
+            </script>
+    
+    
+        <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"6ef1e23532","applicationID":"9772900","transactionName":"YFRQMkdRDBZSBxJRDFkecwVBWQ0LHAECTDxFVEQPUEcROl0LOUgCUFQ=","queueTime":0,"applicationTime":548,"atts":"TBNTRA9LHxg=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-768.min.js"}</script></body>
+</html>
