@@ -1,6 +1,6 @@
 #!/bin/bash
 
-targets=( "Technologien" "Quellen.bib" "3D_Zustand.tex" "Forschung.tex" "Auswirkungen.tex" "Einleitung.tex" "Facharbeit.tex" "Facharbeit.pdf" "Titelblatt.tex" "Schlusserklarung.tex" )
+targets=( "Technologien" "Quellen.bib" "3D_Zustand.tex" "Forschung.tex" "Auswirkungen.tex" "Einleitung.tex" "Facharbeit.tex" "Facharbeit.pdf" "Titelblatt.tex" "Schlusserklarung.tex" "Logo.png" )
 
 makeURLLists() {
 	cd Facharbeit
